@@ -151,6 +151,16 @@ def sizing( no_cores,
             else:
                 return expansion_configs[expansion_configs["Configuration"]==e["Configuration"]].index.to_list()[0]
     final_config.sort(key=sortByConfigSize)
+    for config in final_config:
+        if("Expansion" not in config["Configuration"]):
+            config["CPUSize"]=int(float(exadata_configs[exadata_configs["Configuration"]==config["Configuration"]]["MaximumNumberOfOCPUs"])*int(config["Number"]))
+            config["StorageSize"]=int(float(exadata_configs[exadata_configs["Configuration"]==config["Configuration"]]["TotalUsableDiskCapacity(TB)"])*int(config["Number"]))
+            config["freeStorageExpansion"]=int(float(exadata_configs[exadata_configs["Configuration"]==config["Configuration"]]["AdditionalStorageCellPossibility"])*int(config["Number"]))
+            config["freeDBServerExpansion"]=int(float(MaxNoDBServersInRack-exadata_configs[exadata_configs["Configuration"]==config["Configuration"]]["NumberOfDatabaseServers"])*int(config["Number"]))
+        else:
+            config["CPUSize"]=int(float(expansion_configs[expansion_configs["Configuration"]==config["Configuration"]]["MaximumNumberOfOCPUs"])*int(config["Number"]))
+            config["StorageSize"]=int(float(expansion_configs[expansion_configs["Configuration"]==config["Configuration"]]["TotalUsableDiskCapacity(TB)"])*int(config["Number"]))
+        config["Cost"]=int(exadata_prices[exadata_prices["Configuration"]== config["Configuration"]]["Price"])*int(config["Number"])
     return final_config
 
  
@@ -174,7 +184,7 @@ final_config=sizing(    no_cores,
                         use_StorageExpansions=True)
 
 # print the final configuration grouped
-print("{:<20}{:<5}{:<5}{:<5}".format("Configuration","Number","CPU","Storage"))
+print("{:<20}{:<5}{:<5}{:<5}\t{}".format("Configuration","Number","CPU","Storage","Monthly Cost"))
 print("-"*50)
 totalCPU=0
 totalStorage=0
@@ -195,22 +205,21 @@ for config in final_config:
         else:
             freeDBServerExpansion=-config["Number"]
 
-    print("{:<20}{:>5}{:>5}{:>5}".format(
+    print("{:<20}{:>5}{:>5}{:>5}\t${:,.0f}".format(
     config["Configuration"],
     config["Number"],
-    CPUSize,
-    StorageSize
+    config["CPUSize"],
+    config["StorageSize"],
+    config["Cost"]
     ))
     totalNumber+=int(config["Number"])
-    totalCPU+=CPUSize
-    totalStorage+=StorageSize
-    totalCost+=int(exadata_prices[exadata_prices["Configuration"]== config["Configuration"]]["Price"])*int(config["Number"])
-
+    totalCPU+=int(config["CPUSize"])
+    totalStorage+=int(config["StorageSize"])
+    totalCost+=int(config["Cost"])
 
 print("-"*50)
-print("Total:{:>20}{:>5}{:>5}".format(totalNumber,totalCPU,totalStorage))
+print("Total:{:>20}{:>5}{:>5}\t${:,.0f}".format(totalNumber,totalCPU,totalStorage,totalCost))
 print("Requirements:{:>18}{:>5.0f}".format(no_cores,storage_needed))
-print("Total Monthly Cost: ${:,.0f}".format(totalCost))
 print("{} Storage and {} DB Server expansion possibilities are free".format(freeStorageExpansion,freeDBServerExpansion))
 
 
