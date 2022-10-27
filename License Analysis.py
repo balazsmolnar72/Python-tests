@@ -2,6 +2,7 @@ import threading
 import math
 import pandas as pd
 import warnings
+import ExaSizing as sizer
 
 
 # Read the available database options into a dataframe
@@ -156,11 +157,13 @@ if ula_licenses.__len__()>0:
     print(ula_licenses.to_string(index=False))
 
 #Sizing the environment
-
-no_cores=max_cores_supported
-storage_needed=no_cores*2
-
-exadata_configs=pd.read_csv("Exadata X9 Configurations.csv", sep=',').fillna(0)
-#exadata_configs.transpose()
-print()
-print(exadata_configs)
+print("\nTarget Sizing:")
+result=sizer.sizing(no_cores=max_cores_supported,storage_needed=max_cores_supported*2,use_DBServerExpansions=False)
+print("{:<20}{:<10}{:<9}{:<5}\t{}".format("Configuration","Number","CPU","Storage","Monthly Cost"))
+print(*list(map(lambda config: "{:<20}{:>5}{:>10,.0f}{:>10,.0f}\t${:,.0f}".format(
+    config["Configuration"],
+    config["Number"],
+    config["CPUSize"],
+    config["StorageSize"],
+    config["Cost"]
+    ),result)),sep='\n')
