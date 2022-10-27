@@ -1,0 +1,26 @@
+﻿License name,Keyword,DBCS_Edition,Minimum NUP per core,List Price CPU,List Price NUP
+Standard Edition One ,Database Standard,1,10,5800,290
+Enterprise Edition ,Database Enterprise,2,25,47500,950
+Real Application Clusters (RAC) ,Real Application Clusters,4,25,23000,460
+RAC One Node ,RAC One,4,25,10000,200
+In-Memory Database ,In-Memory,4,25,23000,460
+Active Data Guard ,Active Data,4,25,11500,230
+Multitenant ,Multitenant,3,25,17500,350
+Partitioning ,Partitioning,3,25,11500,230
+Real Application Testing ,Testing,2,25,11500,230
+Advanced Compression ,Compression,3,25,11500,230
+Advanced Security ,Advanced Security,3,25,15000,300
+Label Security ,Label,3,25,11500,230
+Database Vault ,Vault,3,25,11500,230
+OLAP ,OLAP,3,25,23000,460
+Advanced Analytics ,Advanced Analytics,2,25,23000,460
+Spatial and Graph ,Spatial,2,25,17500,350
+Diagnostics Pack ,Diagnostics,2,25,7500,150
+Tuning Pack ,Tuning,2,25,5000,100
+Database Lifecycle Mgnt Pack ,Lifecycle,3,25,12000,240
+Data Masking Pack ,Masking,2,25,11500,230
+Test Data Management Pack ,Test Data Management,3,25,11500,230
+Cloud Mgnt Pack for Oracle DB ,Cloud M,3,25,5000,100
+Configuration Management pack,Configuration,3,25,5000,100
+Provisioning pack,Provisioning pack,3,25,5000,100
+Change management pack,Change Management,3,25,5000,100
