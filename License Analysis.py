@@ -89,7 +89,7 @@ licenses_printable["Contract ARR"]=licenses_printable["Contract ARR"].map('${:,.
 licenses_printable["Average Discount"]=licenses_printable["Average Discount"].map('{:+.0%}'.format)
 warnings.filterwarnings('default')
 
-print()
+print("\n","-"*30," Summary of License Costs ","-"*30) 
 print(licenses_printable[["Product Name","License type","Quantity","Contract ARR","Average Discount"]].to_string(index=False))
 print('-'*100)
 print("Total:{:>64,.0f}{:>13,.0f}{:+17.0%}".format(
@@ -105,7 +105,8 @@ print("Total:{:>64,.0f}{:>13,.0f}{:+17.0%}".format(
 
 del licenses_printable
 
-# And we will calculate the total cores covered and what is the coverage of the different DB options compared to the Enterprise edition
+# And we will calculate the total cores covered and what is the coverage of the different DB options 
+# compared to the Enterprise edition
 
 cores_chart=licenses[licenses["DB_Option"]>0].pivot("Product Name","License type","Total Intel Cores Covered").fillna(0)
 if "NUP" not in cores_chart.columns:
@@ -134,7 +135,7 @@ cores_chart_printable["Total Intel cores"]=cores_chart_printable["Total Intel co
 cores_chart_printable["Percent"]=cores_chart_printable["Percent"].map('{:.0%}'.format)
 warnings.filterwarnings('default')
 
-print()
+print("\n","-"*30," Summary of Licenses ","-"*30) 
 print(cores_chart_printable)
 
 #Check if the customer has ULA
@@ -158,11 +159,13 @@ df["Discount"]=df.apply(
 ,axis=1)
 
 ula_licenses=df[["Customer Name","Product Name"]][(df["Discount"]>0) & (df["Quantity"]==1)]
-if ula_licenses.__len__()>0: 
+if ula_licenses.__len__()>0:
+    print("\n","-"*30," ULA Information ","-"*30) 
     print("These customers has probably a ULA on these Licenses:")
     print(ula_licenses.to_string(index=False))
 
 #Sizing the environment
+print("\n","-"*30," Possible Exa target For The complete workload ","-"*30) 
 print("\nTarget Sizing for this installation:")
 result=sizer.sizing(
     no_cores=max_cores_supported,
