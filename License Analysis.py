@@ -8,7 +8,9 @@ import ExaSizing as sizer
 # Read the available database options into a dataframe
 db_options=pd.read_csv("Database Options.csv", sep=',')
 # Read the installed base into a dataframe with a ',' separator
-df = pd.read_csv("ERSTE_Install_Base.csv", sep=',')
+df = pd.read_csv("Install Base.csv", sep=',')
+if "Install Status" in df.columns:
+    df=df[df["Install Status"]=="ACTIVE"]
 
 # Describe Show the number of customers in this analysis
 no_customers=df["Customer Name"].unique().__len__()
@@ -106,10 +108,14 @@ del licenses_printable
 # And we will calculate the total cores covered and what is the coverage of the different DB options compared to the Enterprise edition
 
 cores_chart=licenses[licenses["DB_Option"]>0].pivot("Product Name","License type","Total Intel Cores Covered").fillna(0)
+if "NUP" not in cores_chart.columns:
+    cores_chart["NUP"]=0
+if "Processor" not in cores_chart.columns:
+    cores_chart["Processor"]=0
 cores_chart["Total Intel cores"]=cores_chart.apply(
     lambda row:
-        row["Processor"]+row["NUP"],
-        axis=1
+        row["Processor"]+row["NUP"]
+        ,axis=1
 )
 max_cores_supported=cores_chart["Total Intel cores"].max()
 cores_chart["Percent"]=cores_chart.apply(
@@ -157,8 +163,11 @@ if ula_licenses.__len__()>0:
     print(ula_licenses.to_string(index=False))
 
 #Sizing the environment
-print("\nTarget Sizing:")
-result=sizer.sizing(no_cores=max_cores_supported,storage_needed=max_cores_supported*2,use_DBServerExpansions=False)
+print("\nTarget Sizing for this installation:")
+result=sizer.sizing(
+    no_cores=max_cores_supported,
+    storage_needed=max_cores_supported*2,
+    use_DBServerExpansions=False)
 print("{:<20}{:<10}{:<9}{:<5}\t{}".format("Configuration","Number","CPU","Storage","Monthly Cost"))
 print(*list(map(lambda config: "{:<20}{:>5}{:>10,.0f}{:>10,.0f}\t${:,.0f}".format(
     config["Configuration"],
@@ -167,3 +176,13 @@ print(*list(map(lambda config: "{:<20}{:>5}{:>10,.0f}{:>10,.0f}\t${:,.0f}".forma
     config["StorageSize"],
     config["Cost"]
     ),result)),sep='\n')
+print("-"*60)
+print("{:<20}{:>5}{:>10,.0f}{:>10,.0f}\t${:,.0f}".format(
+    "Total:",
+    sum(config["Number"] for config in result),
+    sum(config["CPUSize"] for config in result),
+    sum(config["StorageSize"] for config in result),
+    sum(config["Cost"] for config in result)
+    ))
+
+print("Total Annual Infrastructure cost: ${:,.0f}".format(sum(config["Cost"] for config in result)*12))
