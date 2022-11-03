@@ -27,6 +27,8 @@ def sizing( no_cores,
     # Expansion configs are the last two lines
     expansion_configs=Exadata_Configs.tail(2)
 
+    exadata_prices=pd.read_csv("ExaCC pricing.csv", sep=',').fillna(0)
+
     # Set some constants
     StorageOCPURatio=float(exadata_configs[exadata_configs["Configuration"]=="Quarter Rack"]["TotalUsableDiskCapacity(TB)"]/exadata_configs[exadata_configs["Configuration"]=="Quarter Rack"]["MaximumNumberOfOCPUs"])
     DBServerCPUSize=int(float(exadata_configs[exadata_configs["Configuration"]=="Quarter Rack"]["MaximumNumberOfOCPUs"]/exadata_configs[exadata_configs["Configuration"]=="Quarter Rack"]["NumberOfDatabaseServers"]))
@@ -177,52 +179,52 @@ def sizing( no_cores,
     return final_config #return the result 
 
  
-no_cores=650
-storage_needed=650*1.5
+# no_cores=650
+# storage_needed=650*1.5
 
-Exadata_Configs=pd.read_csv("Exadata X9 Configurations.csv", sep=',').fillna(0)
-exadata_configs=Exadata_Configs.head(4)
-expansion_configs=Exadata_Configs.tail(2)
-exadata_prices=pd.read_csv("ExaCC pricing.csv", sep=',').fillna(0)
-MaxNoDBServersInRack=int(float(exadata_configs[exadata_configs["Configuration"]=="Full Rack"]["NumberOfDatabaseServers"]))
-
-
-final_config=sizing(    no_cores,
-                        storage_needed,
-                        ignore_BaseSystem=True,
-                        verbose=False,
-                        use_DBServerExpansions=False,
-                        use_StorageExpansions=True)
+# Exadata_Configs=pd.read_csv("Exadata X9 Configurations.csv", sep=',').fillna(0)
+# exadata_configs=Exadata_Configs.head(4)
+# expansion_configs=Exadata_Configs.tail(2)
+# exadata_prices=pd.read_csv("ExaCC pricing.csv", sep=',').fillna(0)
+# MaxNoDBServersInRack=int(float(exadata_configs[exadata_configs["Configuration"]=="Full Rack"]["NumberOfDatabaseServers"]))
 
 
-print("{:<20}{:<5}{:<5}{:<5}\t{}".format("Configuration","Number","CPU","Storage","Monthly Cost"))
-print("-"*50)
-totalCPU=totalStorage=totalNumber=totalCost=freeStorageExpansion=freeDBServerExpansion=0 #initalize counters
-for config in final_config:
-    if("Expansion" not in config["Configuration"]):
-        freeStorageExpansion+=int(float(exadata_configs[exadata_configs["Configuration"]==config["Configuration"]]["AdditionalStorageCellPossibility"])*int(config["Number"]))
-        freeDBServerExpansion+=int(float(MaxNoDBServersInRack-exadata_configs[exadata_configs["Configuration"]==config["Configuration"]]["NumberOfDatabaseServers"])*int(config["Number"]))
-    else:
-        if "Storage" in config["Configuration"]:
-            freeStorageExpansion-=config["Number"]
-        else:
-            freeDBServerExpansion=-config["Number"]
+# final_config=sizing(    no_cores,
+#                         storage_needed,
+#                         ignore_BaseSystem=True,
+#                         verbose=False,
+#                         use_DBServerExpansions=False,
+#                         use_StorageExpansions=True)
 
-    print("{:<20}{:>5}{:>5}{:>5}\t${:,.0f}".format(
-    config["Configuration"],
-    config["Number"],
-    config["CPUSize"],
-    config["StorageSize"],
-    config["Cost"]
-    ))
-    totalNumber+=int(config["Number"])
-    totalCPU+=int(config["CPUSize"])
-    totalStorage+=int(config["StorageSize"])
-    totalCost+=int(config["Cost"])
 
-print("-"*50)
-print("Total:{:>20}{:>5}{:>5}\t${:,.0f}".format(totalNumber,totalCPU,totalStorage,totalCost))
-print("Requirements:{:>18}{:>5.0f}".format(no_cores,storage_needed))
-print("{} Storage and {} DB Server expansion possibilities are free".format(freeStorageExpansion,freeDBServerExpansion))
+# print("{:<20}{:<5}{:<5}{:<5}\t{}".format("Configuration","Number","CPU","Storage","Monthly Cost"))
+# print("-"*50)
+# totalCPU=totalStorage=totalNumber=totalCost=freeStorageExpansion=freeDBServerExpansion=0 #initalize counters
+# for config in final_config:
+#     if("Expansion" not in config["Configuration"]):
+#         freeStorageExpansion+=int(float(exadata_configs[exadata_configs["Configuration"]==config["Configuration"]]["AdditionalStorageCellPossibility"])*int(config["Number"]))
+#         freeDBServerExpansion+=int(float(MaxNoDBServersInRack-exadata_configs[exadata_configs["Configuration"]==config["Configuration"]]["NumberOfDatabaseServers"])*int(config["Number"]))
+#     else:
+#         if "Storage" in config["Configuration"]:
+#             freeStorageExpansion-=config["Number"]
+#         else:
+#             freeDBServerExpansion=-config["Number"]
+
+#     print("{:<20}{:>5}{:>5}{:>5}\t${:,.0f}".format(
+#     config["Configuration"],
+#     config["Number"],
+#     config["CPUSize"],
+#     config["StorageSize"],
+#     config["Cost"]
+#     ))
+#     totalNumber+=int(config["Number"])
+#     totalCPU+=int(config["CPUSize"])
+#     totalStorage+=int(config["StorageSize"])
+#     totalCost+=int(config["Cost"])
+
+# print("-"*50)
+# print("Total:{:>20}{:>5}{:>5}\t${:,.0f}".format(totalNumber,totalCPU,totalStorage,totalCost))
+# print("Requirements:{:>18}{:>5.0f}".format(no_cores,storage_needed))
+# print("{} Storage and {} DB Server expansion possibilities are free".format(freeStorageExpansion,freeDBServerExpansion))
 
 
