@@ -22,6 +22,9 @@ def TCO_comparison(cores,storageTB,annualDBsupport,utilization):
         ("ExaCS BYOL",ExaCSInfraCost,annualDBsupport,UniversalCreditBYOL)
     ],columns=["Config","Infrastructure","DB Support","UC"])
     output.set_index("Config",inplace=True)
-    output["Total"]=output.sum(axis=1)
+    output["Total"]=output.sum(axis="columns")
     output["Saving %"]=list(map(lambda sum: (sum/output.loc["On Premise"]["Total"])-1,output["Total"]))
     return output
+
+# TCO_result=TCO_comparison(cores=200,storageTB=400,annualDBsupport=1100000,utilization=0.4)
+# print(TCO_result["Infrastructure"])
