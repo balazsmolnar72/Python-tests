@@ -3,9 +3,10 @@ import pandas as pd
 import warnings
 import ExaSizing as sizer
 
+warnings.filterwarnings('ignore')
 global max_cores_supported
 global totalSupportPaid
-warnings.filterwarnings('ignore')
+
 
 # Read the available database options into a dataframe
 db_options=pd.read_csv("Database Options.csv", sep=',')
