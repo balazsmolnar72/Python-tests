@@ -137,7 +137,7 @@ def printLicenseQuantities():
     cores_chart_printable["Processor"]=cores_chart_printable["Processor"].map('{:,.0f}'.format)
     cores_chart_printable["Total Intel cores"]=cores_chart_printable["Total Intel cores"].map('{:,.0f}'.format)
     cores_chart_printable["Percent"]=cores_chart_printable["Percent"].map('{:.0%}'.format)
-    warnings.filterwarnings('default')
+#   warnings.filterwarnings('default')
 
     print("\n","-"*30," Summary of Licenses ","-"*30) 
     print(cores_chart_printable)
