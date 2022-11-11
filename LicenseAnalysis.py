@@ -91,7 +91,7 @@ def printLicenseCosts():    # We create a new dataframe called license_printable
     warnings.filterwarnings('ignore')
     licenses_printable["Contract ARR"]=licenses_printable["Contract ARR"].map('${:,.0f}'.format)
     licenses_printable["Average Discount"]=licenses_printable["Average Discount"].map('{:+.0%}'.format)
-    warnings.filterwarnings('default')
+
 
     print("\n","-"*30," Summary of License Costs ","-"*30) 
     print(licenses_printable[["Product Name","License type","Quantity","Contract ARR","Average Discount"]].to_string(index=False))
@@ -107,6 +107,7 @@ def printLicenseCosts():    # We create a new dataframe called license_printable
             )   
         )
     del licenses_printable
+  
 
 # And we will calculate the total cores covered and what is the coverage of the different DB options 
 # compared to the Enterprise editionmax_cores_supported
@@ -131,7 +132,7 @@ cores_chart["Percent"]=cores_chart.apply(
 
 
 def printLicenseQuantities():
-    warnings.filterwarnings('ignore')
+#    warnings.filterwarnings('ignore')
     cores_chart_printable=cores_chart.sort_values(by=["Percent"], ascending=False)
     cores_chart_printable["NUP"]=cores_chart_printable["NUP"].map('{:,.0f}'.format)
     cores_chart_printable["Processor"]=cores_chart_printable["Processor"].map('{:,.0f}'.format)
@@ -203,6 +204,7 @@ def getMaxCoresSupported():
 def getTotalSupportPaid():
     return totalSupportPaid
 
+warnings.filterwarnings('default')
 # printNoCustomers()
 # printLicenseCosts()
 # printLicenseQuantities()
