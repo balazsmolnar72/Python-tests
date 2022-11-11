@@ -1,20 +1,20 @@
 from asyncio.windows_events import NULL
 from queue import Empty
-import threading
 import math
 import pandas as pd
-import warnings
 
 # This function sizes the environment
 # Returns a list of dictionaries which shows the number of the configurations needed to cover the requirements
 
 def sizing( no_cores,
             storage_needed,
+            Exa_Core_Ratio=1,
             verbose=False,
             ignore_BaseSystem=True,
             use_DBServerExpansions=True,
             use_StorageExpansions=True): 
 
+    no_cores=math.ceil(no_cores/Exa_Core_Ratio)
     Requirements={
             "MaximumNumberOfOCPUs":no_cores,
             "TotalUsableDiskCapacity(TB)": storage_needed
