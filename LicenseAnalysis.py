@@ -122,7 +122,6 @@ cores_chart["Total Intel cores"]=cores_chart.apply(
 )
 max_cores_supported=cores_chart["Total Intel cores"].max()
 totalSupportPaid=licenses[licenses["DB_Option"]>0]["Contract ARR"].sum()
-alma=0
 cores_chart["Percent"]=cores_chart.apply(
     lambda row:
         row["Total Intel cores"]/max_cores_supported,
