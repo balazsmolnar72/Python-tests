@@ -86,27 +86,45 @@ licenses["Total Intel Cores Covered"]=licenses.apply(
 
 
 
-def printLicenseCosts():    # We create a new dataframe called license_printable from licenses, just to do the right ouptut formatting.
+def printLicenseCosts(style='txt'):    # We create a new dataframe called license_printable from licenses, just to do the right ouptut formatting.
 
     licenses_printable=licenses[licenses["DB_Option"]>0]
     warnings.filterwarnings('ignore')
+    if style=='html':
+        licenses_printable=licenses_printable.append(
+                {
+                    "Product Name":"Total",
+                    "License type":"",
+                    "Quantity":"",
+                    "Contract ARR":totalSupportPaid,
+                    "Average Discount":licenses[licenses["DB_Option"]>0].apply(        # this calculates the weighted average. Weight is based on the ARR value
+                        lambda row:
+                            row["Contract ARR"]*row["Average Discount"]
+                        ,axis=1).sum()/licenses["Contract ARR"][licenses["DB_Option"]>0].sum() 
+                }
+            ,ignore_index="true")
+
     licenses_printable["Contract ARR"]=licenses_printable["Contract ARR"].map('${:,.0f}'.format)
     licenses_printable["Average Discount"]=licenses_printable["Average Discount"].map('{:+.0%}'.format)
 
-
-    print("\n","-"*30," Summary of License Costs ","-"*30) 
-    print(licenses_printable[["Product Name","License type","Quantity","Contract ARR","Average Discount"]].to_string(index=False))
-    print('-'*100)
-    print("Total:{:>64,.0f}{:>13,.0f}{:+17.0%}".format(
-        licenses[licenses["DB_Option"]>0]["Quantity"].max(),
-#        licenses[licenses["DB_Option"]>0]["Contract ARR"].sum(),
-        totalSupportPaid,
-        licenses[licenses["DB_Option"]>0].apply(        # this calculates the weighted average. Weight is based on the ARR value
-            lambda row:
-                row["Contract ARR"]*row["Average Discount"]
-            ,axis=1).sum()/licenses["Contract ARR"][licenses["DB_Option"]>0].sum()    
-            )   
-        )
+    if style=='html':
+        print(
+            licenses_printable[["Product Name","License type","Quantity","Contract ARR","Average Discount"]].to_html(index=False)
+            .replace('<tr>\n      <td>Total','<tr style="font-weight:bold">\n      <td>Total'))
+    else:
+        print("\n","-"*30," Summary of License Costs ","-"*30) 
+        print(licenses_printable[["Product Name","License type","Quantity","Contract ARR","Average Discount"]].to_string(index=False))
+        print('-'*100)
+        print("Total:{:>64,.0f}{:>13,.0f}{:+17.0%}".format(
+            licenses[licenses["DB_Option"]>0]["Quantity"].max(),
+    #        licenses[licenses["DB_Option"]>0]["Contract ARR"].sum(),
+            totalSupportPaid,
+            licenses[licenses["DB_Option"]>0].apply(        # this calculates the weighted average. Weight is based on the ARR value
+                lambda row:
+                    row["Contract ARR"]*row["Average Discount"]
+                ,axis=1).sum()/licenses["Contract ARR"][licenses["DB_Option"]>0].sum()    
+                )   
+            )
     del licenses_printable
   
 
@@ -207,7 +225,7 @@ def getTotalSupportPaid():
 
 warnings.filterwarnings('default')
 # printNoCustomers()
-# printLicenseCosts()
+# printLicenseCosts(style='html')
 # printLicenseQuantities()
 # printULAInfo()
 # printTargetSizing()
