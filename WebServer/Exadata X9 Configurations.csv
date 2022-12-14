@@ -1,0 +1,7 @@
+Configuration,NumberOfDatabaseServers,MaximumNumberOfOCPUs,TotalMemory(GB),NumberOfStorageServers,TotalFlashCapacity(TB),TotalUsableDiskCapacity(TB),MaxDB Size-Local backup1(TB),MaxDBSize-NoLocalBackup1(TB),MaxSQLFlashBandwidth2(GB/s),MaxSQLFlashReadIOPS3,MaxSQLFlashWriteIOPS4,MaxSQLDiskBandwidth2(GB/s),MaxSQLDiskIOPS3,MaxDataLoadRate5(TB/hr),AdditionalStorageCellPossibility,Max#ofVMClustersPerSystem,Min#OfOCPUsPerVMCluster
+Base system,2,48,656,3,38.4,74,29.9,59,25,"562,500","518,000",2.7,"3,900",3.8,9,4,4
+Quarter Rack,2,124,"2,780",3,76.8,192,59.9,153,135,"5,600,000","1,842,000",5.4,"7,800",7.5,9,8,4
+Half Rack,4,248,"5,560",6,153.6,384,119.8,307,270,"11,200,000","3,684,000",10.8,"15,600",15,6,8,8
+Full Rack,8,496,"11,120",12,307.2,769,239.5,615,540,"22,400,000","7,368,000",21.5,"31,000",30,0,8,16
+Storage Expansion,,,,1,,64.1,,,,,,,,,,,
+DB Server Expansion,1,62,1390,,,,,,,,,,,,,,

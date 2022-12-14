@@ -1,0 +1,8 @@
+{
+    "Cost of TB Storage CAPEX":	 1650, 
+    "Support of 1 TB of Storage OPEX":	 35, 
+    "Cost of 1 core Intel Server Acquisition":125, 
+    "OS and Server support for 1 core":120, 
+    "Data Center (Power& Cooling& Floor) cost per rack per year"	 :10000,
+    "Amortization Period in Years": 5 
+}
