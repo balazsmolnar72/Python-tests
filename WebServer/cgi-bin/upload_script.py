@@ -14,14 +14,19 @@ def is_csv(infile):
         # Could not get a csv dialect -> probably not a csv.
         return False
 
+
+def insertDownloadLink(table_class, filename):  #This command will insert a 'Downloadd as CSV' link into the page
+                                                #table_class should contain the class of the table to be downloaded
+                                                # filename should contain the default filename where csv should be exported (extended with the current date) 
+    if 'insertDownloadLinkScript' not in globals(): # if the insertDownloadLinkScript is not defined (Include <script> only at the first time when this is involved)
+        print('<script src="../Scripts.js" type="text/javascript"></script>')
+        global insertDownloadLinkScript
+        insertDownloadLinkScript=True
+    print('<a class="download_links" href="#" onclick="download_table_as_csv(\''+table_class+'\',\''+filename+'\');">Download as CSV</a><br>')
+
 import os, cgi, time
 
 form = cgi.FieldStorage() 
-
-def insertDownloadLink(table_id, filename):
-    print('<script src="../Scripts.js" type="text/javascript"></script>')
-    print('<a href="#" onclick="download_table_as_csv(\''+table_id+'\',\''+filename+'\');">Download as CSV</a><br>')
-
 fi = form['filename']
 #fn = fi.filename
 fn ='Install Base.csv'
@@ -74,6 +79,7 @@ print('<h2>TCO Analysis for Complete Oracle DB Migration to ExaCC')
 from datetime import date
 today = date.today()
 print('<br><i style="font-size:small;">',today,'</i></h2>')
+print('<a class="download_links" href="#" onclick="window.print();">Print this analyis</a><br>')
 
 print('<div class="InfoPanel">')
 
@@ -177,16 +183,21 @@ print(plotly.io.to_html(fig=fig,full_html=False, default_width='100%',div_id='TC
 
 print('<h2>Annual Support Paid for Oracle Database and Options:</h2>')
 LA.printLicenseCosts(style='html')
-insertDownloadLink('dataframe.licenses_table_style',LA.getMostSignificantCustomerName()+'support cost by license')
-#print('<a class="download_links" href="','hello','"> Download in csv </a><br>')
-LA.printULAInfo(style='html')
+insertDownloadLink('dataframe.licenses_table_style',LA.getMostSignificantCustomerName()+' support cost by license')
+
+if LA.printULAInfo(style='html'):
+    insertDownloadLink('dataframe.ULA_table_style',LA.getMostSignificantCustomerName()+' Licenses in ULA')
+
 print('<h2>Number of Intel Cores Can Be Covered by DB Licenses</h2>')
 LA.printLicenseQuantities(style='html')
+insertDownloadLink('dataframe.Intel_coverage_table_style',LA.getMostSignificantCustomerName()+' cores covered by DB licenses')
 #print('<div class="pagebreak"> </div>')  # Breaks the page before the target sizing
 
 print('<h2>Possible Exa Target Sizing</h2>')
 print('<br>To host the whole scope of this environment on Exa configurations, you would need this configuration:<br>')
 LA.printTargetSizing(style='html')
+print('<br>')
+insertDownloadLink('target_sizing_table_style',LA.getMostSignificantCustomerName()+' Exa Target Sizing')
 print('<br><br>')
 
 # Close the page

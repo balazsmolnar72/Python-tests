@@ -1,7 +1,7 @@
 // Quick and simple export target #table_id into a csv
-function download_table_as_csv(table_id, separator = ',', filename) {
-    // Select rows from table_id
-    var rows = document.querySelectorAll('table.' + table_id + ' tr');
+function download_table_as_csv(table_class, filename, separator = ',') {
+    // Select rows from table_class
+    var rows = document.querySelectorAll('table.' + table_class + ' tr');
     // Construct csv
     var csv = [];
     for (var i = 0; i < rows.length; i++) {
