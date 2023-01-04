@@ -103,7 +103,7 @@ def sizing( no_cores,
                     NoStorageServers-=int(float(exadata_configs[exadata_configs["Configuration"]=="Quarter Rack"]["NumberOfStorageServers"]))
                     NoDBServers-=int(float(exadata_configs[exadata_configs["Configuration"]=="Quarter Rack"]["NumberOfDatabaseServers"]))
                     NoRacks-=1
-            if NoDBServers<2: # if we need less than the smallest configuration we add the smallest configuration, since we cannot use DB Server Expansion
+            if NoDBServers>0 and NoDBServers<2: # if we need less than the smallest configuration we add the smallest configuration, since we cannot use DB Server Expansion
                 final_config.append({"Configuration":SmallestConfig,"Number":1})
                 NoStorageServers-=int(float(exadata_configs[exadata_configs["Configuration"]==SmallestConfig]["NumberOfStorageServers"]))
                 NoDBServers-=int(float(exadata_configs[exadata_configs["Configuration"]==SmallestConfig]["NumberOfDatabaseServers"]))
@@ -125,7 +125,7 @@ def sizing( no_cores,
                     NoStorageServers-=int(float(exadata_configs[exadata_configs["Configuration"]=="Quarter Rack"]["NumberOfStorageServers"]))
                     NoDBServers-=int(float(exadata_configs[exadata_configs["Configuration"]=="Quarter Rack"]["NumberOfDatabaseServers"]))
                     NoRacks-=1
-            if NoStorageServers<3: # If we need less storage than the minimum configuration we add the minimum configuration
+            if NoStorageServers>0 and NoStorageServers<3: # If we need less storage than the minimum configuration we add the minimum configuration
                 final_config.append({"Configuration":SmallestConfig,"Number":1})
                 NoStorageServers-=int(float(exadata_configs[exadata_configs["Configuration"]==SmallestConfig]["NumberOfStorageServers"]))
                 NoDBServers-=int(float(exadata_configs[exadata_configs["Configuration"]==SmallestConfig]["NumberOfDatabaseServers"]))

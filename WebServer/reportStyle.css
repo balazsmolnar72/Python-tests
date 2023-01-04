@@ -1,0 +1,119 @@
+  
+  body{
+    background-color: #FBF9F8;
+  }
+
+  h2 {
+    color:white;
+    background-color: black;
+    padding: 15px;
+  }
+
+  th{
+    padding:8px;
+    text-align: left;
+  }
+  
+  td{
+    padding:8px;
+  }
+
+  a{
+    color: #DE7F11;
+  }
+
+  .infoPanel{
+    background-color: #e4e1dde6;
+    padding: 6px 0;
+  }
+
+  .ReportFootage{
+    color:white;
+    background-color: black;
+    padding: 10px;  
+  }
+
+  tbody{
+    page-break-inside:avoid;
+    page-break-after:auto;
+    position:relative;
+    }
+
+  .dataframe.licenses_table_style,
+  .dataframe.Intel_coverage_table_style,
+  .dataframe.ULA_table_style,
+  .target_sizing_table_style
+  {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    padding: 8px;
+    /* width: 100%; */
+  }
+
+  .dataframe.licenses_table_style thead,
+  .dataframe.Intel_coverage_table_style thead,
+  .dataframe.Intel_coverage_table_style thead tr:last-child,
+  .target_sizing_table_style tr:first-child{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    background-color: #DE7F11;
+    color: white;
+  }
+
+  .dataframe.licenses_table_style tr:nth-child(even),
+  .dataframe.Intel_coverage_table_style tr:nth-child(even),
+  .target_sizing_table_style tr:nth-child(even)
+  {background-color: #f2f2f2;}
+
+  .dataframe.licenses_table_style tr:hover,
+  .dataframe.Intel_coverage_table_style tr:hover,
+  .target_sizing_table_style tr:hover
+  {background-color: #ddd;}
+
+  .dataframe.licenses_table_style tbody tr:last-child,
+  .target_sizing_table_style tr:last-child
+  {
+    background-color: #e4e1dde6;
+    color: black;
+  }
+
+
+  @media print{
+
+    body{
+      -webkit-print-color-adjust:exact !important;
+      print-color-adjust:exact !important;
+    }
+
+    .download_links{
+      display: none;
+    }
+
+    a:after {
+      content: "("attr(href)")";
+    }
+
+    h2 {
+      color:white;
+      background-color: darkgray;
+      padding: 15px;
+      page-break-after: avoid;
+      } 
+
+      .ReportFootage{
+        color:white;
+        background-color: darkgray;
+        padding: 10px;  
+      }
+      
+      .dataframe.licenses_table_style,
+      .dataframe.Intel_coverage_table_style,
+      .dataframe.ULA_table_style,
+      .target_sizing_table_style{
+        page-break-inside: avoid;
+      }
+      
+  }

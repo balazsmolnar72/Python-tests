@@ -206,7 +206,7 @@ def getTotalSupportPaid():
     return totalSupportPaid
 
 warnings.filterwarnings('default')
-# printNoCustomers()
+printNoCustomers()
 # printLicenseCosts()
 # printLicenseQuantities()
 # printULAInfo()

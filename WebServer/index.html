@@ -1,9 +1,13 @@
 <html>
 <body>
-Uploading file by executing a Python script
+<h1>Making a TCO analysys based on an Installed Base Report</h1>
+Please select the installed based reports in csv to upload for this analysis<br>
+Please note that the file must contain the following mandatory fields:<br> 
+'Customer Name', 'Product Name', 'Product Description', 'Quantity', 'Contract ARR'
 <form enctype = "multipart/form-data" action = "cgi-bin/upload_script.py" method = "post">
-<br> File Uploading <input type = "file" name = "filename" />
-<p> <input type = "submit" value = "Upload Now" /> </p>
+<br> Installed Base CSV File Uploading:<br>
+<input type = "file" name = "filename" />
+<p> <input type = "submit" value = "Launch TCO Analysis" /> </p>
 </form>
 </body>
 </html>

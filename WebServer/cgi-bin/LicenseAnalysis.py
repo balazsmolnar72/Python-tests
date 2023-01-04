@@ -9,16 +9,52 @@ global totalSupportPaid
 
 
 # Read the available database options into a dataframe
-db_options=pd.read_csv("Database Options.csv", sep=',')
-# Read the installed base into a dataframe with a ',' separator
-df = pd.read_csv("Install Base.csv", sep=',')
-if "Install Status" in df.columns:
+db_options=pd.read_csv("Database Options.csv", sep=',',encoding='utf8', engine='python')
+# Read the installed base into a dataframe with a ',' separator chech if all fields/Information is present
+possible_fields=['Customer Name', 'Product Name','Product Description','Quantity','Contract ARR', 'Contract ARR (CD)','Metric', 'Install Status']
+
+try:
+    df = pd.read_csv("Install Base.csv", sep=',', usecols=lambda x: x in possible_fields)
+except Exception as e:
+    print(e)
+    print('Csv format is not valid.')
+    exit()
+
+current_columns=list(df.columns)
+
+if 'Contract ARR (CD)' in current_columns:
+    df=df.rename(columns={"Contract ARR (CD)": "Contract ARR", "B": "c"})
+if 'Product Description' not in current_columns and 'Metric' not in current_columns:
+    exit('Missing mandatory field')
+if 'Product Description' not in current_columns and 'Metric' in current_columns:
+    df['Product Description']=df['Product Name']+" - "+df['Metric']
+if 'Product Name' not in current_columns and 'Product Description' in current_columns:
+    df['Product Name']=df['Product Description'].map(lambda s: s[:s.find(' -')] if s.find(' -')>-1 else "")
+    current_columns=list(df.columns)
+
+if 'Customer Name' not in current_columns or 'Product Name' not in current_columns:
+    exit('Missing mandatory field')
+
+if "Install Status" in df.columns: # Check if there is an install status field in the file, if yes, only the active status is valid
     df=df[df["Install Status"]=="ACTIVE"]
 
-def printNoCustomers():# Describe Show the number of customers in this analysis
+def printNoCustomers(style='txt'):# Describe Show the number of customers in this analysis
     no_customers=df["Customer Name"].unique().__len__()
-    print("This analysis contains information about {} customers".format(no_customers))
-    print(df["Customer Name"].unique() if no_customers<10 else "") # Only lists if the number of customers are less than 10
+    print("This analysis contains information about {} customers:".format(no_customers))
+    if style=='txt':
+        print(df["Customer Name"].unique() if no_customers<10 else "") # Only lists if the number of customers are less than 10
+    if style=='html':
+        print("<br>")
+        if no_customers==1:
+            print("<b>")
+        print("<br>".join((df["Customer Name"].unique() if no_customers<10 else ""))) # Only lists if the number of customers are less than 10
+        if no_customers==1:
+            print("</b>")       
+    return no_customers
+
+def getMostSignificantCustomerName(): #Returns the customer name where most of the lines belong to 
+    listOfCustomers=df[["Customer Name", "Contract ARR"]].groupby(["Customer Name"], as_index=False)["Contract ARR"].sum()
+    return (listOfCustomers.sort_values('Contract ARR', ascending=False).iloc[:1]['Customer Name'].to_string(index=False))
 
    #Calculate the license type based on the Product description 
 df["License type"] = df.apply(
@@ -109,7 +145,7 @@ def printLicenseCosts(style='txt'):    # We create a new dataframe called licens
 
     if style=='html':
         print(
-            licenses_printable[["Product Name","License type","Quantity","Contract ARR","Average Discount"]].to_html(index=False)
+            licenses_printable[["Product Name","License type","Quantity","Contract ARR","Average Discount"]].to_html(index=False,classes="licenses_table_style")
             .replace('<tr>\n      <td>Total','<tr style="font-weight:bold">\n      <td>Total'))
     else:
         print("\n","-"*30," Summary of License Costs ","-"*30) 
@@ -132,6 +168,7 @@ def printLicenseCosts(style='txt'):    # We create a new dataframe called licens
 # compared to the Enterprise editionmax_cores_supported
 
 cores_chart=licenses[licenses["DB_Option"]>0].pivot("Product Name","License type","Total Intel Cores Covered").fillna(0)
+
 if "NUP" not in cores_chart.columns:
     cores_chart["NUP"]=0
 if "Processor" not in cores_chart.columns:
@@ -141,6 +178,7 @@ cores_chart["Total Intel cores"]=cores_chart.apply(
         row["Processor"]+row["NUP"]
         ,axis=1
 )
+
 max_cores_supported=cores_chart["Total Intel cores"].max()
 totalSupportPaid=licenses[licenses["DB_Option"]>0]["Contract ARR"].sum()
 cores_chart["Percent"]=cores_chart.apply(
@@ -150,7 +188,7 @@ cores_chart["Percent"]=cores_chart.apply(
 )
 
 
-def printLicenseQuantities():
+def printLicenseQuantities(style='txt'):
 #    warnings.filterwarnings('ignore')
     cores_chart_printable=cores_chart.sort_values(by=["Percent"], ascending=False)
     cores_chart_printable["NUP"]=cores_chart_printable["NUP"].map('{:,.0f}'.format)
@@ -159,10 +197,16 @@ def printLicenseQuantities():
     cores_chart_printable["Percent"]=cores_chart_printable["Percent"].map('{:.0%}'.format)
 #   warnings.filterwarnings('default')
 
-    print("\n","-"*30," Summary of Licenses ","-"*30) 
-    print(cores_chart_printable)
 
-def printULAInfo(): #Check if the customer has ULA
+    if style=='txt':
+        print("\n","-"*30," Summary of Licenses ","-"*30) 
+        print(cores_chart_printable)
+    if style=='html':
+        print(cores_chart_printable.to_html(classes="Intel_coverage_table_style")
+            .replace('<tr>\n      <th>','<tr>\n      <th style="text-align: left;">')
+            .replace('<tbody>\n    <tr>','<tbody>\n    <tr style="font-weight:bold">'))
+
+def printULAInfo(style='txt'): #Check if the customer has ULA
     df["DB_Option"]=df.apply(
         lambda row: pd.Series(list(map(
             lambda option,no:
@@ -183,39 +227,65 @@ def printULAInfo(): #Check if the customer has ULA
 
     ula_licenses=df[["Customer Name","Product Name"]][(df["Discount"]>0) & (df["Quantity"]==1)]
     if ula_licenses.__len__()>0:
-        print("\n","-"*30," ULA Information ","-"*30) 
-        print("These customers has probably a ULA on these Licenses:")
-        print(ula_licenses.to_string(index=False))
+        if style=='txt':
+            print("\n","-"*30," ULA Information ","-"*30) 
+            print("These customers has probably a ULA on these Licenses:")
+            print(ula_licenses.to_string(index=False))
+        if style=='html':
+            print("<br>These customers has probably a ULA on these Licenses:<br>")
+            print(ula_licenses.to_html(classes="ULA_table_style",index=False))           
         return True
     else:
-        print("There are no ULA licenses in this scope")
+        print("Probably there are no ULA licenses in this scope")
         return False
 
-def printTargetSizing():    #Sizing the environment
-    print("\n","-"*30," Possible Exa target For The complete workload ","-"*30) 
-    print("\nTarget Sizing for this installation:")
+def printTargetSizing(style='txt'):    #Sizing the environment
+    if style=='txt':
+        print("\n","-"*30," Possible Exa target For The complete workload ","-"*30) 
+        print("\nTarget Sizing for this installation:","No. cores:",max_cores_supported,"Storage needed:",max_cores_supported*2)
     result=sizer.sizing(
         no_cores=max_cores_supported,
         storage_needed=max_cores_supported*2,
         use_DBServerExpansions=False)
-    print("{:<20}{:<10}{:<9}{:<5}\t{}".format("Configuration","Number","CPU","Storage","Monthly Cost"))
-    print(*list(map(lambda config: "{:<20}{:>5}{:>10,.0f}{:>10,.0f}\t${:,.0f}".format(
-        config["Configuration"],
-        config["Number"],
-        config["CPUSize"],
-        config["StorageSize"],
-        config["Cost"]
-        ),result)),sep='\n')
-    print("-"*60)
-    print("{:<20}{:>5}{:>10,.0f}{:>10,.0f}\t${:,.0f}".format(
-        "Total:",
-        sum(config["Number"] for config in result),
-        sum(config["CPUSize"] for config in result),
-        sum(config["StorageSize"] for config in result),
-        sum(config["Cost"] for config in result)
-        ))
+    if style=='txt':
+        print("{:<20}{:<10}{:<9}{:<5}\t{}".format("Configuration","Number","CPU","Storage","Monthly Cost"))
+        print(*list(map(lambda config: "{:<20}{:>5}{:>10,.0f}{:>10,.0f}\t${:,.0f}".format(
+            config["Configuration"],
+            config["Number"],
+            config["CPUSize"],
+            config["StorageSize"],
+            config["Cost"]
+            ),result)),sep='\n')
+        print("-"*60)
+        print("{:<20}{:>5}{:>10,.0f}{:>10,.0f}\t${:,.0f}".format(
+            "Total:",
+            sum(config["Number"] for config in result),
+            sum(config["CPUSize"] for config in result),
+            sum(config["StorageSize"] for config in result),
+            sum(config["Cost"] for config in result)
+            ))
+        print("Total Target Annual Infrastructure cost: ${:,.0f}".format(sum(config["Cost"] for config in result)*12))
+    
+    if style=='html':
+        print("No. cores: <b>{:,.0f} </b>Storage needed: <b>{:,.0f} TB</b><br>".format(max_cores_supported,max_cores_supported*2))
+        print('<table border="1" class="target_sizing_table_style">')
+        print("<tr><td>{}</td><td>{}</td><td>{}</td><td>{}</td><td>{}</td></tr>".format("Configuration","Number","CPU","Storage","Monthly Cost"))
+        print(*list(map(lambda config: "<tr><td>{}</td><td>{}</td><td>{:,.0f}</td><td>{:,.0f}</td><td>${:,.0f}</td></tr>".format(
+            config["Configuration"],
+            config["Number"],
+            config["CPUSize"],
+            config["StorageSize"],
+            config["Cost"]
+            ),result)),sep='\n')
+        print('<tr style="font-weight:bold"><td>{}</td><td>{}</td><td>{:,.0f}</td><td>{:,.0f}</td><td>${:,.0f}</td></tr>'.format(
+            "Total:",
+            sum(config["Number"] for config in result),
+            sum(config["CPUSize"] for config in result),
+            sum(config["StorageSize"] for config in result),
+            sum(config["Cost"] for config in result)
+            ))
+        print("</table><br>Total Target Annual Infrastructure cost: <b>${:,.0f}</b>".format(sum(config["Cost"] for config in result)*12))
 
-    print("Total Annual Infrastructure cost: ${:,.0f}".format(sum(config["Cost"] for config in result)*12))
 
 def getMaxCoresSupported():
     return max_cores_supported
@@ -224,10 +294,11 @@ def getTotalSupportPaid():
     return totalSupportPaid
 
 warnings.filterwarnings('default')
-# printNoCustomers()
-# printLicenseCosts(style='html')
-# printLicenseQuantities()
+#printNoCustomers()
+#printLicenseCosts(style='html')
+#printLicenseQuantities(style='html')
 # printULAInfo()
 # printTargetSizing()
+# getMostSignificantCustomerName()
 
 

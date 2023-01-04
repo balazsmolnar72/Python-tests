@@ -18,15 +18,13 @@ import os, cgi, time
 
 form = cgi.FieldStorage() 
 
-print("Content-type:text/html\r\n\r\n")
-print('<html>')
-print('<head>')
-print('<title>TCO Analysis</title>')
-print('</head>')
-print('<body>')
+def insertDownloadLink(table_id, filename):
+    print('<script src="../Scripts.js" type="text/javascript"></script>')
+    print('<a href="#" onclick="download_table_as_csv(\''+table_id+'\',\''+filename+'\');">Download as CSV</a><br>')
 
 fi = form['filename']
-fn = fi.filename
+#fn = fi.filename
+fn ='Install Base.csv'
 if fi.filename:
     # This code will strip the leading absolute path from your file-name
     fil = os.path.basename(fi.filename)
@@ -39,7 +37,32 @@ if fi.filename:
         time.sleep(1)
     
 
-import LicenseAnalysis as LA
+
+print("Content-type:text/html\r\n\r\n")
+print('<html>')
+try:
+    import LicenseAnalysis as LA
+except:
+    print('<body>')
+    print('<h1>Installed Base file has wrong format</h1>')
+    print('</body></html>')
+    exit()
+print('<head>')
+print('<title>TCO Analysis for ',LA.getMostSignificantCustomerName(),'</title>')
+print('<link rel="stylesheet" href="../reportStyle.css" type="text/css"/>')
+print('</head>')
+print('<body>')
+print('<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>')
+
+
+
+# print("""<style>
+#         @media print {
+#             .pagebreak {
+#                 clear: both;
+#                 page-break-after: always;
+#             }
+#     }</style>""")
 
 
 """ if is_csv(fn):
@@ -47,12 +70,135 @@ import LicenseAnalysis as LA
 else:
     print("The file you've uploded is not a csv.") """
 
-print('<h2>This is a TCO analysis</h2>')
+print('<h2>TCO Analysis for Complete Oracle DB Migration to ExaCC')
+from datetime import date
+today = date.today()
+print('<br><i style="font-size:small;">',today,'</i></h2>')
 
-LA.printNoCustomers()
+print('<div class="InfoPanel">')
 
-print('<h2>These customers or this customer pays annually this amount of Support to Oracle for Oracle Database:</h2>')
+no_customers=LA.printNoCustomers(style="html")
+if no_customers>1:
+    print('<br><br>The most significant customer is:<b>',LA.getMostSignificantCustomerName(),'</b><br>')
+
+print('</div>')
+
+print('<h2>TCO Comparison of Current and A Possible Exa Environment</h2>')
+
+#The plotly chart of TCO Comparison
+
+import pandas as pd
+import plotly
+import plotly.graph_objects as go
+import TCOComparison as TCO
+
+max_cores_supported=LA.getMaxCoresSupported()
+totalSupportPaid=LA.getTotalSupportPaid()
+
+#totalSupportPaid=licenses[licenses["DB_Option"]>0]["Contract ARR"].sum()
+TCO_result=TCO.TCO_comparison(
+    cores=max_cores_supported,
+    storageTB=max_cores_supported*2,
+    annualDBsupport=totalSupportPaid,
+    utilization=0.4)
+Scenarios = ['On Premise', 'ExaCC', 'ExaCS', 'ExaCC BYOL', 'ExaCS BYOL']
+Infrastructure = TCO_result['Infrastructure']
+License_support = TCO_result['DB Support']
+Universal_credits=TCO_result['UC']
+width = 0.9       # the width of the bars: can also be len(x) sequence
+
+#Totals=list(map(lambda a,b,c: a+b+c, Infrastructure, License_support,Universal_credits))
+Totals=TCO_result['Total']
+Reference='On Premise' # On the chart the savings will be displayed based on this reference
+
+data={'Scenarios':Scenarios,'Infra':Infrastructure,'License_support':License_support,'UC':Universal_credits}
+df=pd.DataFrame(data)
+df.set_index('Scenarios', inplace=True)
+fig=go.Figure(
+    data=[
+        go.Bar(
+            name="Infra",
+            x=df.index,
+            y=df.Infra,
+            offsetgroup=0,
+            marker=go.bar.Marker(color='#245d63'),
+            text=list(map(lambda val: 'Infra \n${:,.0f}K'.format(val/1000) if(val>0) else "",df.Infra)),
+            textposition="inside"
+        ),
+         go.Bar(
+            name="License_Support",
+            x=df.index,
+            y=df.License_support,
+            offsetgroup=0,
+            marker=go.bar.Marker(color='#83401E'),
+            text=list(map(lambda val: 'Lic. Support \n${:,.0f}K'.format(val/1000) if(val>0) else "",df.License_support)),
+            textposition="inside",
+            textfont=dict(
+                color="white"
+            )
+        ),       
+        go.Bar(
+            name="UC",
+            x=df.index,
+            y=df.UC,
+            marker=go.bar.Marker(color='#DE7F11'),
+            offsetgroup=0,
+            text=list(map(lambda val: 'UC \n${:,.0f}K'.format(val/1000) if(val>0) else "",df.UC)),
+            textposition="inside",
+            textfont=dict(
+                color="white"
+            )
+        )
+    ]
+)
+fig.update_layout(barmode="stack",bargap=0.1)
+
+totalSum=df.sum(axis="columns")
+totalSumText=list(map(lambda val: '{:+.0%} Total \n${:,.0f}K'.format(val/totalSum[Reference]-1,val/1000) if(val>0) else "",totalSum))
+fig.add_trace(go.Scatter(
+#    x=df.Scenarios, 
+    x=df.index,
+    y=totalSum,
+    text=totalSumText,
+    mode="text",
+    textposition='top center',
+    textfont=dict(
+        size=14,
+    ),
+    showlegend=False
+))
+fig.update_yaxes(range=[0,totalSum.max()*1.2])
+fig.update_layout(title="4 years cost comparison",width=df.index.size*220, height=500)
+#fig.show()
+#print(plotly.io.to_html(fig=fig,full_html=False, default_width='100%', default_height='60%',div_id='TCO_Comparison_chart'))
+print(plotly.io.to_html(fig=fig,full_html=False, default_width='100%',div_id='TCO_Comparison_chart'))
+
+#Other details display
+
+print('<h2>Annual Support Paid for Oracle Database and Options:</h2>')
 LA.printLicenseCosts(style='html')
+insertDownloadLink('dataframe.licenses_table_style',LA.getMostSignificantCustomerName()+'support cost by license')
+#print('<a class="download_links" href="','hello','"> Download in csv </a><br>')
+LA.printULAInfo(style='html')
+print('<h2>Number of Intel Cores Can Be Covered by DB Licenses</h2>')
+LA.printLicenseQuantities(style='html')
+#print('<div class="pagebreak"> </div>')  # Breaks the page before the target sizing
+
+print('<h2>Possible Exa Target Sizing</h2>')
+print('<br>To host the whole scope of this environment on Exa configurations, you would need this configuration:<br>')
+LA.printTargetSizing(style='html')
+print('<br><br>')
+
+# Close the page
+
+print('<div class="ReportFootage"> ')
+print('''
+    This calculation is based on actual Customer Support data, but the TCO comparison is based on several assumptions.
+    This calculation cannot be considered as a commercial offer, the purpose of this calculation is to give an orientation of the 
+    expected costs and benefits of the solution.  
+    Oracle does not take any responsiblility for the assumptions and calculations in case of a future commercial offer!
+    <br><br>Calculation prepared by: <a href="mailto:balazs.molnar@oracle.com">Balazs Molnar</a> Oracle Corporation ''')
+print('</div>')
 
 print('</body>')
 print('</html>')
