@@ -191,6 +191,20 @@ cores_chart["Percent"]=cores_chart.apply(
 def printLicenseQuantities(style='txt'):
 #    warnings.filterwarnings('ignore')
     cores_chart_printable=cores_chart.sort_values(by=["Percent"], ascending=False)
+#    print(cores_chart_printable)
+
+    # Make sure that the DB EE is the first in the row even if that is not the greatest
+    cores_chart_printable.reset_index(inplace=True)
+    DBEE_location=cores_chart_printable[cores_chart_printable['Product Name']=='Oracle Database Enterprise Edition'].index[0]
+    if DBEE_location>0:
+        temp=cores_chart_printable.iloc[DBEE_location].copy()
+        cores_chart_printable.drop(index=DBEE_location, inplace=True)
+        cores_chart_printable.loc[-1]=temp
+        cores_chart_printable.index=cores_chart_printable.index+1
+        cores_chart_printable.sort_index(inplace=True)
+    else:
+        cores_chart_printable=cores_chart.sort_values(by=["Percent"], ascending=False)
+
     cores_chart_printable["NUP"]=cores_chart_printable["NUP"].map('{:,.0f}'.format)
     cores_chart_printable["Processor"]=cores_chart_printable["Processor"].map('{:,.0f}'.format)
     cores_chart_printable["Total Intel cores"]=cores_chart_printable["Total Intel cores"].map('{:,.0f}'.format)
@@ -200,9 +214,10 @@ def printLicenseQuantities(style='txt'):
 
     if style=='txt':
         print("\n","-"*30," Summary of Licenses ","-"*30) 
-        print(cores_chart_printable)
+        print(cores_chart_printable.to_string(index=False))
+#        print(cores_chart_printable[['Product Name','NUP','Processor','Total Intel cores','Percent']])
     if style=='html':
-        print(cores_chart_printable.to_html(classes="Intel_coverage_table_style")
+        print(cores_chart_printable[['Product Name','NUP','Processor','Total Intel cores','Percent']].to_html(classes="Intel_coverage_table_style", index=False,index_names=False)
             .replace('<tr>\n      <th>','<tr>\n      <th style="text-align: left;">')
             .replace('<tbody>\n    <tr>','<tbody>\n    <tr style="font-weight:bold">'))
 
@@ -296,7 +311,7 @@ def getTotalSupportPaid():
 warnings.filterwarnings('default')
 #printNoCustomers()
 #printLicenseCosts(style='html')
-#printLicenseQuantities(style='html')
+# printLicenseQuantities(style='txt')
 # printULAInfo()
 # printTargetSizing()
 # getMostSignificantCustomerName()
