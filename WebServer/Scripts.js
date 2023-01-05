@@ -28,3 +28,21 @@ function download_table_as_csv(table_class, filename, separator = ',') {
     link.click();
     document.body.removeChild(link);
 }
+
+function DisplayPercentageOfCoverage(){
+
+    if(window.matchMedia('print').matches){
+        return
+    }
+    var col1="#FBc26A",
+    col2="white";
+    var els=document.querySelectorAll('.dataframe.Intel_coverage_table_style tr td:last-child');
+    for (var i=0; i<els.length; i++) {
+        var content=els[i].firstChild.nodeValue;
+        var percentage = Number(content.substring(0,content.length-1));
+        els[i].style.background = "-webkit-gradient(linear, left top,right top, color-stop("+percentage+"%,"+col1+"), color-stop("+percentage+"%,"+col2+"))";
+        els[i].style.background = "-moz-linear-gradient(left center,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)" ;
+        els[i].style.background = "-o-linear-gradient(left,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)";
+        els[i].style.background = "linear-gradient(to right,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)" ;
+    }
+}

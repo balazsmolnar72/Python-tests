@@ -168,6 +168,7 @@ def printLicenseCosts(style='txt'):    # We create a new dataframe called licens
 # compared to the Enterprise editionmax_cores_supported
 
 cores_chart=licenses[licenses["DB_Option"]>0].pivot("Product Name","License type","Total Intel Cores Covered").fillna(0)
+cores_chart.reset_index(inplace=True)
 
 if "NUP" not in cores_chart.columns:
     cores_chart["NUP"]=0
@@ -186,7 +187,6 @@ cores_chart["Percent"]=cores_chart.apply(
         row["Total Intel cores"]/max_cores_supported,
         axis=1
 )
-
 
 def printLicenseQuantities(style='txt'):
 #    warnings.filterwarnings('ignore')
@@ -220,6 +220,22 @@ def printLicenseQuantities(style='txt'):
         print(cores_chart_printable[['Product Name','NUP','Processor','Total Intel cores','Percent']].to_html(classes="Intel_coverage_table_style", index=False,index_names=False)
             .replace('<tr>\n      <th>','<tr>\n      <th style="text-align: left;">')
             .replace('<tbody>\n    <tr>','<tbody>\n    <tr style="font-weight:bold">'))
+
+
+#These activities are needed to calculate the cores coverage by CSI or Order number
+
+if 'CSI#' in current_columns or 'Order Number' in licenses.columns:
+    if 'CSI#'in current_columns:
+        support_id='CSI#'
+    else:
+        support_id='Order Number'
+    
+    support_licenses=df[[support_id,"Product Name", "Quantity", "Contract ARR","License type"]][df["License type"] != "Unknown"].groupby(
+    [support_id,"Product Name","License type"], as_index=False)[["Quantity", "Contract ARR"]].sum()
+
+
+
+
 
 def printULAInfo(style='txt'): #Check if the customer has ULA
     df["DB_Option"]=df.apply(
@@ -311,7 +327,7 @@ def getTotalSupportPaid():
 warnings.filterwarnings('default')
 #printNoCustomers()
 #printLicenseCosts(style='html')
-# printLicenseQuantities(style='txt')
+#printLicenseQuantities(style='txt')
 # printULAInfo()
 # printTargetSizing()
 # getMostSignificantCustomerName()

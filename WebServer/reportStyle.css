@@ -80,6 +80,10 @@
     color: black;
   }
 
+  .dataframe.Intel_coverage_table_style{
+    width:50%;
+  }
+
 
   @media print{
 
@@ -108,6 +112,7 @@
         background-color: darkgray;
         padding: 10px;  
       }
+
       
       .dataframe.licenses_table_style,
       .dataframe.Intel_coverage_table_style,

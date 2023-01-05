@@ -47,9 +47,10 @@ print("Content-type:text/html\r\n\r\n")
 print('<html>')
 try:
     import LicenseAnalysis as LA
-except:
+except Exception as e:
     print('<body>')
     print('<h1>Installed Base file has wrong format</h1>')
+    print(e)
     print('</body></html>')
     exit()
 print('<head>')
@@ -190,6 +191,7 @@ if LA.printULAInfo(style='html'):
 
 print('<h2>Number of Intel Cores Can Be Covered by DB Licenses</h2>')
 LA.printLicenseQuantities(style='html')
+print('<div class="download_links"><script> DisplayPercentageOfCoverage()</script></div>')
 insertDownloadLink('dataframe.Intel_coverage_table_style',LA.getMostSignificantCustomerName()+' cores covered by DB licenses')
 #print('<div class="pagebreak"> </div>')  # Breaks the page before the target sizing
 
