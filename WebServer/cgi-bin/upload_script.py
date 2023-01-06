@@ -98,6 +98,11 @@ def printSupportIDChart():
 
     support_ids=support_licenses["Support ID"].unique().tolist()
     i=0
+    total_cores=available_licenses.copy()
+    total_cores["Total Intel Cores Covered"]=total_cores.apply(
+        lambda row: 0,
+        axis=1
+    )
    
     for s_id in support_ids:
         testseries=available_licenses.copy()
@@ -108,16 +113,31 @@ def printSupportIDChart():
                 s_idLicenses[support_licenses["Product Name"] == row["Product Name"]]["Total Intel Cores Covered"].iloc[0] 
                     if len(s_idLicenses[support_licenses["Product Name"] == row["Product Name"]])>0 else 0,
                 axis=1
+        )
+        total_cores["Total Intel Cores Covered"]=total_cores.apply(
+            lambda row: row["Total Intel Cores Covered"]+testseries[testseries["Product Name"]==row["Product Name"]]["Total Intel Cores Covered"].iloc[0]
+                if len(testseries[testseries["Product Name"]==row["Product Name"]])>0 else 0,
+        axis=1
         )   
         warnings.filterwarnings('default')
         testseries=testseries[["Product Name","Total Intel Cores Covered"]]
+        categories=testseries["Product Name"].copy()
+        categories.at[0]="<b>"+categories.at[0]+"</b>"
         fig.add_trace(go.Bar(
-            x=[testseries["Total Intel Cores Covered"]], y=[testseries["Product Name"]],
+            x=testseries["Total Intel Cores Covered"], y=categories,
+            name=s_id,
             orientation='h',
             marker=dict(
                 color=colors[i],
                 line=dict(color='rgb(248, 248, 249)', width=1)
-            )
+            ),
+            text=testseries["Total Intel Cores Covered"],
+            textposition="inside",
+            insidetextanchor = 'middle',
+            textfont=dict(
+                color="white"
+            ),
+            hovertext=testseries.apply(lambda row, si_id=s_id: 'Support Id:'+str(si_id)+' cores:'+"{:.0f}".format(row["Total Intel Cores Covered"]), axis=1)
         ))
 
         del testseries
@@ -127,28 +147,31 @@ def printSupportIDChart():
             i=0
 
     fig.update_layout(
-        xaxis=dict(
-            showgrid=False,
-            showline=False,
-            showticklabels=False,
-            zeroline=False,
-            domain=[0.15, 1]
-        ),
-        yaxis=dict(
-            showgrid=False,
-            showline=False,
-            showticklabels=False,
-            zeroline=False,
-        ),
         barmode='stack',
-        paper_bgcolor='rgb(248, 248, 255)',
-        plot_bgcolor='rgb(248, 248, 255)',
-        margin=dict(l=120, r=10, t=140, b=80),
-        showlegend=False,
+        showlegend=True,
+        yaxis={'categoryorder':'total ascending'}
     )
- #   fig.update_layout(title="Supported cores by Support ID",width=1000, height=500)
+    total_cores["Total Intel Cores Covered"]=total_cores["Total Intel Cores Covered"].apply(
+        lambda row: "{:.0f}".format(row)
+    )
+    categories=total_cores["Product Name"].copy()
+    categories.at[0]="<b>"+categories.at[0]+"</b>"
+    fig.add_trace(go.Scatter(
+        x=list(total_cores["Total Intel Cores Covered"].map(lambda row: int(row)*1.01)),
+        y=categories,
+        text=list(total_cores["Total Intel Cores Covered"]),
+        mode="text",
+        textposition='middle right',
+        textfont=dict(
+            size=14,
+        ),
+        showlegend=False
+    ))
+
+    # fig.update_layout(title="Supported cores by Support ID",width=1000)
+    fig.update_layout(title="Supported cores by Support ID",width=1000, height=len(available_licenses)*50)
     #fig.show()
-    print(plotly.io.to_html(fig=fig,full_html=False, default_width='100%',div_id='Support_ID_licenses_chart'))
+    print(plotly.io.to_html(fig=fig,full_html=False,div_id='Support_ID_licenses_chart'))
 
 import os, cgi, time
 

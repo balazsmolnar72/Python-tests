@@ -81,7 +81,12 @@
   }
 
   .dataframe.Intel_coverage_table_style{
-    width:50%;
+    width:100%;
+  }
+
+  #Support_ID_licenses_chart{
+    width:100%;
+    height:100%;
   }
 
   #LicenseCoverageColumnTable{
