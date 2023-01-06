@@ -30,8 +30,7 @@ function download_table_as_csv(table_class, filename, separator = ',') {
 }
 
 function DisplayPercentageOfCoverage(){
-
-    if(window.matchMedia('print').matches){
+    if(getComputedStyle(document.getElementById('LicenseCoverageColumnTable')).getPropertyValue("--printed")=='yes'){
         return
     }
     var col1="#FBc26A",
@@ -40,9 +39,24 @@ function DisplayPercentageOfCoverage(){
     for (var i=0; i<els.length; i++) {
         var content=els[i].firstChild.nodeValue;
         var percentage = Number(content.substring(0,content.length-1));
-        els[i].style.background = "-webkit-gradient(linear, left top,right top, color-stop("+percentage+"%,"+col1+"), color-stop("+percentage+"%,"+col2+"))";
-        els[i].style.background = "-moz-linear-gradient(left center,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)" ;
-        els[i].style.background = "-o-linear-gradient(left,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)";
-        els[i].style.background = "linear-gradient(to right,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)" ;
-    }
+        els[i].style.background = "-webkit-gradient(linear, left,right, color-stop("+percentage+"%, var(--percentCol1)), color-stop("+percentage+"%,var(--percentCol2)))";
+        els[i].style.background = "-moz-linear-gradient(left center,var(--percentCol1) "+percentage+"%, var(--percentCol2) "+percentage+"%)" ;
+        els[i].style.background = "-o-linear-gradient(left,var(--percentCol1) "+percentage+"%, var(--percentCol2) "+percentage+"%)";
+        els[i].style.background = "linear-gradient(to right,var(--percentCol1) "+percentage+"%, var(--percentCol2) "+percentage+"%)" ;
+    //      els[i].style.background = "-webkit-gradient(linear, left,right, color-stop("+percentage+"%,"+col1+"), color-stop("+percentage+"%,"+col2+"))";
+    //     els[i].style.background = "-moz-linear-gradient(left center,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)" ;
+    //     els[i].style.background = "-o-linear-gradient(left,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)";
+    //     els[i].style.background = "linear-gradient(to right,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)" ;
+     }
 }
+
+function resizeGraphs(){
+    const chartDiv = document.getElementById('Support_ID_licenses_chart');
+    var update = {
+        title: 'Supported Intel Cores by Support ID', // updates the title
+        width: chartDiv.offsetWidth, height: chartDiv.offsetHeight
+        };
+    Plotly.relayout('Support_ID_licenses_chart', update)
+}
+window.onbeforeprint=resizeGraphs
+window.onresize=resizeGraphs

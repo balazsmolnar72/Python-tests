@@ -47,7 +47,7 @@
     border-collapse: collapse;
     border: 1px solid #ddd;
     padding: 8px;
-    /* width: 100%; */
+    width: 100%;
   }
 
   .dataframe.licenses_table_style thead,
@@ -91,6 +91,8 @@
 
   #LicenseCoverageColumnTable{
     width: 100%;
+    --percentCol1:#FBc26A;
+    --percentCol2:white;
   }
 
 
@@ -129,5 +131,17 @@
       .target_sizing_table_style{
         page-break-inside: avoid;
       }
-      
+      .dataframe.Intel_coverage_table_style{
+      /* #LicenseCoverageColumnTable{ */
+        width: 100%;
+        --percentCol1:white;
+        --percentCol2:white;
+      }
+
+      .dataframe.Intel_coverage_table_style tr:nth-child(even){
+        width: 100%;
+        --percentCol1:#f2f2f2;
+        --percentCol2:#f2f2f2;
+      }
+          
   }

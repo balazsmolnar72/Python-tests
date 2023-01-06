@@ -82,7 +82,7 @@ def printTCOChart():
         showlegend=False
     ))
     fig.update_yaxes(range=[0,totalSum.max()*1.2])
-    fig.update_layout(title="4 years cost comparison",width=df.index.size*220, height=500)
+    fig.update_layout(title="Annual cost comparison",width=df.index.size*220, height=500)
     #fig.show()
     #print(plotly.io.to_html(fig=fig,full_html=False, default_width='100%', default_height='60%',div_id='TCO_Comparison_chart'))
     print(plotly.io.to_html(fig=fig,full_html=False, default_width='100%',div_id='TCO_Comparison_chart'))
@@ -169,7 +169,7 @@ def printSupportIDChart():
     ))
 
     # fig.update_layout(title="Supported cores by Support ID",width=1000)
-    fig.update_layout(title="Supported cores by Support ID",width=1000, height=len(available_licenses)*50)
+    fig.update_layout(title="Supported Intel Cores by Support ID",width=650, height=len(available_licenses)*50)
     #fig.show()
     print(plotly.io.to_html(fig=fig,full_html=False,div_id='Support_ID_licenses_chart'))
 

@@ -1,612 +1,222 @@
-﻿Customer Name,Product Name,Product Description,Metric,Quantity,Install Status,Contract ARR,Contract Start Date,Contract End Date,Purchase Amount,Purchase Start Date,Order Number,SRs,CSI#
-Paysafe,Financials,Financials - Application User Perpetual,Application User Perpetual,10,ACTIVE,209018,30.5.2022,29.5.2023,95638,30.5.2019,715111,0,22354181
-Paysafe Technology Services Austria GmbH,Exadata Database Machine X8-2 Hardware,Exadata Database Machine X8-2 Hardware - ,,1,ACTIVE,144905,29.5.2022,28.5.2023,0,29.5.2019,36152924,0,22303687
-Paysafe,Oracle Database Enterprise Edition,Oracle Database Enterprise Edition - Processor Perpetual,Processor Perpetual,1,ACTIVE,94221,30.11.2021,29.11.2022,495902,29.1.2018,696523,4,21482337
-Skrill Ltd,Oracle Planning and Budgeting Cloud Service,Oracle Planning and Budgeting Cloud Service - Hosted Named User,Hosted Named User,63,ACTIVE,82348,17.6.2022,16.6.2023,0,17.6.2022,40368604,6,19560226
-Skrill Ltd,Responsys Interaction Cloud Service,Responsys Interaction Cloud Service - Each,Each,1,ACTIVE,76653,1.9.2022,31.8.2023,0,1.9.2022,40479908,0,19615387
-Paysafe,Oracle Database Enterprise Edition,Oracle Database Enterprise Edition - Processor Perpetual,Processor Perpetual,32,ACTIVE,49980,26.5.2022,25.5.2023,227183,26.5.2022,40314660,4,24874235
-Paysafe Bulgaria EOOD,Oracle Database Enterprise Edition,Oracle Database Enterprise Edition - Processor Perpetual,Processor Perpetual,16,ACTIVE,48461,1.1.2022,31.12.2022,160616,30.11.2012,51881,27,18843244
-Skrill Ltd,Profitability and Cost Management Cloud Service,Profitability and Cost Management Cloud Service - Hosted Named User,Hosted Named User,10,ACTIVE,42335,17.6.2022,16.6.2023,0,17.6.2022,40368604,2,19560226
-Paysafe Technology Services Austria GmbH,Exadata Storage Expansion X8-2 Quarter Rack,Exadata Storage Expansion X8-2 Quarter Rack - ,,1,ACTIVE,40058,29.5.2022,28.5.2023,268372,29.5.2019,36152924,0,22303687
-Paysafe Bulgaria EOOD,Exadata Database Machine X6-2 Quarter Rack,Exadata Database Machine X6-2 Quarter Rack - ,,1,ACTIVE,39634,19.1.2022,18.1.2023,231670,23.1.2017,34769722,0,21016686
-Paysafe Technologies Inc.,Exadata Database Machine X7-2 Quarter Rack,Exadata Database Machine X7-2 Quarter Rack - ,,1,ACTIVE,39612,26.3.2022,25.3.2023,276000,26.3.2018,35531188,0,21707283
-Skrill Ltd,Tax Reporting Cloud Service,Tax Reporting Cloud Service - Hosted Named User,Hosted Named User,13,ACTIVE,37096,17.6.2022,16.6.2023,0,17.6.2022,40368604,5,19560226
-Paysafe Bulgaria EOOD,ACS Support License,ACS Support License - Senior Advanced Support Engineer for Software,Senior Advanced Support Engineer for Software,20,ACTIVE,36604,6.1.2022,5.1.2023,0,14.12.2017,14631,0,20533670
-Paysafe Bulgaria EOOD,Exadata Database Machine X9M-2 Quarter Rack,Exadata Database Machine X9M-2 Quarter Rack - ,,1,ACTIVE,36439,15.6.2022,14.6.2023,270596,15.6.2021,37036496,0,23572342
-Paysafe,Exadata Database Machine X6-2 Eighth Rack,Exadata Database Machine X6-2 Eighth Rack - ,,1,ACTIVE,34928,24.5.2022,23.5.2023,158827,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine X6-2 Eighth Rack,Exadata Database Machine X6-2 Eighth Rack - ,,1,ACTIVE,34928,24.5.2022,23.5.2023,158827,24.5.2016,34277180,0,20638735
-Paysafe Bulgaria EOOD,Financials,Financials - Application User Perpetual,Application User Perpetual,94,ACTIVE,34428,30.5.2022,29.5.2023,274218,30.5.2020,15582,0,23008241
-Paysafe,Exadata Database Machine X6-2 Eighth Rack,Exadata Database Machine X6-2 Eighth Rack - ,,1,ACTIVE,31283,26.5.2022,25.5.2023,158827,26.5.2016,34283829,0,20643897
-Paysafe Bulgaria EOOD,Financials,Financials - Application User Perpetual,Application User Perpetual,80,ACTIVE,30392,1.6.2022,31.5.2023,119622,27.5.2016,14215,0,20672819
-Skrill Ltd,Planning and Budgeting Enterprise Cloud Service,Planning and Budgeting Enterprise Cloud Service - Test Environment,Test Environment,1,ACTIVE,27011,17.6.2022,16.6.2023,0,17.6.2022,40368604,0,19560226
-Paysafe Bulgaria EOOD,Hyperion Financial Management Plus,Hyperion Financial Management Plus - Application User Perpetual,Application User Perpetual,40,ACTIVE,26144,1.6.2022,31.5.2023,67698,7.3.2016,14154,0,20544849
-Paysafe,Exadata Storage Server Software - with Linux Support,Exadata Storage Server Software - with Linux Support - Disk Drive Perpetual,Disk Drive Perpetual,36,ACTIVE,24958,26.5.2022,25.5.2023,113447,26.5.2022,40314660,0,24874235
-Paysafe Payment Processing Solutions LLC,eBusiness Suite Professional,eBusiness Suite Professional - Professional User Perpetual,Professional User Perpetual,50,ACTIVE,24628,1.1.2022,31.12.2022,90000,30.10.2018,9210865,0,22018166
-Paysafe Bulgaria EOOD,Real Application Clusters,Real Application Clusters - Processor Perpetual,Processor Perpetual,16,ACTIVE,23465,1.1.2022,31.12.2022,77772,30.11.2012,51881,2,18843244
-Paysafe Technology Services Austria GmbH,Exadata Database Machine FLEX X8-2 Storage Server,Exadata Database Machine FLEX X8-2 Storage Server - ,,4,ACTIVE,21944,29.5.2022,28.5.2023,147017,29.5.2019,36152924,0,22303687
-Skrill Ltd,Oracle Workforce Planning,Oracle Workforce Planning - Hosted Named User,Hosted Named User,27,ACTIVE,21237,17.6.2022,16.6.2023,0,17.6.2022,40368604,0,19560226
-Paysafe Bulgaria EOOD,MySQL Subscription License - Server - Oracle 1-Click Ordering,MySQL Subscription License - Server - Oracle 1-Click Ordering - Oracle 1-Click Ordering,Oracle 1-Click Ordering,6,ACTIVE,20768,23.8.2022,22.8.2023,0,23.8.2022,40406766,0,21335287
-Paysafe Bulgaria EOOD,MySQL Subscription License - Server - Oracle 1-Click Ordering,MySQL Subscription License - Server - Oracle 1-Click Ordering - Oracle 1-Click Ordering,Oracle 1-Click Ordering,7,ACTIVE,20739,18.1.2022,17.1.2023,0,18.1.2022,39292391,0,21623912
-Paysafe,Real Application Clusters,Real Application Clusters - Processor Perpetual,Processor Perpetual,24,ACTIVE,18151,26.5.2022,25.5.2023,82503,26.5.2022,40314660,0,24874235
-Paysafe Bulgaria EOOD,Oracle Financial Accounting Hub,Oracle Financial Accounting Hub - Employee Perpetual,Employee Perpetual,450,ACTIVE,17964,1.6.2022,31.5.2023,93113,25.8.2010,12368,0,17541898
-Paysafe Bulgaria EOOD,Oracle GoldenGate,Oracle GoldenGate - Processor Perpetual,Processor Perpetual,16,ACTIVE,17854,1.1.2022,31.12.2022,59175,30.11.2012,51881,0,18843244
-Paysafe Bulgaria EOOD,Exadata Memory Expansion X6-2,Exadata Memory Expansion X6-2 - Eight 64 GB DIMMs,Eight 64 GB DIMMs,9,ACTIVE,17753,19.1.2022,18.1.2023,103769,23.1.2017,34769722,0,21012522
-Paysafe,Advanced Security,Advanced Security - Processor Perpetual,Processor Perpetual,32,ACTIVE,15783,26.5.2022,25.5.2023,71742,26.5.2022,40314660,0,24874235
-Paysafe Bulgaria EOOD,Hyperion Financial Management Plus,Hyperion Financial Management Plus - Application User Perpetual,Application User Perpetual,15,ACTIVE,14829,1.6.2022,31.5.2023,32640,12.5.2016,14203,0,20648429
-Paysafe Bulgaria EOOD,Oracle Financial Accounting Hub,Oracle Financial Accounting Hub - Employee Perpetual,Employee Perpetual,1011,ACTIVE,14086,30.5.2022,29.5.2023,56099,30.5.2020,15582,0,23008241
-Paysafe,Purchasing,Purchasing - Application User Perpetual,Application User Perpetual,15,ACTIVE,13410,30.5.2022,29.5.2023,66211,30.5.2019,715111,0,22354181
-Paysafe Bulgaria EOOD,eBusiness Suite Professional,eBusiness Suite Professional - Professional User Perpetual,Professional User Perpetual,23,ACTIVE,13331,28.5.2022,27.5.2023,106178,28.5.2020,15579,0,23007235
-Paysafe Bulgaria EOOD,Purchasing,Purchasing - Application User Perpetual,Application User Perpetual,35,ACTIVE,13296,1.6.2022,31.5.2023,52335,27.5.2016,14215,0,20672819
-Paysafe Bulgaria EOOD,WebCenter Content,WebCenter Content - Named User Plus Perpetual,Named User Plus Perpetual,50,ACTIVE,12967,1.6.2022,31.5.2023,48115,5.12.2016,14338,0,20969982
-Paysafe,Exadata Memory Expansion X6-2,Exadata Memory Expansion X6-2 - Eight 32 GB DIMMs for X6 racks,Eight 32 GB DIMMs for X6 racks,8,ACTIVE,12513,26.5.2022,25.5.2023,63529,26.5.2016,34277180,0,20638735
-Paysafe,Active Data Guard,Active Data Guard - Processor Perpetual,Processor Perpetual,32,ACTIVE,12100,26.5.2022,25.5.2023,55002,26.5.2022,40314660,0,24874235
-Paysafe,Partitioning,Partitioning - Processor Perpetual,Processor Perpetual,32,ACTIVE,12100,26.5.2022,25.5.2023,55002,26.5.2022,40314660,0,24874235
-Paysafe Technology Services Austria GmbH,Exadata Database Machine FLEX X8-2 Database Server,Exadata Database Machine FLEX X8-2 Database Server - ,,2,ACTIVE,11800,29.5.2022,28.5.2023,79055,29.5.2019,36152924,0,22303687
-Paysafe Bulgaria EOOD,Partitioning,Partitioning - Processor Perpetual,Processor Perpetual,16,ACTIVE,11733,1.1.2022,31.12.2022,38886,30.11.2012,51881,0,18843244
-Paysafe Bulgaria EOOD,Advanced Compression,Advanced Compression - Processor Perpetual,Processor Perpetual,16,ACTIVE,11733,1.1.2022,31.12.2022,38886,30.11.2012,51881,0,18843244
-Paysafe Bulgaria EOOD,Hyperion Financial Management Plus,Hyperion Financial Management Plus - Application User Perpetual,Application User Perpetual,19,ACTIVE,11472,31.5.2022,31.5.2023,47515,31.5.2021,16036,0,23610596
-Paysafe Bulgaria EOOD,Oracle Financial Accounting Hub,Oracle Financial Accounting Hub - Employee Perpetual,Employee Perpetual,781,ACTIVE,11301,1.6.2022,31.5.2023,88998,27.5.2016,14215,0,20672819
-Skrill Ltd,Oracle Planning and Budgeting Cloud Service,Oracle Planning and Budgeting Cloud Service - Hosted Named User,Hosted Named User,8,ACTIVE,10782,28.6.2022,16.6.2023,0,28.6.2022,40368604,6,19560226
-Paysafe,Exadata Storage Server Software - with Linux Support,Exadata Storage Server Software - with Linux Support - Disk Drive Perpetual,Disk Drive Perpetual,18,ACTIVE,10696,26.5.2022,25.5.2023,48620,26.5.2022,40314660,0,24874235
-Paysafe Bulgaria EOOD,Coherence Enterprise Edition,Coherence Enterprise Edition - Processor Perpetual,Processor Perpetual,12,ACTIVE,10373,1.6.2022,31.5.2023,0,5.12.2016,14338,0,20969982
-Paysafe Technology Services Austria GmbH,Exadata Memory Expansion X7-2,Exadata Memory Expansion X7-2 - ,,4,ACTIVE,10201,29.5.2022,28.5.2023,68344,29.5.2019,36152924,0,22303687
-Paysafe,Oracle Database Enterprise Edition,Oracle Database Enterprise Edition - Processor Perpetual,Processor Perpetual,16,ACTIVE,9936,26.5.2022,25.5.2023,45163,26.5.2022,40314660,4,24874235
-Paysafe,Internet Application Server Enterprise Edition,Internet Application Server Enterprise Edition - Processor Perpetual,Processor Perpetual,8,ACTIVE,9207,26.5.2022,25.5.2023,41849,26.5.2022,40314660,0,24874235
-Paysafe Bulgaria EOOD,Oracle Database Enterprise Edition,Oracle Database Enterprise Edition - Named User Plus Perpetual,Named User Plus Perpetual,150,ACTIVE,9086,1.1.2022,31.12.2022,30122,30.11.2012,51881,27,18843244
-Paysafe,Diagnostics Pack,Diagnostics Pack - Processor Perpetual,Processor Perpetual,32,ACTIVE,7892,26.5.2022,25.5.2023,35871,26.5.2022,40314660,0,24874235
-Paysafe Bulgaria EOOD,Data Integrator Enterprise Edition,Data Integrator Enterprise Edition - Processor Perpetual,Processor Perpetual,2,ACTIVE,7251,1.1.2022,31.12.2022,23332,27.5.2011,48715,0,18061094
-Paysafe,Exadata Memory Expansion X6-2,Exadata Memory Expansion X6-2 - Eight 32 GB DIMMs for X6 racks,Eight 32 GB DIMMs for X6 racks,4,ACTIVE,6256,26.5.2022,25.5.2023,31765,26.5.2016,34283829,0,20643897
-Skrill Ltd.,Purchasing,Purchasing - Application User Perpetual,Application User Perpetual,17,ACTIVE,6220,1.6.2022,31.5.2023,15099,28.7.2008,565803,0,15992428
-Paysafe Bulgaria EOOD,M-Series Memory Accessories,M-Series Memory Accessories - ,,16,ACTIVE,5693,28.4.2022,27.4.2023,41491,28.4.2021,36985388,0,23489251
-Paysafe,WebCenter Content,WebCenter Content - Named User Plus Perpetual,Named User Plus Perpetual,50,ACTIVE,5672,26.5.2022,25.5.2023,25782,26.5.2022,40314660,0,24874235
-Skrill Ltd.,Financials,Financials - Application User Perpetual,Application User Perpetual,20,ACTIVE,5654,1.6.2022,31.5.2023,12374,28.7.2008,565803,0,15992428
-Paysafe,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,5544,25.5.2022,24.5.2023,25212,25.5.2016,34277181,0,20638736
-Paysafe,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,5544,25.5.2022,24.5.2023,25212,25.5.2016,34277181,0,20638736
-Paysafe,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,5544,25.5.2022,24.5.2023,25212,25.5.2016,34277181,0,20638736
-Paysafe Technology Services Austria GmbH,Exadata Database Machine FLEX X8-2 Storage Server,Exadata Database Machine FLEX X8-2 Storage Server - ,,1,ACTIVE,5471,29.5.2022,28.5.2023,40783,31.12.2020,36863421,0,22303687
-Paysafe Bulgaria EOOD,Exadata Database Machine FLEX X8-2 Storage Server,Exadata Database Machine FLEX X8-2 Storage Server - ,,1,ACTIVE,5446,7.11.2021,6.11.2022,40783,7.11.2019,36377819,0,22617816
-Paysafe,Tuning Pack,Tuning Pack - Processor Perpetual,Processor Perpetual,32,ACTIVE,5261,26.5.2022,25.5.2023,23914,26.5.2022,40314660,0,24874235
-Paysafe Bulgaria EOOD,Exadata Database Machine FLEX X7-2 Database Server,Exadata Database Machine FLEX X7-2 Database Server - ,,1,ACTIVE,5143,16.3.2022,15.3.2023,39798,23.3.2018,35512581,0,21016686
-Paysafe Bulgaria EOOD,Tuning Pack,Tuning Pack - Processor Perpetual,Processor Perpetual,16,ACTIVE,5101,1.1.2022,31.12.2022,16909,30.11.2012,51881,0,18843244
-Paysafe Bulgaria EOOD,Diagnostics Pack,Diagnostics Pack - Processor Perpetual,Processor Perpetual,16,ACTIVE,5101,1.1.2022,31.12.2022,16909,30.11.2012,51881,0,18843244
-Paysafe Bulgaria EOOD,Exadata Database Machine FLEX X8-2 Storage Server,Exadata Database Machine FLEX X8-2 Storage Server - ,,1,ACTIVE,5090,6.1.2022,5.1.2023,40783,28.1.2021,36863420,0,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine FLEX X8-2 Storage Server,Exadata Database Machine FLEX X8-2 Storage Server - ,,1,ACTIVE,5090,6.1.2022,5.1.2023,40783,6.1.2021,36863420,0,21016686
-Skrill Ltd,Responsys Cloud Service - Additional Account,Responsys Cloud Service - Additional Account - Account,Account,2,ACTIVE,4910,1.9.2022,31.8.2024,0,1.9.2022,40479908,0,19615387
-Paysafe,Real Application Clusters,Real Application Clusters - Processor Perpetual,Processor Perpetual,16,ACTIVE,4811,26.5.2022,25.5.2023,21868,26.5.2022,40314660,0,24874235
-Paysafe Bulgaria EOOD,Exadata Database Machine FLEX X7-2 Storage Server,Exadata Database Machine FLEX X7-2 Storage Server - ,,1,ACTIVE,4806,16.3.2022,15.3.2023,37194,23.3.2018,35512581,0,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine FLEX X7-2 Storage Server,Exadata Database Machine FLEX X7-2 Storage Server - ,,1,ACTIVE,4806,16.3.2022,15.3.2023,37194,23.3.2018,35512581,0,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine FLEX X6-2 Database Server,Exadata Database Machine FLEX X6-2 Database Server - ,,1,ACTIVE,4804,19.1.2022,18.1.2023,28081,23.1.2017,34769722,0,21016686
-Skrill Ltd,Main Platform - Additional Full Users - Responsys,Main Platform - Additional Full Users - Responsys - Hosted Named User,Hosted Named User,9,ACTIVE,4566,1.9.2022,31.8.2024,0,1.9.2022,40479908,0,19615387
-Paysafe Bulgaria EOOD,WebCenter Applications Adapter for Oracle E-Business Suite,WebCenter Applications Adapter for Oracle E-Business Suite - Processor Perpetual,Processor Perpetual,3,ACTIVE,4510,1.6.2022,31.5.2023,16737,5.12.2016,14338,0,20969982
-Paysafe Bulgaria EOOD,SPARC T8-1 Server,SPARC T8-1 Server - ,,1,ACTIVE,4256,28.4.2022,27.4.2023,31018,28.4.2021,36985388,0,23489251
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,4224,16.5.2022,15.5.2023,22311,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,4224,16.5.2022,15.5.2023,22311,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,4224,16.5.2022,15.5.2023,22311,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,4224,16.5.2022,15.5.2023,22311,18.5.2017,34980835,0,21175639
-Skrill Ltd,Oracle Workforce Planning,Oracle Workforce Planning - Hosted Named User,Hosted Named User,5,ACTIVE,4055,28.6.2022,16.6.2023,0,28.6.2022,40368604,0,19560226
-Paysafe Bulgaria EOOD,Oracle Financial Accounting Hub,Oracle Financial Accounting Hub - Employee Perpetual,Employee Perpetual,192,ACTIVE,3897,31.5.2022,31.5.2023,16142,31.5.2021,16036,0,23610596
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,3163,26.3.2022,25.3.2023,22039,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,3163,26.3.2022,25.3.2023,22039,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,3163,26.3.2022,25.3.2023,22039,26.3.2018,35531190,0,21707280
-Paysafe,Advanced Security,Advanced Security - Processor Perpetual,Processor Perpetual,16,ACTIVE,3138,26.5.2022,25.5.2023,14262,26.5.2022,40314660,0,24874235
-Paysafe Bulgaria EOOD,Purchasing,Purchasing - Application User Perpetual,Application User Perpetual,5,ACTIVE,3002,31.5.2022,30.5.2023,13646,31.5.2022,40333024,0,24915925
-Paysafe Bulgaria EOOD,Oracle WebCenter Enterprise Capture,Oracle WebCenter Enterprise Capture - Named User Plus Perpetual,Named User Plus Perpetual,19,ACTIVE,2979,31.5.2022,30.5.2023,13542,31.5.2022,40349385,0,24885899
-Paysafe Payment Processing Solutions LLC,Order Management,Order Management - Electronic Order Line Perpetual,Electronic Order Line Perpetual,100000,ACTIVE,2832,16.11.2021,15.11.2022,10350,30.10.2018,9210865,0,22018166
-Paysafe Bulgaria EOOD,Oracle WebCenter Enterprise Capture,Oracle WebCenter Enterprise Capture - Named User Plus Perpetual,Named User Plus Perpetual,31,ACTIVE,2796,1.6.2022,31.5.2023,16740,5.12.2016,14338,0,20969982
-Paysafe Bulgaria EOOD,Netra Memory Accessories,Netra Memory Accessories - ,,24,ACTIVE,2773,27.10.2022,26.10.2023,14519,28.10.2016,34579373,0,20884533
-Paysafe Bulgaria EOOD,Qlogic FC HBA,Qlogic FC HBA - ,,18,ACTIVE,2597,26.5.2022,25.5.2023,21692,26.5.2022,40279204,0,24757703
-MERCHANT'S CHOICE PAYMENT SOLUTIONS,Sun SPARC Enterprise T4-1,Sun SPARC Enterprise T4-1 - ,,1,ACTIVE,2569,4.8.2022,3.8.2023,9574,4.8.2014,32898582,0,19625995
-Paysafe Bulgaria EOOD,ZFS Storage ZS5-2,ZFS Storage ZS5-2 - ,,1,ACTIVE,2540,27.10.2022,26.10.2023,13296,28.10.2016,34579373,8,20884533
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE2-24 Capacity,Oracle Storage Drive Enclosure DE2-24 Capacity - ,,24,ACTIVE,2486,27.10.2022,26.10.2023,13013,28.10.2016,34579373,1,20884533
-Skrill Ltd,Responsys Cloud Service - Additional Account,Responsys Cloud Service - Additional Account - Account,Account,1,ACTIVE,2455,1.9.2022,31.8.2024,0,1.9.2022,40479908,0,19615387
-Paysafe,Partitioning,Partitioning - Processor Perpetual,Processor Perpetual,16,ACTIVE,2406,26.5.2022,25.5.2023,10934,26.5.2022,40314660,0,24874235
-Paysafe,Active Data Guard,Active Data Guard - Processor Perpetual,Processor Perpetual,16,ACTIVE,2406,26.5.2022,25.5.2023,10934,26.5.2022,40314660,0,24874235
-Paysafe Technologies Inc.,ZFS Storage ZS9-2 Mid-Range TAA Compliant,ZFS Storage ZS9-2 Mid-Range TAA Compliant - ,,1,ACTIVE,2394,11.4.2022,10.4.2023,19954,11.4.2022,39737349,0,24260401
-Skrill Ltd,Main Platform - Transactional Messaging - Account - Responsys,Main Platform - Transactional Messaging - Account - Responsys - Account,Account,2,ACTIVE,2324,1.9.2022,31.8.2024,0,1.9.2022,40479908,0,19615387
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,8,ACTIVE,2240,16.8.2022,15.8.2023,12063,16.8.2017,35139202,0,21286477
-Paysafe Bulgaria EOOD,Exadata Memory Expansion X7-2,Exadata Memory Expansion X7-2 - ,,1,ACTIVE,2211,16.3.2022,15.3.2023,17109,22.3.2018,35512581,0,21687186
-Paysafe Bulgaria EOOD,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,24,ACTIVE,2185,3.4.2022,2.4.2023,10532,26.2.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,24,ACTIVE,2185,3.4.2022,2.4.2023,10532,26.2.2019,36031670,0,22163077
-Paysafe,T-Series Memory Accessories,T-Series Memory Accessories - ,,16,ACTIVE,2089,25.5.2022,24.5.2023,9499,25.5.2016,34277181,0,20638736
-Paysafe,T-Series Memory Accessories,T-Series Memory Accessories - ,,16,ACTIVE,2089,25.5.2022,24.5.2023,9499,25.5.2016,34277181,0,20638736
-Paysafe,T-Series Memory Accessories,T-Series Memory Accessories - ,,16,ACTIVE,2089,25.5.2022,24.5.2023,9499,25.5.2016,34277181,0,20638736
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE2-24 Capacity,Oracle Storage Drive Enclosure DE2-24 Capacity - ,,20,ACTIVE,2071,27.10.2022,26.10.2023,10844,28.10.2016,34579373,1,20884533
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE2-24 Capacity,Oracle Storage Drive Enclosure DE2-24 Capacity - ,,20,ACTIVE,2071,27.10.2022,26.10.2023,10844,28.10.2016,34579373,1,20884533
-Paysafe Technologies Inc.,X86 Other Accessories,X86 Other Accessories - ,,8,ACTIVE,1991,3.11.2022,2.11.2023,14426,3.11.2021,38543552,0,23966692
-Paysafe,WebCenter Applications Adapter for Oracle E-Business Suite,WebCenter Applications Adapter for Oracle E-Business Suite - Processor Perpetual,Processor Perpetual,3,ACTIVE,1973,26.5.2022,25.5.2023,8968,26.5.2022,40314660,0,24874235
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,20,ACTIVE,1950,29.5.2022,28.5.2023,14536,31.12.2020,36863421,0,23302598
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,20,ACTIVE,1950,29.5.2022,28.5.2023,14536,31.12.2020,36863421,0,23302598
-Paysafe Bulgaria EOOD,Netra Memory Accessories,Netra Memory Accessories - ,,24,ACTIVE,1919,9.4.2022,8.4.2023,14214,9.4.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,20,ACTIVE,1866,29.12.2021,5.1.2023,14536,29.12.2020,36863420,0,23302591
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,20,ACTIVE,1866,29.12.2021,5.1.2023,14536,29.12.2020,36863420,0,23302591
-Paysafe Payment Processing Solutions LLC,Internet Expenses,Internet Expenses - Expense Report Perpetual,Expense Report Perpetual,2400,ACTIVE,1773,16.11.2021,15.11.2022,6480,30.10.2018,9210865,0,22018166
-Paysafe Technologies Inc.,ZFS Storage ZS5-2,ZFS Storage ZS5-2 - ,,1,ACTIVE,1642,21.3.2022,20.3.2023,11439,21.3.2018,35520250,1,21698646
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,8,ACTIVE,1600,16.8.2022,15.8.2023,8617,17.8.2017,35145211,0,21302012
-Paysafe Bulgaria EOOD,ZFS Storage ZS5-2,ZFS Storage ZS5-2 - ,,1,ACTIVE,1579,9.4.2022,8.4.2023,11700,9.4.2019,36031671,8,22163075
-Paysafe,Diagnostics Pack,Diagnostics Pack - Processor Perpetual,Processor Perpetual,16,ACTIVE,1569,26.5.2022,25.5.2023,7131,26.5.2022,40314660,0,24874235
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,24,ACTIVE,1478,21.3.2022,20.3.2023,10296,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,24,ACTIVE,1478,21.3.2022,20.3.2023,10296,21.3.2018,35520250,0,21698646
-Paysafe Bulgaria EOOD,Netra Memory Accessories,Netra Memory Accessories - ,,24,ACTIVE,1475,3.4.2022,2.4.2023,14214,3.4.2019,36031670,0,22163077
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,16,ACTIVE,1452,26.3.2022,25.3.2023,10118,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,16,ACTIVE,1452,26.3.2022,25.3.2023,10118,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,16,ACTIVE,1452,26.3.2022,25.3.2023,10118,26.3.2018,35531190,0,21707280
-Paysafe Bulgaria EOOD,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,24,ACTIVE,1422,9.4.2022,8.4.2023,10532,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,24,ACTIVE,1422,9.4.2022,8.4.2023,10532,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Coherence Enterprise Edition,Coherence Enterprise Edition - Named User Plus Perpetual,Named User Plus Perpetual,80,ACTIVE,1383,1.6.2022,31.5.2023,0,5.12.2016,14338,0,20969982
-Paysafe,Oracle WebCenter Enterprise Capture,Oracle WebCenter Enterprise Capture - Named User Plus Perpetual,Named User Plus Perpetual,35,ACTIVE,1381,26.5.2022,25.5.2023,6277,26.5.2022,40314660,0,24874235
-Paysafe Technologies Inc.,Server X9-2L,Server X9-2L - ,,24,ACTIVE,1376,6.10.2022,5.10.2023,11469,6.10.2022,39737349,0,24336928
-Paysafe Technologies Inc.,Server X9-2L,Server X9-2L - ,,24,ACTIVE,1376,6.10.2022,5.10.2023,11469,6.10.2022,39737349,0,24336928
-Paysafe Technologies Inc.,Server X9-2L,Server X9-2L - ,,24,ACTIVE,1376,6.10.2022,5.10.2023,11469,6.10.2022,39737349,0,24336928
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,20,ACTIVE,1231,29.3.2022,28.3.2023,8580,5.4.2018,35531189,0,21707264
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,20,ACTIVE,1231,21.3.2022,20.3.2023,8580,21.3.2018,35520250,0,21698646
-Paysafe,Active Data Guard,Active Data Guard - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,WebLogic Server Enterprise Edition,WebLogic Server Enterprise Edition - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Oracle Management Pack for Oracle GoldenGate,Oracle Management Pack for Oracle GoldenGate - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Oracle Data Integrator Enterprise Edition Advanced Big Data Option,Oracle Data Integrator Enterprise Edition Advanced Big Data Option - Named User Plus JP Perpetual,Named User Plus JP Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Analytics Server,Analytics Server - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Oracle GoldenGate,Oracle GoldenGate - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Multitenant,Multitenant - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Tuning Pack,Tuning Pack - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Partitioning,Partitioning - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Diagnostics Pack,Diagnostics Pack - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Database In-Memory,Database In-Memory - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Oracle GoldenGate for Non Oracle Database,Oracle GoldenGate for Non Oracle Database - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Data Integrator Enterprise Edition,Data Integrator Enterprise Edition - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Oracle GoldenGate for Big Data,Oracle GoldenGate for Big Data - Named User Plus JP Perpetual,Named User Plus JP Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Coherence Enterprise Edition,Coherence Enterprise Edition - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Real Application Clusters,Real Application Clusters - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Exadata Storage Server Software - with Linux Support,Exadata Storage Server Software - with Linux Support - Disk Drive Perpetual,Disk Drive Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Real Application Testing,Real Application Testing - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Advanced Compression,Advanced Compression - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Oracle GoldenGate Veridata,Oracle GoldenGate Veridata - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Oracle Big Data Connectors,Oracle Big Data Connectors - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe,Advanced Security,Advanced Security - Processor Perpetual,Processor Perpetual,1,ACTIVE,1224,30.11.2021,29.11.2022,6440,29.1.2018,696523,0,21482337
-Paysafe Bulgaria EOOD,ZFS Storage ZS5-2,ZFS Storage ZS5-2 - ,,1,ACTIVE,1214,3.4.2022,2.4.2023,11700,3.4.2019,36031670,8,22163077
-Paysafe Bulgaria EOOD,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,20,ACTIVE,1185,9.4.2022,8.4.2023,8777,26.2.2019,36031671,0,22163075
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,8,ACTIVE,1168,26.3.2022,25.3.2023,8140,28.3.2018,35531190,0,21707281
-Paysafe,Internet Application Server Enterprise Edition,Internet Application Server Enterprise Edition - Named User Plus Perpetual,Named User Plus Perpetual,50,ACTIVE,1151,26.5.2022,25.5.2023,5231,26.5.2022,40314660,0,24874235
-Paysafe Bulgaria EOOD,Hyperion Financial Management Plus,Hyperion Financial Management Plus - Application User Perpetual,Application User Perpetual,70,ACTIVE,1107,1.6.2022,31.5.2023,126934,7.2.2018,14653,0,21466543
-Paysafe,Tuning Pack,Tuning Pack - Processor Perpetual,Processor Perpetual,16,ACTIVE,1046,26.5.2022,25.5.2023,4754,26.5.2022,40314660,0,24874235
-Skrill Ltd,Main Platform - Additional Full Users - Responsys,Main Platform - Additional Full Users - Responsys - Hosted Named User,Hosted Named User,2,ACTIVE,1015,1.9.2022,31.8.2024,0,1.9.2022,40479908,0,19615387
-Paysafe Bulgaria EOOD,Internet Expenses,Internet Expenses - Expense Report Perpetual,Expense Report Perpetual,2000,ACTIVE,996,1.6.2022,31.5.2023,3749,27.5.2016,14215,0,20672819
-Paysafe Bulgaria EOOD,Forty Gb Transceivers,Forty Gb Transceivers - ,,16,ACTIVE,980,9.4.2022,8.4.2023,7257,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,20,ACTIVE,911,3.4.2022,2.4.2023,8777,26.2.2019,36031670,0,22163077
-Paysafe Technologies Inc.,Ten Gb Transceivers,Ten Gb Transceivers - ,,8,ACTIVE,816,19.10.2022,18.10.2023,5916,19.10.2021,38543552,0,23966692
-Paysafe Technologies Inc.,Netra Memory Accessories,Netra Memory Accessories - ,,24,ACTIVE,814,21.3.2022,20.3.2023,5674,21.3.2018,35520250,0,21698646
-Paysafe Bulgaria EOOD,Forty Gb Transceivers,Forty Gb Transceivers - ,,16,ACTIVE,753,3.4.2022,2.4.2023,7257,26.2.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Forty Gb Optical Cables,Forty Gb Optical Cables - ,,8,ACTIVE,681,9.4.2022,8.4.2023,5042,26.2.2019,36031671,0,22163075
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,8,ACTIVE,661,26.3.2022,25.3.2023,4608,28.3.2018,35531190,0,21707279
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,4,ACTIVE,634,15.8.2022,14.8.2023,3414,15.8.2017,35131960,0,21287629
-Paysafe,Oracle Database Enterprise Edition,Oracle Database Enterprise Edition - Named User Plus Perpetual,Named User Plus Perpetual,50,ACTIVE,621,26.5.2022,25.5.2023,2823,26.5.2022,40314660,4,24874235
-Paysafe Bulgaria EOOD,Oracle Dual Port QDR IB Adapter M3,Oracle Dual Port QDR IB Adapter M3 - ,,2,ACTIVE,608,27.10.2022,26.10.2023,3185,28.10.2016,34579373,0,20884533
-Paysafe Technology Services Austria GmbH,Quad Port 10GBase-T Adapter,Quad Port 10GBase-T Adapter - ,,4,ACTIVE,604,29.5.2022,28.5.2023,4048,29.5.2019,36152924,0,22303702
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE2-24 Capacity,Oracle Storage Drive Enclosure DE2-24 Capacity - ,,2,ACTIVE,594,27.10.2022,26.10.2023,3107,28.10.2016,34579373,1,20884533
-Paysafe,WebLogic Server Enterprise Edition,WebLogic Server Enterprise Edition - Named User Plus Perpetual,Named User Plus Perpetual,35,ACTIVE,575,26.5.2022,25.5.2023,2616,26.5.2022,40314660,0,24874235
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE2-24 Capacity,Oracle Storage Drive Enclosure DE2-24 Capacity - ,,1,ACTIVE,544,27.10.2022,26.10.2023,2846,28.10.2016,34579373,1,20884533
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE2-24 Capacity,Oracle Storage Drive Enclosure DE2-24 Capacity - ,,1,ACTIVE,544,27.10.2022,26.10.2023,2846,28.10.2016,34579373,1,20884533
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE2-24 Capacity,Oracle Storage Drive Enclosure DE2-24 Capacity - ,,1,ACTIVE,544,27.10.2022,26.10.2023,2846,28.10.2016,34579373,1,20884533
-Paysafe Bulgaria EOOD,Forty Gb Optical Cables,Forty Gb Optical Cables - ,,8,ACTIVE,523,3.4.2022,2.4.2023,5042,26.2.2019,36031670,0,22163077
-Optimal Payments Inc.,Sun Storage F80 Flash PCIe Card,Sun Storage F80 Flash PCIe Card - ,,1,ACTIVE,482,20.12.2021,19.12.2022,2835,26.3.2014,32568765,0,19449731
-Paysafe Bulgaria EOOD,Qlogic FC HBA,Qlogic FC HBA - ,,3,ACTIVE,470,28.4.2022,27.4.2023,3425,28.4.2021,36985388,0,23489251
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,470,3.4.2022,2.4.2023,2264,26.2.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,470,3.4.2022,2.4.2023,2264,26.2.2019,36031670,0,22163077
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,4,ACTIVE,453,21.8.2022,20.8.2023,2438,25.8.2017,35145211,0,21302012
-Paysafe Technology Services Austria GmbH,Ten Gb Transceivers,Ten Gb Transceivers - ,,16,ACTIVE,437,29.5.2022,28.5.2023,2930,29.5.2019,36152924,0,22303707
-Paysafe,Qlogic FC HBA,Qlogic FC HBA - ,,2,ACTIVE,434,25.5.2022,24.5.2023,1975,25.5.2016,34277181,0,20638736
-Paysafe,Qlogic FC HBA,Qlogic FC HBA - ,,2,ACTIVE,434,25.5.2022,24.5.2023,1975,25.5.2016,34277181,0,20638736
-Paysafe,Qlogic FC HBA,Qlogic FC HBA - ,,2,ACTIVE,434,25.5.2022,24.5.2023,1975,25.5.2016,34277181,0,20638736
-MERCHANT'S CHOICE PAYMENT SOLUTIONS,T-Series Memory Accessories,T-Series Memory Accessories - ,,4,ACTIVE,426,4.8.2022,3.8.2023,1380,4.8.2014,32898582,0,19625995
-Paysafe Bulgaria EOOD,ZFS Integrated Software Options,ZFS Integrated Software Options - per Management Controller Metric,per Management Controller Metric,1,ACTIVE,420,27.10.2022,26.10.2023,2906,28.10.2016,34579373,0,20884533
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,411,29.5.2022,28.5.2023,3067,31.12.2020,36863421,0,23302598
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,411,29.5.2022,28.5.2023,3067,31.12.2020,36863421,0,23302598
-Paysafe Bulgaria EOOD,Ten Gb Ethernet Adapters,Ten Gb Ethernet Adapters - ,,3,ACTIVE,410,16.3.2022,15.3.2023,3173,16.3.2018,35512581,0,21695194
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,394,29.12.2021,5.1.2023,3067,29.12.2020,36863420,0,23302591
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,394,29.12.2021,5.1.2023,3067,29.12.2020,36863420,0,23302591
-Paysafe Bulgaria EOOD,Oracle Dual Port QDR IB Adapter M3,Oracle Dual Port QDR IB Adapter M3 - ,,2,ACTIVE,378,9.4.2022,8.4.2023,2803,9.4.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,2,ACTIVE,367,29.5.2022,28.5.2023,2736,31.12.2020,36863421,0,23302598
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,2,ACTIVE,367,29.5.2022,28.5.2023,2736,31.12.2020,36863421,0,23302598
-Paysafe Technologies Inc.,ZFS Integrated Software Options,ZFS Integrated Software Options - per Management Controller Metric,per Management Controller Metric,1,ACTIVE,359,21.3.2022,20.3.2023,2500,21.3.2018,35520250,0,21698646
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,2,ACTIVE,351,29.12.2021,5.1.2023,2736,29.12.2020,36863420,0,23302591
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,2,ACTIVE,351,29.12.2021,5.1.2023,2736,29.12.2020,36863420,0,23302591
-Paysafe Bulgaria EOOD,ZFS Integrated Software Options,ZFS Integrated Software Options - per Management Controller Metric,per Management Controller Metric,1,ACTIVE,345,9.4.2022,8.4.2023,2557,6.2.2019,36031671,0,22163075
-Paysafe Technologies Inc.,Forty Gb Transceivers,Forty Gb Transceivers - ,,4,ACTIVE,331,19.7.2022,18.7.2023,2216,19.7.2019,36240018,0,22408488
-Paysafe Technologies Inc.,ZFS Integrated Software Options,ZFS Integrated Software Options - per Management Controller Metric,per Management Controller Metric,1,ACTIVE,324,29.3.2022,28.3.2023,2500,29.3.2018,35531189,0,21707264
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,318,29.3.2022,28.3.2023,2214,5.4.2018,35531189,0,21707264
-Paysafe Bulgaria EOOD,Oracle Dual Port QDR IB Adapter M3,Oracle Dual Port QDR IB Adapter M3 - ,,1,ACTIVE,318,27.3.2022,26.3.2023,1911,27.3.2017,34895842,0,21155585
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,318,21.3.2022,20.3.2023,2214,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,318,21.3.2022,20.3.2023,2214,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,318,21.3.2022,20.3.2023,2214,21.3.2018,35520250,0,21698646
-Paysafe Bulgaria EOOD,INTEGRATED PROD,INTEGRATED PROD - ,,4,ACTIVE,315,7.6.2022,6.6.2023,2327,7.6.2021,37036496,0,23571920
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,308,17.5.2022,16.5.2023,1982,18.5.2018,35626146,0,21794056
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,306,9.4.2022,8.4.2023,2264,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,306,9.4.2022,8.4.2023,2264,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,306,9.4.2022,8.4.2023,2264,26.2.2019,36031671,0,22163075
-Paysafe,Ten Gb Transceivers,Ten Gb Transceivers - ,,8,ACTIVE,301,26.5.2022,25.5.2023,1527,26.5.2016,34277180,0,20638735
-Paysafe Bulgaria EOOD,Oracle Dual Port QDR IB Adapter M3,Oracle Dual Port QDR IB Adapter M3 - ,,2,ACTIVE,291,3.4.2022,2.4.2023,2803,3.4.2019,36031670,0,22163077
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,2,ACTIVE,283,21.3.2022,20.3.2023,1975,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,2,ACTIVE,283,29.3.2022,28.3.2023,1975,5.4.2018,35531189,0,21707264
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,278,6.10.2022,5.10.2023,2320,6.10.2022,39737349,0,24336928
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,278,6.10.2022,5.10.2023,2320,6.10.2022,39737349,0,24336928
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,278,6.10.2022,5.10.2023,2320,6.10.2022,39737349,0,24336928
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,2,ACTIVE,273,9.4.2022,8.4.2023,2020,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Qlogic FC HBA,Qlogic FC HBA - ,,3,ACTIVE,266,28.4.2022,27.4.2023,1939,28.4.2021,36985388,0,23489251
-Paysafe Bulgaria EOOD,ZFS Integrated Software Options,ZFS Integrated Software Options - per Management Controller Metric,per Management Controller Metric,1,ACTIVE,265,3.4.2022,2.4.2023,2557,6.2.2019,36031670,0,22163077
-Paysafe Technologies Inc.,Quad Port 10GBase-T Adapter,Quad Port 10GBase-T Adapter - ,,2,ACTIVE,260,26.3.2022,25.3.2023,1814,4.4.2018,35531188,0,21707294
-MERCHANT'S CHOICE PAYMENT SOLUTIONS,Ten Gb Transceivers,Ten Gb Transceivers - ,,2,ACTIVE,259,4.8.2022,3.8.2023,840,4.8.2014,32898582,0,19625995
-Skrill Ltd.,Internet Expenses,Internet Expenses - Expense Report Perpetual,Expense Report Perpetual,697,ACTIVE,257,1.6.2022,31.5.2023,0,25.5.2021,565803,0,15992428
-Paysafe Technologies Inc.,Oracle Dual Port QDR IB Adapter M3,Oracle Dual Port QDR IB Adapter M3 - ,,1,ACTIVE,255,17.7.2022,16.7.2023,1711,17.7.2019,36240018,0,22408488
-Paysafe,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,3,ACTIVE,244,25.5.2022,24.5.2023,1111,25.5.2016,34277181,0,20638736
-Paysafe,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,3,ACTIVE,244,25.5.2022,24.5.2023,1111,25.5.2016,34277181,0,20638736
-Paysafe,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,3,ACTIVE,244,25.5.2022,24.5.2023,1111,25.5.2016,34277181,0,20638736
-MERCHANT'S CHOICE PAYMENT SOLUTIONS,Ten Gb Ethernet Adapters,Ten Gb Ethernet Adapters - ,,1,ACTIVE,244,4.8.2022,3.8.2023,790,4.8.2014,32898582,0,19625995
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,2,ACTIVE,243,26.3.2022,25.3.2023,1696,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,2,ACTIVE,243,26.3.2022,25.3.2023,1696,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,2,ACTIVE,243,26.3.2022,25.3.2023,1696,26.3.2018,35531190,0,21707280
-Paysafe Bulgaria EOOD,Ten Gb Transceivers,Ten Gb Transceivers - ,,10,ACTIVE,237,16.3.2022,15.3.2023,1831,16.3.2018,35512581,0,21695193
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,235,3.4.2022,2.4.2023,2264,26.2.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,2,ACTIVE,210,3.4.2022,2.4.2023,2020,26.2.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Hyperion Financial Data Quality Management Source Adapter for SAP,Hyperion Financial Data Quality Management Source Adapter for SAP - Application User Perpetual,Application User Perpetual,3,ACTIVE,209,31.5.2022,31.5.2023,866,31.5.2021,16036,0,23610596
-Paysafe,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,209,25.5.2022,24.5.2023,949,25.5.2016,34277181,0,20638736
-Paysafe,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,209,25.5.2022,24.5.2023,949,25.5.2016,34277181,0,20638736
-Paysafe,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,209,25.5.2022,24.5.2023,949,25.5.2016,34277181,0,20638736
-Paysafe Technologies Inc.,Oracle Dual Port QDR IB Adapter M3,Oracle Dual Port QDR IB Adapter M3 - ,,1,ACTIVE,197,21.3.2022,20.3.2023,1370,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,1,ACTIVE,197,16.5.2022,15.5.2023,1040,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,1,ACTIVE,197,16.5.2022,15.5.2023,1040,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,1,ACTIVE,197,16.5.2022,15.5.2023,1040,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,1,ACTIVE,197,16.5.2022,15.5.2023,1040,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,1,ACTIVE,197,16.5.2022,15.5.2023,1040,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,1,ACTIVE,197,16.5.2022,15.5.2023,1040,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,1,ACTIVE,197,16.5.2022,15.5.2023,1040,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Qlogic FC HBA,Qlogic FC HBA - ,,1,ACTIVE,197,16.5.2022,15.5.2023,1040,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,ZFS Storage ZS7-2 High-End TAA Compliant,ZFS Storage ZS7-2 High-End TAA Compliant - ,,6,ACTIVE,196,11.4.2022,10.4.2023,1632,11.4.2022,39737349,0,24260401
-Paysafe,Advanced Security,Advanced Security - Named User Plus Perpetual,Named User Plus Perpetual,50,ACTIVE,196,26.5.2022,25.5.2023,891,26.5.2022,40314660,0,24874235
-Paysafe Bulgaria EOOD,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,195,28.4.2022,27.4.2023,1421,28.4.2021,36985388,0,23489251
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,194,16.5.2022,15.5.2023,1022,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,194,16.5.2022,15.5.2023,1022,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,194,16.5.2022,15.5.2023,1022,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,194,16.5.2022,15.5.2023,1022,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Ten Gb Transceivers,Ten Gb Transceivers - ,,8,ACTIVE,188,26.3.2022,25.3.2023,1312,29.3.2018,35531188,0,21707299
-Paysafe Bulgaria EOOD,Ten Gb Transceivers,Ten Gb Transceivers - ,,6,ACTIVE,188,19.1.2022,18.1.2023,1099,23.1.2017,34769722,0,21012522
-Paysafe Technologies Inc.,Forty Gb Optical Cables,Forty Gb Optical Cables - ,,2,ACTIVE,177,17.7.2022,16.7.2023,1184,17.7.2019,36240018,0,22408488
-Paysafe Bulgaria EOOD,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,3,ACTIVE,176,28.4.2022,27.4.2023,1284,28.4.2021,36985388,0,23489251
-Optimal Payments Inc.,Ten Gb Ethernet Adapters,Ten Gb Ethernet Adapters - ,,1,ACTIVE,169,20.12.2021,19.12.2022,995,19.3.2014,32568765,0,19449731
-Paysafe Bulgaria EOOD,Forty Gb Transceivers,Forty Gb Transceivers - ,,2,ACTIVE,162,7.6.2022,6.6.2023,1195,7.6.2021,37036496,0,23571920
-Paysafe Technologies Inc.,Forty Gb Optical Cables,Forty Gb Optical Cables - ,,2,ACTIVE,152,24.3.2022,23.3.2023,1264,24.3.2022,39737349,0,24336928
-Paysafe,Ten Gb Transceivers,Ten Gb Transceivers - ,,4,ACTIVE,150,26.5.2022,25.5.2023,763,26.5.2016,34283829,0,20643897
-Paysafe,Partitioning,Partitioning - Named User Plus Perpetual,Named User Plus Perpetual,50,ACTIVE,150,26.5.2022,25.5.2023,683,26.5.2022,40314660,0,24874235
-Paysafe Technologies Inc.,One Hundred Gb Transceivers,One Hundred Gb Transceivers - ,,4,ACTIVE,149,11.4.2022,10.4.2023,1241,11.4.2022,39737349,0,24260401
-Paysafe Bulgaria EOOD,Forty Gb Ethernet Adapters,Forty Gb Ethernet Adapters - ,,1,ACTIVE,146,25.6.2022,24.6.2023,1086,25.6.2021,37036496,0,23571920
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,145,26.3.2022,25.3.2023,1010,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,145,26.3.2022,25.3.2023,1010,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,145,26.3.2022,25.3.2023,1010,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,3,ACTIVE,137,26.3.2022,25.3.2023,954,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,3,ACTIVE,137,26.3.2022,25.3.2023,954,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,3,ACTIVE,137,26.3.2022,25.3.2023,954,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,Server X9-2,Server X9-2 - ,,2,ACTIVE,133,11.4.2022,10.4.2023,1110,11.4.2022,39737349,0,24260401
-Paysafe Bulgaria EOOD,Ten Gb Ethernet Adapters,Ten Gb Ethernet Adapters - ,,1,ACTIVE,131,9.4.2022,8.4.2023,970,26.2.2019,36031671,0,22163075
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,T-Series Memory Accessories,T-Series Memory Accessories - ,,1,ACTIVE,121,16.5.2022,15.5.2023,641,18.5.2017,34980835,0,21175639
-Paysafe Bulgaria EOOD,Ten Gb Transceivers,Ten Gb Transceivers - ,,4,ACTIVE,120,7.6.2022,6.6.2023,885,7.6.2021,37036496,0,23571920
-Paysafe Bulgaria EOOD,Forty Gb Copper Cables,Forty Gb Copper Cables - ,,4,ACTIVE,117,27.3.2022,26.3.2023,704,27.3.2017,34895842,0,21155585
-Paysafe Technologies Inc.,Ten Gb Ethernet Adapters,Ten Gb Ethernet Adapters - ,,1,ACTIVE,113,21.3.2022,20.3.2023,790,21.3.2018,35520250,0,21698646
-Skrill Ltd.,Internet Expenses,Internet Expenses - Expense Report Perpetual,Expense Report Perpetual,303,ACTIVE,112,1.6.2022,31.5.2023,792,28.7.2008,565803,0,15992428
-Paysafe Bulgaria EOOD,Ten Gb Ethernet Adapters,Ten Gb Ethernet Adapters - ,,1,ACTIVE,109,9.4.2022,8.4.2023,808,9.4.2019,36031671,0,22163075
-MERCHANT'S CHOICE PAYMENT SOLUTIONS,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,2,ACTIVE,106,4.8.2022,3.8.2023,345,4.8.2014,32898582,0,19625995
-Paysafe Bulgaria EOOD,Ten Gb Ethernet Adapters,Ten Gb Ethernet Adapters - ,,1,ACTIVE,101,3.4.2022,2.4.2023,970,26.2.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,INTEGRATED PROD,INTEGRATED PROD - ,,1,ACTIVE,98,9.4.2022,8.4.2023,726,12.3.2019,36031671,0,22163075
-Paysafe,Diagnostics Pack,Diagnostics Pack - Named User Plus Perpetual,Named User Plus Perpetual,50,ACTIVE,98,26.5.2022,25.5.2023,446,26.5.2022,40314660,0,24874235
-Paysafe Technologies Inc.,Quad Port 10GBase-T Adapter,Quad Port 10GBase-T Adapter - ,,1,ACTIVE,95,11.4.2022,10.4.2023,792,11.4.2022,39737349,0,24260401
-Paysafe Bulgaria EOOD,Ten Gb Ethernet Adapters,Ten Gb Ethernet Adapters - ,,1,ACTIVE,84,3.4.2022,2.4.2023,808,3.4.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,INTEGRATED PROD,INTEGRATED PROD - ,,1,ACTIVE,75,3.4.2022,2.4.2023,726,12.3.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Oracle ZFS Storage ZS3-4,Oracle ZFS Storage ZS3-4 - ,,4,ACTIVE,74,29.12.2021,5.1.2023,578,29.12.2020,36863420,0,23302592
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,1,ACTIVE,74,16.5.2022,15.5.2023,390,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,1,ACTIVE,74,16.5.2022,15.5.2023,390,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,1,ACTIVE,74,16.5.2022,15.5.2023,390,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,1,ACTIVE,74,16.5.2022,15.5.2023,390,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,1,ACTIVE,74,16.5.2022,15.5.2023,390,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,1,ACTIVE,74,16.5.2022,15.5.2023,390,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,1,ACTIVE,74,16.5.2022,15.5.2023,390,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,1,ACTIVE,74,16.5.2022,15.5.2023,390,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,1,ACTIVE,74,16.5.2022,15.5.2023,390,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,1,ACTIVE,74,16.5.2022,15.5.2023,390,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,1,ACTIVE,74,16.5.2022,15.5.2023,390,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun SAS Disk Drive,Sun SAS Disk Drive - ,,1,ACTIVE,74,16.5.2022,15.5.2023,390,18.5.2017,34980835,0,21175639
-Paysafe,Tuning Pack,Tuning Pack - Named User Plus Perpetual,Named User Plus Perpetual,50,ACTIVE,65,26.5.2022,25.5.2023,297,26.5.2022,40314660,0,24874235
-Paysafe Bulgaria EOOD,Forty Gb Copper Cables,Forty Gb Copper Cables - ,,2,ACTIVE,56,27.10.2022,26.10.2023,293,28.10.2016,34579373,0,20884533
-Paysafe Bulgaria EOOD,Oracle ZFS Storage ZS3-4,Oracle ZFS Storage ZS3-4 - ,,3,ACTIVE,56,6.1.2022,5.1.2023,434,6.1.2021,36863421,0,23302599
-Paysafe Technologies Inc.,One Hundred Gb Transceivers,One Hundred Gb Transceivers - ,,2,ACTIVE,46,9.3.2022,8.3.2023,385,9.3.2022,39737349,0,24260401
-Paysafe Bulgaria EOOD,Ten Gb Transceivers,Ten Gb Transceivers - ,,2,ACTIVE,45,9.4.2022,8.4.2023,336,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Forty Gb Copper Cables,Forty Gb Copper Cables - ,,2,ACTIVE,41,27.10.2022,26.10.2023,214,28.10.2016,34579373,0,20884533
-Paysafe,X86 Other Accessories,X86 Other Accessories - ,,1,ACTIVE,40,25.5.2022,24.5.2023,184,25.5.2016,34277181,0,20638736
-Paysafe,X86 Other Accessories,X86 Other Accessories - ,,1,ACTIVE,40,25.5.2022,24.5.2023,184,25.5.2016,34277181,0,20638736
-Paysafe,X86 Other Accessories,X86 Other Accessories - ,,1,ACTIVE,40,25.5.2022,24.5.2023,184,25.5.2016,34277181,0,20638736
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,37,29.5.2022,28.5.2023,278,31.12.2020,36863421,0,23302598
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,37,29.5.2022,28.5.2023,278,31.12.2020,36863421,0,23302598
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,36,29.12.2021,5.1.2023,278,29.12.2020,36863420,0,23302591
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,36,29.12.2021,5.1.2023,278,29.12.2020,36863420,0,23302591
-Paysafe Bulgaria EOOD,Ten Gb Transceivers,Ten Gb Transceivers - ,,2,ACTIVE,35,3.4.2022,2.4.2023,336,26.2.2019,36031670,0,22163077
-Paysafe Technologies Inc.,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,4,ACTIVE,32,21.3.2022,20.3.2023,220,21.3.2018,35520250,0,21698646
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,4,ACTIVE,31,9.4.2022,8.4.2023,226,9.4.2019,36031671,0,22163075
-Paysafe Technologies Inc.,X86 Other Accessories,X86 Other Accessories - ,,1,ACTIVE,31,16.5.2022,15.5.2023,161,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,X86 Other Accessories,X86 Other Accessories - ,,1,ACTIVE,31,16.5.2022,15.5.2023,161,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,X86 Other Accessories,X86 Other Accessories - ,,1,ACTIVE,31,16.5.2022,15.5.2023,161,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,X86 Other Accessories,X86 Other Accessories - ,,1,ACTIVE,31,16.5.2022,15.5.2023,161,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Ten Gb Transceivers,Ten Gb Transceivers - ,,2,ACTIVE,30,21.3.2022,20.3.2023,210,21.3.2018,35520250,0,21698646
-Paysafe Bulgaria EOOD,Ten Gb Transceivers,Ten Gb Transceivers - ,,2,ACTIVE,29,9.4.2022,8.4.2023,214,9.4.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,26,3.4.2022,2.4.2023,125,26.2.2019,36031670,0,22163077
-Paysafe Technologies Inc.,Forty Gb Copper Cables,Forty Gb Copper Cables - ,,2,ACTIVE,26,21.3.2022,20.3.2023,184,21.3.2018,35520250,0,21698646
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,26,3.4.2022,2.4.2023,125,26.2.2019,36031670,0,22163077
-Paysafe Technologies Inc.,X86 Other Accessories,X86 Other Accessories - ,,1,ACTIVE,25,26.3.2022,25.3.2023,174,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,X86 Other Accessories,X86 Other Accessories - ,,1,ACTIVE,25,26.3.2022,25.3.2023,174,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,X86 Other Accessories,X86 Other Accessories - ,,1,ACTIVE,25,26.3.2022,25.3.2023,174,26.3.2018,35531190,0,21707280
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,4,ACTIVE,23,3.4.2022,2.4.2023,226,3.4.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Ten Gb Transceivers,Ten Gb Transceivers - ,,2,ACTIVE,22,3.4.2022,2.4.2023,214,3.4.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Oracle ZFS Storage ZS3-2,Oracle ZFS Storage ZS3-2 - ,,1,ACTIVE,20,27.10.2022,26.10.2023,103,28.10.2016,34579373,0,20884533
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,19,29.5.2022,28.5.2023,141,31.12.2020,36863421,0,23302598
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,19,29.5.2022,28.5.2023,141,31.12.2020,36863421,0,23302598
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,18,29.12.2021,5.1.2023,141,29.12.2020,36863420,0,23302591
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,18,29.12.2021,5.1.2023,141,29.12.2020,36863420,0,23302591
-Paysafe Technologies Inc.,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,18,29.3.2022,28.3.2023,122,5.4.2018,35531189,0,21707264
-Paysafe Technologies Inc.,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,18,21.3.2022,20.3.2023,122,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,18,21.3.2022,20.3.2023,122,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,18,21.3.2022,20.3.2023,122,21.3.2018,35520250,0,21698646
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,17,9.4.2022,8.4.2023,125,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,17,9.4.2022,8.4.2023,125,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,17,9.4.2022,8.4.2023,125,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Sun SAS/SATA Cable,Sun SAS/SATA Cable - ,,2,ACTIVE,13,3.4.2022,2.4.2023,125,26.2.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,9,28.4.2022,27.4.2023,67,28.4.2021,36985388,0,23489251
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE2-24 Capacity,Oracle Storage Drive Enclosure DE2-24 Capacity - ,,4,ACTIVE,7,27.10.2022,26.10.2023,35,28.10.2016,34579373,1,20884533
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,5,3.4.2022,2.4.2023,26,26.2.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,5,3.4.2022,2.4.2023,26,26.2.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,4,9.4.2022,8.4.2023,26,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,4,9.4.2022,8.4.2023,26,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,4,9.4.2022,8.4.2023,26,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,4,9.4.2022,8.4.2023,26,9.4.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,4,29.12.2021,5.1.2023,28,29.12.2020,36863420,0,23302591
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,4,29.12.2021,5.1.2023,28,29.12.2020,36863420,0,23302591
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,4,29.3.2022,28.3.2023,29,5.4.2018,35531189,0,21707264
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,4,29.5.2022,28.5.2023,28,31.12.2020,36863421,0,23302598
-MERCHANT'S CHOICE PAYMENT SOLUTIONS,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,4,4.8.2022,3.8.2023,13,4.8.2014,32898582,0,19625995
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,4,21.3.2022,20.3.2023,29,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,4,21.3.2022,20.3.2023,29,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,4,21.3.2022,20.3.2023,29,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,4,21.3.2022,20.3.2023,29,21.3.2018,35520250,0,21698646
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,4,29.5.2022,28.5.2023,28,31.12.2020,36863421,0,23302598
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,3,11.4.2022,10.4.2023,26,11.4.2022,39737349,0,24260401
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,3,6.10.2022,5.10.2023,26,6.10.2022,39737349,0,24336928
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,3,6.10.2022,5.10.2023,26,6.10.2022,39737349,0,24336928
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,3,6.10.2022,5.10.2023,26,6.10.2022,39737349,0,24336928
-Paysafe,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,3,25.5.2022,24.5.2023,16,25.5.2016,34277181,0,20638736
-Paysafe,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,3,25.5.2022,24.5.2023,16,25.5.2016,34277181,0,20638736
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,3,3.4.2022,2.4.2023,26,3.4.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE2-24 Capacity,Oracle Storage Drive Enclosure DE2-24 Capacity - ,,2,ACTIVE,3,27.10.2022,26.10.2023,17,28.10.2016,34579373,1,20884533
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,3,27.10.2022,26.10.2023,15,28.10.2016,34579373,0,20884533
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,3,27.10.2022,26.10.2023,15,28.10.2016,34579373,0,20884533
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,3,27.10.2022,26.10.2023,15,28.10.2016,34579373,0,20884533
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,3,27.10.2022,26.10.2023,15,28.10.2016,34579373,0,20884533
-Paysafe Bulgaria EOOD,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,3,3.4.2022,2.4.2023,26,26.2.2019,36031670,0,22163077
-Paysafe,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,3,25.5.2022,24.5.2023,16,25.5.2016,34277181,0,20638736
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,2,26.3.2022,25.3.2023,13,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,2,26.3.2022,25.3.2023,13,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,2,ACTIVE,2,26.3.2022,25.3.2023,13,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,1,ACTIVE,1,16.5.2022,15.5.2023,8,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,1,ACTIVE,1,16.5.2022,15.5.2023,8,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,1,ACTIVE,1,16.5.2022,15.5.2023,8,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,1,ACTIVE,1,16.5.2022,15.5.2023,8,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,1,ACTIVE,1,16.5.2022,15.5.2023,8,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,1,ACTIVE,1,16.5.2022,15.5.2023,8,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,1,ACTIVE,1,16.5.2022,15.5.2023,8,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,Sun Rack Hardware,Sun Rack Hardware - ,,1,ACTIVE,1,16.5.2022,15.5.2023,8,18.5.2017,34980835,0,21175639
-Paysafe Bulgaria EOOD,Order Management,Order Management - Application User Perpetual,Application User Perpetual,2,ACTIVE,0,1.1.2022,31.12.2022,23924,20.1.2017,14365,0,21040186
-Paysafe,Financials,Financials - Application User Perpetual,Application User Perpetual,55,ACTIVE,0,1.1.2022,31.12.2022,0,26.5.2021,715111,0,22354181
-Paysafe Payment Processing Solutions LLC,eBusiness Suite Professional,eBusiness Suite Professional - Professional User Perpetual,Professional User Perpetual,70,ACTIVE,0,1.1.2022,31.12.2022,109200,22.5.2019,9281938,0,22340765
-MERCHANT'S CHOICE PAYMENT SOLUTIONS,Sun SPARC Enterprise T4-1,Sun SPARC Enterprise T4-1 - ,,1,ACTIVE,0,4.8.2022,3.8.2023,0,4.8.2014,32898582,0,19625995
-MERCHANT'S CHOICE PAYMENT SOLUTIONS,Sun SPARC Enterprise T4-1,Sun SPARC Enterprise T4-1 - ,,1,ACTIVE,0,4.8.2022,3.8.2023,0,4.8.2014,32898582,0,19625995
-Paysafe,Server Spares,Server Spares - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine FLEX X6-2 Database Server,Exadata Database Machine FLEX X6-2 Database Server - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine X6-2 Eighth Rack,Exadata Database Machine X6-2 Eighth Rack - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine X6-2 Eighth Rack,Exadata Database Machine X6-2 Eighth Rack - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine X6-2 Eighth Rack,Exadata Database Machine X6-2 Eighth Rack - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine X6-2 Eighth Rack,Exadata Database Machine X6-2 Eighth Rack - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine X6-2 Hardware,Exadata Database Machine X6-2 Hardware - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,9,20638735
-Paysafe,Exadata Database Machine X6-2 Hardware,Exadata Database Machine X6-2 Hardware - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,9,20638735
-Paysafe,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine FLEX X6-2 Database Server,Exadata Database Machine FLEX X6-2 Database Server - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine X6-2 Eighth Rack,Exadata Database Machine X6-2 Eighth Rack - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine X6-2 Eighth Rack,Exadata Database Machine X6-2 Eighth Rack - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine X6-2 Hardware,Exadata Database Machine X6-2 Hardware - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,9,20638735
-Paysafe,Exadata Database Machine X6-2 Hardware,Exadata Database Machine X6-2 Hardware - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,9,20638735
-Paysafe,Server Spares,Server Spares - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Server Spares,Server Spares - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Server Spares,Server Spares - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine FLEX X6-2 Database Server,Exadata Database Machine FLEX X6-2 Database Server - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,Exadata Database Machine FLEX X6-2 Database Server,Exadata Database Machine FLEX X6-2 Database Server - ,,1,ACTIVE,0,24.5.2022,23.5.2023,0,24.5.2016,34277180,0,20638735
-Paysafe,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,25.5.2022,24.5.2023,0,25.5.2016,34277181,0,20638736
-Paysafe,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,25.5.2022,24.5.2023,0,25.5.2016,34277181,0,20638736
-Paysafe,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,25.5.2022,24.5.2023,0,25.5.2016,34277181,0,20638736
-Paysafe,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,25.5.2022,24.5.2023,0,25.5.2016,34277181,0,20638736
-Paysafe,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,25.5.2022,24.5.2023,0,25.5.2016,34277181,0,20638736
-Paysafe,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,25.5.2022,24.5.2023,0,25.5.2016,34277181,0,20638736
-Paysafe,Exadata Database Machine FLEX X6-2 Database Server,Exadata Database Machine FLEX X6-2 Database Server - ,,1,ACTIVE,0,26.5.2022,25.5.2023,0,26.5.2016,34283829,0,20643897
-Paysafe,Server Spares,Server Spares - ,,1,ACTIVE,0,26.5.2022,25.5.2023,0,26.5.2016,34283829,0,20643897
-Paysafe,Server Spares,Server Spares - ,,1,ACTIVE,0,26.5.2022,25.5.2023,0,26.5.2016,34283829,0,20643897
-Paysafe,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,26.5.2022,25.5.2023,0,26.5.2016,34283829,0,20643897
-Paysafe,Exadata Database Machine X6-2 Eighth Rack,Exadata Database Machine X6-2 Eighth Rack - ,,1,ACTIVE,0,26.5.2022,25.5.2023,0,26.5.2016,34283829,0,20643897
-Paysafe,Exadata Database Machine FLEX X6-2 Database Server,Exadata Database Machine FLEX X6-2 Database Server - ,,1,ACTIVE,0,26.5.2022,25.5.2023,0,26.5.2016,34283829,0,20643897
-Paysafe,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,26.5.2022,25.5.2023,0,26.5.2016,34283829,0,20643897
-Paysafe,Exadata Database Machine X6-2 Hardware,Exadata Database Machine X6-2 Hardware - ,,1,ACTIVE,0,26.5.2022,25.5.2023,0,26.5.2016,34283829,9,20643897
-Paysafe,Exadata Database Machine X6-2 Eighth Rack,Exadata Database Machine X6-2 Eighth Rack - ,,1,ACTIVE,0,26.5.2022,25.5.2023,0,26.5.2016,34283829,0,20643897
-Paysafe,Exadata Database Machine X6-2 Eighth Rack,Exadata Database Machine X6-2 Eighth Rack - ,,1,ACTIVE,0,26.5.2022,25.5.2023,0,26.5.2016,34283829,0,20643897
-Paysafe,Exadata Database Machine X6-2 Hardware,Exadata Database Machine X6-2 Hardware - ,,1,ACTIVE,0,26.5.2022,25.5.2023,0,26.5.2016,34283829,9,20643897
-Paysafe Bulgaria EOOD,ZFS Storage ZS5-2,ZFS Storage ZS5-2 - ,,1,ACTIVE,0,27.10.2022,26.10.2023,0,28.10.2016,34579373,8,20884533
-Paysafe Bulgaria EOOD,ZFS Storage ZS5-2,ZFS Storage ZS5-2 - ,,1,ACTIVE,0,27.10.2022,26.10.2023,0,28.10.2016,34579373,8,20884533
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE2-24 Capacity,Oracle Storage Drive Enclosure DE2-24 Capacity - ,,1,ACTIVE,0,27.10.2022,26.10.2023,0,28.10.2016,34579373,1,20884533
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE2-24 Capacity,Oracle Storage Drive Enclosure DE2-24 Capacity - ,,1,ACTIVE,0,27.10.2022,26.10.2023,0,28.10.2016,34579373,1,20884533
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE2-24 Capacity,Oracle Storage Drive Enclosure DE2-24 Capacity - ,,1,ACTIVE,0,27.10.2022,26.10.2023,0,28.10.2016,34579373,1,20884533
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE2-24 Capacity,Oracle Storage Drive Enclosure DE2-24 Capacity - ,,1,ACTIVE,0,27.10.2022,26.10.2023,0,28.10.2016,34579373,1,20884533
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE2-24 Capacity,Oracle Storage Drive Enclosure DE2-24 Capacity - ,,1,ACTIVE,0,27.10.2022,26.10.2023,0,28.10.2016,34579373,1,20884533
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE2-24 Capacity,Oracle Storage Drive Enclosure DE2-24 Capacity - ,,1,ACTIVE,0,27.10.2022,26.10.2023,0,28.10.2016,34579373,1,20884533
-Paysafe Bulgaria EOOD,Exadata Database Machine FLEX X6-2 Database Server,Exadata Database Machine FLEX X6-2 Database Server - ,,1,ACTIVE,0,19.1.2022,18.1.2023,0,23.1.2017,34769722,0,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine FLEX X6-2 Database Server,Exadata Database Machine FLEX X6-2 Database Server - ,,1,ACTIVE,0,19.1.2022,18.1.2023,0,23.1.2017,34769722,0,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine FLEX X6-2 Database Server,Exadata Database Machine FLEX X6-2 Database Server - ,,1,ACTIVE,0,19.1.2022,18.1.2023,0,23.1.2017,34769722,0,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,19.1.2022,18.1.2023,0,23.1.2017,34769722,0,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine FLEX X6-8 Storage Server,Exadata Database Machine FLEX X6-8 Storage Server - ,,1,ACTIVE,0,19.1.2022,18.1.2023,0,23.1.2017,34769722,0,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine FLEX X6-8 Storage Server,Exadata Database Machine FLEX X6-8 Storage Server - ,,1,ACTIVE,0,19.1.2022,18.1.2023,0,23.1.2017,34769722,0,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine FLEX X6-8 Storage Server,Exadata Database Machine FLEX X6-8 Storage Server - ,,1,ACTIVE,0,19.1.2022,18.1.2023,0,23.1.2017,34769722,0,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,19.1.2022,18.1.2023,0,23.1.2017,34769722,0,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,19.1.2022,18.1.2023,0,23.1.2017,34769722,0,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine X6-2 Hardware,Exadata Database Machine X6-2 Hardware - ,,1,ACTIVE,0,19.1.2022,18.1.2023,0,23.1.2017,34769722,5,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine X6-2 Hardware,Exadata Database Machine X6-2 Hardware - ,,1,ACTIVE,0,19.1.2022,18.1.2023,0,23.1.2017,34769722,5,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,19.1.2022,18.1.2023,0,23.1.2017,34769722,0,21016686
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,16.5.2022,15.5.2023,0,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,16.5.2022,15.5.2023,0,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,16.5.2022,15.5.2023,0,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,16.5.2022,15.5.2023,0,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,16.5.2022,15.5.2023,0,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,16.5.2022,15.5.2023,0,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,16.5.2022,15.5.2023,0,18.5.2017,34980835,0,21175639
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,16.5.2022,15.5.2023,0,18.5.2017,34980835,0,21175639
-Paysafe Bulgaria EOOD,Exadata Database Machine X7-2 Hardware,Exadata Database Machine X7-2 Hardware - ,,1,ACTIVE,0,16.3.2022,15.3.2023,0,23.3.2018,35512581,8,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine X7-2 Hardware,Exadata Database Machine X7-2 Hardware - ,,1,ACTIVE,0,16.3.2022,15.3.2023,0,23.3.2018,35512581,8,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine X7-2 Hardware,Exadata Database Machine X7-2 Hardware - ,,1,ACTIVE,0,16.3.2022,15.3.2023,0,23.3.2018,35512581,8,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,16.3.2022,15.3.2023,0,23.3.2018,35512581,0,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,16.3.2022,15.3.2023,0,23.3.2018,35512581,0,21016686
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,21.3.2022,20.3.2023,0,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,21.3.2022,20.3.2023,0,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,21.3.2022,20.3.2023,0,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,ZFS Storage ZS5-2,ZFS Storage ZS5-2 - ,,1,ACTIVE,0,21.3.2022,20.3.2023,0,21.3.2018,35520250,1,21698646
-Paysafe Technologies Inc.,ZFS Storage ZS5-2,ZFS Storage ZS5-2 - ,,1,ACTIVE,0,21.3.2022,20.3.2023,0,21.3.2018,35520250,1,21698646
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,21.3.2022,20.3.2023,0,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,21.3.2022,20.3.2023,0,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,21.3.2022,20.3.2023,0,21.3.2018,35520250,0,21698646
-Paysafe Technologies Inc.,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,26.3.2022,25.3.2023,0,26.3.2018,35531188,0,21707283
-Paysafe Technologies Inc.,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,26.3.2022,25.3.2023,0,26.3.2018,35531188,0,21707283
-Paysafe Technologies Inc.,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,26.3.2022,25.3.2023,0,26.3.2018,35531188,0,21707283
-Paysafe Technologies Inc.,Exadata Database Machine X7-2 Hardware,Exadata Database Machine X7-2 Hardware - ,,1,ACTIVE,0,26.3.2022,25.3.2023,0,26.3.2018,35531188,1,21707283
-Paysafe Technologies Inc.,Exadata Database Machine X7-2 Hardware,Exadata Database Machine X7-2 Hardware - ,,1,ACTIVE,0,26.3.2022,25.3.2023,0,26.3.2018,35531188,1,21707283
-Paysafe Technologies Inc.,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,26.3.2022,25.3.2023,0,26.3.2018,35531188,0,21707283
-Paysafe Technologies Inc.,Exadata Database Machine X7-2 Hardware,Exadata Database Machine X7-2 Hardware - ,,1,ACTIVE,0,26.3.2022,25.3.2023,0,26.3.2018,35531188,1,21707283
-Paysafe Technologies Inc.,Exadata Database Machine X7-2 Hardware,Exadata Database Machine X7-2 Hardware - ,,1,ACTIVE,0,26.3.2022,25.3.2023,0,26.3.2018,35531188,1,21707283
-Paysafe Technologies Inc.,Exadata Database Machine Expansion Switch Kit,Exadata Database Machine Expansion Switch Kit - ,,1,ACTIVE,0,26.3.2022,25.3.2023,0,26.3.2018,35531188,0,21707283
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,29.3.2022,28.3.2023,0,17.10.2018,35531189,0,21707264
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,29.3.2022,28.3.2023,0,5.4.2018,35531189,0,21707264
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,29.3.2022,28.3.2023,0,5.4.2018,35531189,0,21707264
-Paysafe Technologies Inc.,ZFS Storage ZS5-2,ZFS Storage ZS5-2 - ,,1,ACTIVE,0,29.3.2022,28.3.2023,0,17.10.2018,35531189,1,21707264
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,29.3.2022,28.3.2023,0,17.10.2018,35531189,0,21707264
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,26.3.2022,25.3.2023,0,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,26.3.2022,25.3.2023,0,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,26.3.2022,25.3.2023,0,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,26.3.2022,25.3.2023,0,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,26.3.2022,25.3.2023,0,26.3.2018,35531190,0,21707280
-Paysafe Technologies Inc.,SPARC T7-1 Server,SPARC T7-1 Server - ,,1,ACTIVE,0,26.3.2022,25.3.2023,0,26.3.2018,35531190,0,21707280
-Paysafe Bulgaria EOOD,ZFS Storage ZS5-2,ZFS Storage ZS5-2 - ,,1,ACTIVE,0,3.4.2022,2.4.2023,0,3.4.2019,36031670,8,22163077
-Paysafe Bulgaria EOOD,ZFS Storage ZS5-2,ZFS Storage ZS5-2 - ,,1,ACTIVE,0,3.4.2022,2.4.2023,0,3.4.2019,36031670,8,22163077
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,3.4.2022,2.4.2023,0,26.2.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,3.4.2022,2.4.2023,0,26.2.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,3.4.2022,2.4.2023,0,26.2.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,3.4.2022,2.4.2023,0,26.2.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,3.4.2022,2.4.2023,0,26.2.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,3.4.2022,2.4.2023,0,26.2.2019,36031670,0,22163077
-Paysafe Bulgaria EOOD,ZFS Storage ZS5-2,ZFS Storage ZS5-2 - ,,1,ACTIVE,0,9.4.2022,8.4.2023,0,9.4.2019,36031671,8,22163075
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,9.4.2022,8.4.2023,0,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,9.4.2022,8.4.2023,0,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,9.4.2022,8.4.2023,0,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,9.4.2022,8.4.2023,0,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,9.4.2022,8.4.2023,0,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,9.4.2022,8.4.2023,0,26.2.2019,36031671,0,22163075
-Paysafe Bulgaria EOOD,ZFS Storage ZS5-2,ZFS Storage ZS5-2 - ,,1,ACTIVE,0,9.4.2022,8.4.2023,0,9.4.2019,36031671,8,22163075
-Paysafe Technology Services Austria GmbH,Exadata Database Machine X8-2 Hardware,Exadata Database Machine X8-2 Hardware - ,,1,ACTIVE,0,29.5.2022,28.5.2023,0,29.5.2019,36152924,0,22303687
-Paysafe Technology Services Austria GmbH,Exadata Database Machine X8-2 Hardware,Exadata Database Machine X8-2 Hardware - ,,1,ACTIVE,0,29.5.2022,28.5.2023,0,29.5.2019,36152924,0,22303687
-Paysafe Bulgaria EOOD,Exadata Database Machine X8-2 Hardware,Exadata Database Machine X8-2 Hardware - ,,1,ACTIVE,0,7.11.2021,6.11.2022,0,7.11.2019,36377819,0,22617816
-Paysafe Bulgaria EOOD,Exadata Database Machine X8-2 Hardware,Exadata Database Machine X8-2 Hardware - ,,1,ACTIVE,0,7.11.2021,6.11.2022,0,7.11.2019,36377819,0,22617816
-Paysafe Bulgaria EOOD,Exadata Database Machine X8-2 Storage Server Upgrades,Exadata Database Machine X8-2 Storage Server Upgrades - ,,1,ACTIVE,0,6.1.2022,5.1.2023,0,6.1.2021,36863420,0,21016686
-Paysafe Bulgaria EOOD,Exadata Database Machine X8-2 Storage Server Upgrades,Exadata Database Machine X8-2 Storage Server Upgrades - ,,1,ACTIVE,0,6.1.2022,5.1.2023,0,6.1.2021,36863420,0,21016686
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,29.12.2021,5.1.2023,0,29.12.2020,36863420,0,23302591
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,29.12.2021,5.1.2023,0,29.12.2020,36863420,0,23302591
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,29.12.2021,5.1.2023,0,29.12.2020,36863420,0,23302591
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,29.12.2021,5.1.2023,0,29.12.2020,36863420,0,23302591
-Paysafe Technology Services Austria GmbH,Exadata Database Machine X8-2 Storage Server Upgrades,Exadata Database Machine X8-2 Storage Server Upgrades - ,,1,ACTIVE,0,29.5.2022,28.5.2023,0,31.12.2020,36863421,0,22303687
-Paysafe Technology Services Austria GmbH,Exadata Database Machine X8-2 Storage Server Upgrades,Exadata Database Machine X8-2 Storage Server Upgrades - ,,1,ACTIVE,0,29.5.2022,28.5.2023,0,31.12.2020,36863421,0,22303687
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,29.5.2022,28.5.2023,0,31.12.2020,36863421,0,23302598
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,29.5.2022,28.5.2023,0,31.12.2020,36863421,0,23302598
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,29.5.2022,28.5.2023,0,31.12.2020,36863421,0,23302598
-Paysafe Bulgaria EOOD,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,29.5.2022,28.5.2023,0,31.12.2020,36863421,0,23302598
-Paysafe Bulgaria EOOD,SPARC T8-1 Server,SPARC T8-1 Server - ,,1,ACTIVE,0,28.4.2022,27.4.2023,0,28.4.2021,36985388,0,23489251
-Paysafe Bulgaria EOOD,SPARC T8-1 Server,SPARC T8-1 Server - ,,1,ACTIVE,0,28.4.2022,27.4.2023,0,28.4.2021,36985388,0,23489251
-Paysafe Bulgaria EOOD,Exadata Database Machine X9M-2 Hardware,Exadata Database Machine X9M-2 Hardware - ,,1,ACTIVE,0,15.6.2022,14.6.2023,0,15.6.2021,37036496,0,23572342
-Paysafe Bulgaria EOOD,Exadata Database Machine X9M-2 Hardware,Exadata Database Machine X9M-2 Hardware - ,,1,ACTIVE,0,15.6.2022,14.6.2023,0,15.6.2021,37036496,0,23572342
-Paysafe Technologies Inc.,ZFS Storage ZS9-2 TAA Compliant,ZFS Storage ZS9-2 TAA Compliant - ,,1,ACTIVE,0,11.4.2022,10.4.2023,0,11.4.2022,39737349,0,24260401
-Paysafe Technologies Inc.,ZFS Storage ZS9-2 TAA Compliant,ZFS Storage ZS9-2 TAA Compliant - ,,1,ACTIVE,0,11.4.2022,10.4.2023,0,11.4.2022,39737349,0,24260401
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,6.10.2022,5.10.2023,0,6.10.2022,39737349,0,24336928
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,6.10.2022,5.10.2023,0,6.10.2022,39737349,0,24336928
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,6.10.2022,5.10.2023,0,6.10.2022,39737349,0,24336928
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,6.10.2022,5.10.2023,0,6.10.2022,39737349,0,24336928
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,6.10.2022,5.10.2023,0,6.10.2022,39737349,0,24336928
-Paysafe Technologies Inc.,Oracle Storage Drive Enclosure DE3-24 Capacity,Oracle Storage Drive Enclosure DE3-24 Capacity - ,,1,ACTIVE,0,6.10.2022,5.10.2023,0,6.10.2022,39737349,0,24336928
-PaySafe Group,PaaS and IaaS Universal Credits,PaaS and IaaS Universal Credits - CURRENCY UNIT,CURRENCY UNIT,0,ACTIVE,0,3.10.2022,1.12.2022,0,3.10.2022,40518268,0,25973117
-PaySafe Group,Cloud Credit Programs for PaaS and IaaS,Cloud Credit Programs for PaaS and IaaS - Universal Credits,Universal Credits,0,ACTIVE,0,3.10.2022,1.12.2022,0,3.10.2022,40518268,0,25973117
+"Customer Name","Product Name","Product Description","Quantity","Purchase Amount (CD)","Purchase Start Date","Order Number","Contract Start Date","Contract End Date","Contract ARR (CD)","SRs","CSI#","Purchase Level"
+"MKB Bank Nyrt.","PaaS and IaaS Universal Credits","Oracle PaaS and IaaS Universal Credits","325003653","0","2020-12-10","35136","2020-12-10","2024-12-09","268512","0","23268305",""
+"MKB Bank Nyrt.","PaaS and IaaS Universal Credits","Oracle PaaS and IaaS Universal Credits","65270202","0","2021-11-25","39057107","2021-11-25","2022-11-24","215848","0","23268305",""
+"MKB Bank Nyrt.","Oracle Database Enterprise Edition","Oracle Database Enterprise Edition - Processor Perpetual","26","300610","2011-11-30","26059","2022-01-01","2022-12-31","211263","18","18297321","FULL USE"
+"MKB Bank Nyrt.","Exadata Database Machine X5-2 Hardware","Exadata Database Machine X5-2: model family","1","0","2015-12-23","33970067","2021-12-01","2022-12-31","162006","0","20386874",""
+"MKB Bank Nyrt.","Gen 2 Exadata Cloud at Customer Infrastructure - X8M - Quarter Rack - Non-metered","Gen 2 Exadata Cloud at Customer Infrastructure - X8M - Quarter Rack - Non-metered - Hosted Environment Per Month","1","0","2020-12-22","35136","2020-12-22","2024-12-21","121278","0","23268305",""
+"MKB Bank Nyrt.","Gen 2 Exadata Cloud at Customer Infrastructure - X8M - Quarter Rack - Non-metered","Gen 2 Exadata Cloud at Customer Infrastructure - X8M - Quarter Rack - Non-metered - Hosted Environment Per Month","1","0","2020-12-23","35137","2020-12-23","2024-12-22","121278","0","23268313",""
+"MKB Bank Nyrt.","Oracle Database Enterprise Edition","Oracle Database Enterprise Edition - Processor Perpetual","22","356693","2018-12-27","33212","2021-12-27","2022-12-31","112705","18","22098185","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Java SE - Subscription","Oracle Java SE Subscription - Processor","500","0","2021-08-12","38401134","2021-08-12","2022-08-11","112000","0","23802551","FULL USE"
+"MKB Bank Nyrt.","Oracle Database Enterprise Edition","Oracle Database Enterprise Edition - Named User Plus Perpetual","1200","277486","2011-11-30","26059","2022-01-01","2022-12-31","103488","18","18297321","FULL USE"
+"MKB Bank Nyrt.","Gen 2 Exadata Cloud@Customer Infrastructure - Quarter Rack - X9M - Non Metered - PaaS","Gen 2 Exadata Cloud@Customer Infrastructure - Quarter Rack - X9M - Non-metered - Hosted Environment Per Month","1","0","2022-01-14","39063408","2022-01-14","2026-01-13","99519","0","24048143",""
+"MKB Bank Nyrt.","Gen 2 Exadata Cloud@Customer Infrastructure - Quarter Rack - X9M - Non Metered - PaaS","Gen 2 Exadata Cloud@Customer Infrastructure - Quarter Rack - X9M - Non-metered - Hosted Environment Per Month","1","0","2022-01-14","38971190","2022-01-14","2026-01-13","99519","0","24126306",""
+"MKB Bank Nyrt.","Oracle Database Enterprise Edition","Oracle Database Enterprise Edition - Processor Perpetual","8","0","2020-12-31","35267","2021-12-31","2022-12-31","55628","18","23339079","FULL USE"
+"MKB Bank Nyrt.","Active Data Guard","Oracle Active Data Guard - Processor Perpetual","44","172714","2018-12-27","33212","2021-12-27","2022-12-31","54573","0","22098185","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Oracle Database Enterprise Edition","Oracle Database Enterprise Edition - Processor Perpetual","12","175476","2015-11-27","30415","2022-01-01","2022-12-31","51607","18","20387469","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Oracle Database Enterprise Edition","Oracle Database Enterprise Edition - Processor Perpetual","10","173037","2017-11-30","32262","2021-11-30","2022-12-31","50928","18","21474192","RESTRICTED USE"
+"MKB Bank Nyrt.","Real Application Clusters","Oracle Real Application Clusters - Named User Plus Perpetual","700","134362","2011-11-30","26059","2022-01-01","2022-12-31","50110","0","18297321","FULL USE"
+"MKB Bank Nyrt.","Real Application Clusters","Oracle Real Application Clusters - Processor Perpetual","22","123165","2011-11-30","26059","2022-01-01","2022-12-31","45934","0","18297321","FULL USE"
+"MKB Bank Nyrt.","Oracle Database Enterprise Edition","Oracle Database Enterprise Edition - Named User Plus Perpetual","400","138429","2017-11-30","32262","2021-11-30","2022-12-31","40743","18","21474192","RESTRICTED USE"
+"MKB Bank Nyrt.","Real Application Clusters","Oracle Real Application Clusters - Processor Perpetual","12","94208","2018-12-27","33212","2021-12-27","2022-12-31","29767","0","22098185","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Exadata Database Machine X5-2 Eighth Rack","Exadata Database Machine X5-2 HC Eighth Rack","1","155696","2015-12-23","33970067","2022-01-01","2022-12-31","27449","2","20386874",""
+"MKB Bank Nyrt.","Exadata Database Machine X5-2 Eighth Rack","Exadata Database Machine X5-2 HC Eighth Rack","1","155696","2015-12-23","33970067","2022-01-01","2022-12-31","27447","2","20387608",""
+"MKB Bank Nyrt.","Partitioning","Oracle Partitioning - Processor Perpetual","22","86357","2018-12-27","33212","2021-12-27","2022-12-31","27286","0","22098185","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Oracle Database Enterprise Edition","Oracle Database Enterprise Edition - Named User Plus Perpetual","300","87738","2015-11-27","30415","2022-01-01","2022-12-31","25803","18","20387469","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Partitioning","Oracle Partitioning - Processor Perpetual","22","61583","2011-11-30","26059","2022-01-01","2022-12-31","22967","0","18297321","FULL USE"
+"MKB Bank Nyrt.","Exadata Database Machine X7-2 Eighth Rack","Exadata Database Machine X7-2 High Capacity (HC) Eighth Rack","1","174459","2019-01-04","35938270","2019-01-04","2024-01-03","20935","0","22063355",""
+"MKB Bank Nyrt.","Real Application Clusters","Oracle Real Application Clusters - Processor Perpetual","10","0","2019-03-20","33460","2022-01-01","2022-07-31","20879","0","22219736","FULL USE"
+"MKB Bank Nyrt.","WebLogic Suite for Oracle Applications","Oracle WebLogic Suite for Oracle Applications - Processor Perpetual","16","83618","2015-11-27","30415","2022-01-01","2022-12-31","20478","0","20387469","FULL USE"
+"MKB Bank Nyrt.","Exadata Database Machine X5-2 Eighth Rack to Quarter Rack Upgrade","Exadata Database Machine X5-2 Eighth Rack to Quarter Rack Database Server Upgrade","2","137332","2017-12-04","35374656","2021-11-30","2022-12-31","18359","0","21478674",""
+"MKB Bank Nyrt.","Exadata Storage Server Software - with Linux Support","Exadata Storage Server Software - Disk Drive Perpetual","18","71680","2018-11-29","35938270","2019-11-29","2023-11-28","18135","9","22063354","FULL USE"
+"MKB Bank Nyrt.","Diagnostics Pack","Oracle Diagnostics Pack - Processor Perpetual","22","56320","2018-12-27","33212","2021-12-27","2022-12-31","17795","0","22098185","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","WebLogic Server Enterprise Edition","Oracle WebLogic Server Enterprise Edition - Processor Perpetual","5","63347","2020-08-10","34883","2021-08-10","2022-08-09","16027","1","23113814","FULL USE"
+"MKB Bank Nyrt.","Exadata Storage Server Software - with Linux Support","Exadata Storage Server Software - Disk Drive Perpetual","18","57161","2015-11-26","33970067","2022-01-01","2022-12-31","13999","9","20385656","FULL USE"
+"MKB Bank Nyrt.","Exadata Storage Server Software - with Linux Support","Exadata Storage Server Software - Disk Drive Perpetual","18","57161","2015-11-26","33970067","2022-01-01","2022-12-31","13999","9","20385656","FULL USE"
+"MKB Bank Nyrt.","Oracle Database Enterprise Edition","Oracle Database Enterprise Edition - Processor Perpetual","2","47407","2016-06-17","31037","2022-01-01","2022-12-31","13757","18","20685006","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Partitioning","Oracle Partitioning - Processor Perpetual","8","42569","2020-12-31","35267","2021-12-31","2022-12-31","12924","0","23339079","FULL USE"
+"MKB Bank Nyrt.","Partitioning","Oracle Partitioning - Processor Perpetual","12","42484","2015-11-27","30415","2022-01-01","2022-12-31","12494","0","20387469","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Partitioning","Oracle Partitioning - Processor Perpetual","10","41893","2017-11-30","32262","2021-11-30","2022-12-31","12330","0","21474192","RESTRICTED USE"
+"MKB Bank Nyrt.","Tuning Pack","Oracle Tuning Pack - Processor Perpetual","22","37547","2018-12-27","33212","2021-12-27","2022-12-31","11864","0","22098185","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Diagnostics Pack","Oracle Diagnostics Pack - Processor Perpetual","26","31643","2011-11-30","26059","2022-01-01","2022-12-31","11801","0","18297321","FULL USE"
+"MKB Bank Nyrt.","Tuning Pack","Oracle Tuning Pack - Processor Perpetual","26","31643","2011-11-30","26059","2022-01-01","2022-12-31","11801","0","18297321","FULL USE"
+"MKB Bank Nyrt.","Tuning Pack","Oracle Tuning Pack - Named User Plus Perpetual","1200","29210","2011-11-30","26059","2022-01-01","2022-12-31","10893","0","18297321","FULL USE"
+"MKB Bank Nyrt.","Diagnostics Pack","Oracle Diagnostics Pack - Named User Plus Perpetual","1200","29210","2011-11-30","26059","2022-01-01","2022-12-31","10893","0","18297321","FULL USE"
+"MKB Bank Nyrt.","Partitioning","Oracle Partitioning - Named User Plus Perpetual","400","33514","2017-11-30","32262","2021-11-30","2022-12-31","9864","0","21474192","RESTRICTED USE"
+"MKB Bank Nyrt.","Diagnostics Pack","Oracle Diagnostics Pack - Processor Perpetual","8","27762","2020-12-31","35267","2021-12-31","2022-12-31","8429","0","23339079","FULL USE"
+"MKB Bank Nyrt.","Directory Services","Directory Services - Processor Perpetual","2","23251","2007-08-21","19312","2022-01-01","2022-12-31","8184","0","15589880","FULL USE"
+"MKB Bank Nyrt.","Diagnostics Pack","Oracle Diagnostics Pack - Processor Perpetual","12","27707","2015-11-27","30415","2022-01-01","2022-12-31","8148","0","20387469","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Diagnostics Pack","Oracle Diagnostics Pack - Processor Perpetual","10","27322","2017-11-30","32262","2021-11-30","2022-12-31","8041","0","21474192","RESTRICTED USE"
+"MKB Bank Nyrt.","Diagnostics Pack","Oracle Diagnostics Pack - Named User Plus Perpetual","400","21857","2017-11-30","32262","2021-11-30","2022-12-31","6433","0","21474192","RESTRICTED USE"
+"MKB Bank Nyrt.","Exadata Memory Expansion X7-2","Memory upgrade 768 GB (twelve 64 GB) DIMM (for field installation)","3","52338","2019-01-04","35938270","2019-01-04","2024-01-03","6281","0","22065367",""
+"MKB Bank Nyrt.","Partitioning","Oracle Partitioning - Named User Plus Perpetual","300","21242","2015-11-27","30415","2022-01-01","2022-12-31","6247","0","20387469","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Tuning Pack","Oracle Tuning Pack - Processor Perpetual","8","18508","2020-12-31","35267","2021-12-31","2022-12-31","5619","0","23339079","FULL USE"
+"MKB Bank Nyrt.","Analytics Publisher","Oracle Analytics Publisher or Oracle Business Intelligence Publisher - Processor Perpetual","1","22955","2016-06-17","31037","2022-01-01","2022-12-31","5547","0","20685006","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Warehouse Builder Enterprise ETL","Warehouse Builder Enterprise ETL - Processor Perpetual","4","15501","2007-08-21","19312","2022-01-01","2022-12-31","5456","0","15589880","FULL USE"
+"MKB Bank Nyrt.","Tuning Pack","Oracle Tuning Pack - Processor Perpetual","12","18471","2015-11-27","30415","2022-01-01","2022-12-31","5432","0","20387469","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Tuning Pack","Oracle Tuning Pack - Processor Perpetual","10","18214","2017-11-30","32262","2021-11-30","2022-12-31","5361","0","21474192","RESTRICTED USE"
+"MKB Bank Nyrt.","Analytics Publisher for Oracle Applications","Oracle Analytics Publisher for Oracle Applications or OBI Publisher for Oracle Applications - Processor Perpetual","3","20109","2017-11-30","32262","2021-11-30","2022-12-31","4928","0","21474192","RESTRICTED USE"
+"MKB Bank Nyrt.","Exadata Database Machine FLEX X7-2 Database Server","Exadata Database Server X7-2 with 768 GB (twelve 64 GB) plus Infiniband Infrastructure (for field installation)","1","40581","2019-01-04","35938270","2019-01-04","2024-01-03","4870","0","22063355",""
+"MKB Bank Nyrt.","WebLogic Suite for Oracle Applications","Oracle WebLogic Suite for Oracle Applications - Processor Perpetual","2","17965","2016-06-17","31037","2022-01-01","2022-12-31","4341","0","20685006","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: base with 1 SPARC M7 32-core 4.13 GHz processor (for factory installation)","1","24834","2016-10-03","34546385","2022-01-01","2022-12-31","4290","2","20865706",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: base with 1 SPARC M7 32-core 4.13 GHz processor (for factory installation)","1","24834","2016-10-03","34546385","2022-01-01","2022-12-31","4290","2","20865706",""
+"MKB Bank Nyrt.","Tuning Pack","Oracle Tuning Pack - Named User Plus Perpetual","400","14572","2017-11-30","32262","2021-11-30","2022-12-31","4289","0","21474192","RESTRICTED USE"
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: base with 1 SPARC M7 32-core 4.13 GHz processor (for factory installation)","1","23140","2015-12-23","33970067","2022-01-01","2022-12-31","4080","2","20386875",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: base with 1 SPARC M7 32-core 4.13 GHz processor (for factory installation)","1","23140","2015-12-23","33970067","2022-01-01","2022-12-31","4080","2","20386875",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: base with 1 SPARC M7 32-core 4.13 GHz processor (for factory installation)","1","23140","2015-12-23","33970067","2022-01-01","2022-12-31","4079","2","20385657",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: base with 1 SPARC M7 32-core 4.13 GHz processor (for factory installation)","1","23140","2015-12-23","33970067","2022-01-01","2022-12-31","4079","2","20385657",""
+"MKB Bank Nyrt.","Diagnostics Pack","Oracle Diagnostics Pack - Named User Plus Perpetual","300","13853","2015-11-27","30415","2022-01-01","2022-12-31","4074","0","20387469","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Analytics Publisher for Oracle Applications","Oracle Analytics Publisher for Oracle Applications or OBI Publisher for Oracle Applications - Processor Perpetual","3","16027","2015-11-27","30415","2022-01-01","2022-12-31","3925","0","20387469","FULL USE"
+"MKB Bank Nyrt.","Partitioning","Oracle Partitioning - Processor Perpetual","2","11478","2016-06-17","31037","2022-01-01","2022-12-31","3331","0","20685006","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Unified Business Process Management Suite for Oracle Applications","Oracle Unified Business Process Management Suite for Oracle Applications - Processor Perpetual","2","13356","2015-11-27","30415","2022-01-01","2022-12-31","3271","0","20387469","FULL USE"
+"MKB Bank Nyrt.","SOA Suite for Oracle Middleware for Oracle Applications","Oracle SOA Suite for Oracle Middleware for Oracle Applications - Processor Perpetual","2","13356","2015-11-27","30415","2022-01-01","2022-12-31","3271","0","20387469","FULL USE"
+"MKB Bank Nyrt.","Exadata Memory Expansion X5-2","Memory Expansion Kit - Eight 32 GB DIMMs","2","15570","2015-12-23","33970067","2022-01-01","2022-12-31","2745","0","20385657",""
+"MKB Bank Nyrt.","Exadata Memory Expansion X5-2","Memory Expansion Kit - Eight 32 GB DIMMs","2","15570","2015-12-23","33970067","2022-01-01","2022-12-31","2745","0","20386875",""
+"MKB Bank Nyrt.","Warehouse Builder Enterprise ETL","Warehouse Builder Enterprise ETL - Named User Plus Perpetual","100","7750","2007-08-21","19308","2022-01-01","2022-12-31","2728","0","15589815","FULL USE"
+"MKB Bank Nyrt.","Tuning Pack","Oracle Tuning Pack - Named User Plus Perpetual","300","9236","2015-11-27","30415","2022-01-01","2022-12-31","2716","0","20387469","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Oracle Database Enterprise Edition","Oracle Database Enterprise Edition - Named User Plus Perpetual","25","8107","2018-12-27","33212","2021-12-27","2022-12-31","2561","18","22098185","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Internet Application Server Java Edition","Internet Application Server Java Edition - Processor Perpetual","4","7427","2008-05-08","20475","2022-01-01","2022-12-31","2441","0","15878913","FULL USE"
+"MKB Bank Nyrt.","Exadata Memory Expansion X5-2","Memory Expansion Kit - Eight 32 GB DIMMs","4","17166","2017-12-21","35374656","2021-12-21","2022-12-31","2295","0","21479996",""
+"MKB Bank Nyrt.","Diagnostics Pack","Oracle Diagnostics Pack - Processor Perpetual","2","7485","2016-06-17","31037","2022-01-01","2022-12-31","2172","0","20685006","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","SOA Suite for Oracle Middleware","Oracle SOA Suite for Oracle Middleware - Named User Plus Perpetual","20","8743","2017-11-30","32262","2021-11-30","2022-12-31","2143","0","21474192","RESTRICTED USE"
+"MKB Bank Nyrt.","WebLogic Suite for Oracle Applications","Oracle WebLogic Suite for Oracle Applications - Named User Plus Perpetual","160","8362","2015-11-27","30415","2022-01-01","2022-12-31","2048","0","20387469","FULL USE"
+"MKB Bank Nyrt.","Internet Developer Suite","Oracle Internet Developer Suite - Named User Plus Perpetual","3","5813","2007-08-21","19312","2022-01-01","2022-12-31","2046","0","15589880","FULL USE"
+"MKB Bank Nyrt.","Business Intelligence Suite Enterprise Edition","Business Intelligence Suite Enterprise Edition - Named User Plus Perpetual","10","5813","2007-08-21","19312","2022-01-01","2022-12-31","2046","0","15589880","FULL USE"
+"MKB Bank Nyrt.","WebLogic Suite for Oracle Applications","Oracle WebLogic Suite for Oracle Applications - Named User Plus Perpetual","120","7373","2018-12-27","33212","2021-12-27","2022-12-31","1940","0","22098185","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 LRDIMM (for factory installation)","16","10624","2015-12-23","33970067","2022-01-01","2022-12-31","1873","0","20385657",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 LRDIMM (for factory installation)","16","10624","2015-12-23","33970067","2022-01-01","2022-12-31","1873","0","20385657",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 LRDIMM (for factory installation)","16","10624","2015-12-23","33970067","2022-01-01","2022-12-31","1873","0","20386875",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 LRDIMM (for factory installation)","16","10624","2015-12-23","33970067","2022-01-01","2022-12-31","1873","0","20386875",""
+"MKB Bank Nyrt.","Tuning Pack","Oracle Tuning Pack - Processor Perpetual","2","4990","2016-06-17","31037","2022-01-01","2022-12-31","1448","0","20685006","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","WebLogic Suite for Oracle Applications","Oracle WebLogic Suite for Oracle Applications - Named User Plus Perpetual","90","5901","2017-11-30","32262","2021-11-30","2022-12-31","1446","0","21474192","RESTRICTED USE"
+"MKB Bank Nyrt.","Real Application Clusters","Oracle Real Application Clusters - Named User Plus Perpetual","25","3925","2018-12-27","33212","2021-12-27","2022-12-31","1240","0","22098185","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Advanced Support Gateway Server X5-2","Oracle Advanced Support Gateway Server X5-2","1","6791","2015-12-23","33970067","2022-01-01","2022-12-31","1197","0","20386875",""
+"MKB Bank Nyrt.","Advanced Support Gateway Server X5-2","Oracle Advanced Support Gateway Server X5-2","1","6791","2015-12-23","33970067","2022-01-01","2022-12-31","1197","0","20385657",""
+"MKB Bank Nyrt.","Partitioning","Oracle Partitioning - Named User Plus Perpetual","25","1963","2018-12-27","33212","2021-12-27","2022-12-31","620","0","22098185","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Sun 8Gb FC 2-port PCIe (Qlogic) HBA","StorageTek 8 Gb Fibre Channel PCIe HBA dual port QLogic (for factory Installation)","2","3123","2015-12-23","33970067","2022-01-01","2022-12-31","551","0","20385657",""
+"MKB Bank Nyrt.","Sun 8Gb FC 2-port PCIe (Qlogic) HBA","StorageTek 8 Gb Fibre Channel PCIe HBA dual port QLogic (for factory Installation)","2","3123","2015-12-23","33970067","2022-01-01","2022-12-31","551","0","20385657",""
+"MKB Bank Nyrt.","Sun 8Gb FC 2-port PCIe (Qlogic) HBA","StorageTek 8 Gb Fibre Channel PCIe HBA dual port QLogic (for factory Installation)","2","3123","2015-12-23","33970067","2022-01-01","2022-12-31","551","0","20386875",""
+"MKB Bank Nyrt.","Sun 8Gb FC 2-port PCIe (Qlogic) HBA","StorageTek 8 Gb Fibre Channel PCIe HBA dual port QLogic (for factory Installation)","2","3123","2015-12-23","33970067","2022-01-01","2022-12-31","551","0","20386875",""
+"MKB Bank Nyrt.","Unified Business Process Management Suite for Oracle Applications","Oracle Unified Business Process Management Suite for Oracle Applications - Named User Plus Perpetual","20","1676","2017-11-30","32262","2021-11-30","2022-12-31","411","0","21474192","RESTRICTED USE"
+"MKB Bank Nyrt.","Diagnostics Pack","Oracle Diagnostics Pack - Named User Plus Perpetual","25","1280","2018-12-27","33212","2021-12-27","2022-12-31","404","0","22098185","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","SOA Suite for Oracle Middleware for Oracle Applications","Oracle SOA Suite for Oracle Middleware for Oracle Applications - Named User Plus Perpetual","20","1394","2015-11-27","30415","2022-01-01","2022-12-31","341","0","20387469","FULL USE"
+"MKB Bank Nyrt.","Unified Business Process Management Suite for Oracle Applications","Oracle Unified Business Process Management Suite for Oracle Applications - Named User Plus Perpetual","20","1336","2015-11-27","30415","2022-01-01","2022-12-31","327","0","20387469","FULL USE"
+"MKB Bank Nyrt.","Ten Gb Transceivers","Dual rate transceiver: SFP+ SR. Support 1 Gb/sec and 10 Gb/sec dual rate","8","2488","2018-11-15","35886270","2018-11-15","2023-11-14","299","0","22014381",""
+"MKB Bank Nyrt.","Tuning Pack","Oracle Tuning Pack - Named User Plus Perpetual","25","853","2018-12-27","33212","2021-12-27","2022-12-31","270","0","22098185","LIMITED USE SPECIFIED APP"
+"MKB Bank Nyrt.","Analytics Publisher for Oracle Applications","Oracle Analytics Publisher for Oracle Applications or OBI Publisher for Oracle Applications - Named User Plus Perpetual","50","871","2015-11-27","30415","2022-01-01","2022-12-31","213","0","20387469","FULL USE"
+"MKB Bank Nyrt.","Ten Gb Transceivers","Dual rate transceiver: SFP+ SR. Support 1 Gb/sec and 10 Gb/sec dual rate","8","1742","2019-01-04","35938270","2019-01-04","2024-01-03","209","0","22065367",""
+"MKB Bank Nyrt.","Qlogic FC HBA","Sun Storage Dual 16 Gb Fibre Channel PCIe Universal HBA, Qlogic (for factory installation)","1","1185","2016-10-03","34546385","2022-01-01","2022-12-31","205","0","20865706",""
+"MKB Bank Nyrt.","Qlogic FC HBA","Sun Storage Dual 16 Gb Fibre Channel PCIe Universal HBA, Qlogic (for factory installation)","1","1185","2016-10-03","34546385","2022-01-01","2022-12-31","205","0","20865706",""
+"MKB Bank Nyrt.","Qlogic FC HBA","Sun Storage Dual 16 Gb Fibre Channel PCIe Universal HBA, Qlogic (for factory installation)","1","1185","2016-10-03","34546385","2022-01-01","2022-12-31","205","0","20865706",""
+"MKB Bank Nyrt.","Qlogic FC HBA","Sun Storage Dual 16 Gb Fibre Channel PCIe Universal HBA, Qlogic (for factory installation)","1","1185","2016-10-03","34546385","2022-01-01","2022-12-31","205","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","2 memory expansion boards (for factory installation)","1","1138","2016-10-03","34546385","2022-01-01","2022-12-31","197","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","2 memory expansion boards (for factory installation)","1","1138","2016-10-03","34546385","2022-01-01","2022-12-31","197","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","2 memory expansion boards (for factory installation)","1","1060","2015-12-23","33970067","2022-01-01","2022-12-31","187","0","20385657",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","2 memory expansion boards (for factory installation)","1","1060","2015-12-23","33970067","2022-01-01","2022-12-31","187","0","20386875",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","2 memory expansion boards (for factory installation)","1","1060","2015-12-23","33970067","2022-01-01","2022-12-31","187","0","20386875",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","2 memory expansion boards (for factory installation)","1","1060","2015-12-23","33970067","2022-01-01","2022-12-31","187","0","20385657",""
+"MKB Bank Nyrt.","Ten Gb Ethernet Adapters","Sun Dual Port 10GBase-T Adapter (for factory installation)","1","872","2016-10-03","34546385","2022-01-01","2022-12-31","151","0","20865706",""
+"MKB Bank Nyrt.","Ten Gb Ethernet Adapters","Sun Dual Port 10GBase-T Adapter (for factory installation)","1","872","2016-10-03","34546385","2022-01-01","2022-12-31","151","0","20865706",""
+"MKB Bank Nyrt.","Ten Gb Ethernet Adapters","Sun Dual Port 10GBase-T Adapter (for factory installation)","1","872","2016-10-03","34546385","2022-01-01","2022-12-31","151","0","20865706",""
+"MKB Bank Nyrt.","Ten Gb Ethernet Adapters","Sun Dual Port 10GBase-T Adapter (for factory installation)","1","872","2016-10-03","34546385","2022-01-01","2022-12-31","151","0","20865706",""
+"MKB Bank Nyrt.","Ten Gb Ethernet Adapters","Sun Dual Port 10GBase-T Adapter (for factory installation)","1","812","2015-12-23","33970067","2022-01-01","2022-12-31","143","0","20385657",""
+"MKB Bank Nyrt.","Ten Gb Ethernet Adapters","Sun Dual Port 10GBase-T Adapter (for factory installation)","1","812","2015-12-23","33970067","2022-01-01","2022-12-31","143","0","20386875",""
+"MKB Bank Nyrt.","Ten Gb Ethernet Adapters","Sun Dual Port 10GBase-T Adapter (for factory installation)","1","812","2015-12-23","33970067","2022-01-01","2022-12-31","143","0","20385657",""
+"MKB Bank Nyrt.","Ten Gb Ethernet Adapters","Sun Dual Port 10GBase-T Adapter (for factory installation)","1","812","2015-12-23","33970067","2022-01-01","2022-12-31","143","0","20386875",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","T-Series Memory Accessories","One 32 GB DDR4-2133 registered DIMM (for factory installation)","1","713","2016-10-03","34546385","2022-01-01","2022-12-31","123","0","20865706",""
+"MKB Bank Nyrt.","Qlogic FC HBA","2 Sun Storage 16 Gb FC short wave optics, Qlogic (for factory installation)","1","671","2016-10-03","34546385","2022-01-01","2022-12-31","116","0","20865706",""
+"MKB Bank Nyrt.","Qlogic FC HBA","2 Sun Storage 16 Gb FC short wave optics, Qlogic (for factory installation)","1","671","2016-10-03","34546385","2022-01-01","2022-12-31","116","0","20865706",""
+"MKB Bank Nyrt.","Qlogic FC HBA","2 Sun Storage 16 Gb FC short wave optics, Qlogic (for factory installation)","1","671","2016-10-03","34546385","2022-01-01","2022-12-31","116","0","20865706",""
+"MKB Bank Nyrt.","Qlogic FC HBA","2 Sun Storage 16 Gb FC short wave optics, Qlogic (for factory installation)","1","671","2016-10-03","34546385","2022-01-01","2022-12-31","116","0","20865706",""
+"MKB Bank Nyrt.","Ten Gb Transceivers","Dual rate transceiver: SFP+ SR. Support 1 Gb/sec and 10 Gb/sec dual rate","4","871","2019-01-04","35938270","2019-01-04","2024-01-03","104","0","22065367",""
+"MKB Bank Nyrt.","Sun SAS Disk Drive","One 600 GB 10000 rpm 2.5-inch SAS-3 HDD with marlin bracket (for factory installation)","2","500","2015-12-23","33970067","2022-01-01","2022-12-31","88","0","20385657",""
+"MKB Bank Nyrt.","Sun SAS Disk Drive","One 600 GB 10000 rpm 2.5-inch SAS-3 HDD with marlin bracket (for factory installation)","2","500","2015-12-23","33970067","2022-01-01","2022-12-31","88","0","20385657",""
+"MKB Bank Nyrt.","Sun SAS Disk Drive","One 600 GB 10000 rpm 2.5-inch SAS-3 HDD with marlin bracket (for factory installation)","2","500","2015-12-23","33970067","2022-01-01","2022-12-31","88","0","20386875",""
+"MKB Bank Nyrt.","Sun SAS Disk Drive","One 600 GB 10000 rpm 2.5-inch SAS-3 HDD with marlin bracket (for factory installation)","2","500","2015-12-23","33970067","2022-01-01","2022-12-31","88","0","20386875",""
+"MKB Bank Nyrt.","Sun SAS Disk Drive","One 600 GB 10000 rpm 2.5-inch SAS-3 HDD with marlin bracket (for factory installation)","1","268","2016-10-03","34546385","2022-01-01","2022-12-31","46","0","20865706",""
+"MKB Bank Nyrt.","Sun SAS Disk Drive","One 600 GB 10000 rpm 2.5-inch SAS-3 HDD with marlin bracket (for factory installation)","1","268","2016-10-03","34546385","2022-01-01","2022-12-31","46","0","20865706",""
+"MKB Bank Nyrt.","Sun SAS Disk Drive","One 600 GB 10000 rpm 2.5-inch SAS-3 HDD with marlin bracket (for factory installation)","1","268","2016-10-03","34546385","2022-01-01","2022-12-31","46","0","20865706",""
+"MKB Bank Nyrt.","Sun SAS Disk Drive","One 600 GB 10000 rpm 2.5-inch SAS-3 HDD with marlin bracket (for factory installation)","1","268","2016-10-03","34546385","2022-01-01","2022-12-31","46","0","20865706",""
+"MKB Bank Nyrt.","Sun Rack Hardware","Power cord: Sun Rack 2 jumper, 2 meters, C14RA plug, C13 connector, 13 A (for factory installation)","2","38","2015-12-23","33970067","2022-01-01","2022-12-31","7","0","20386875",""
+"MKB Bank Nyrt.","Sun Rack Hardware","Jumper Cable Kit: 1 x 2m C13","2","41","2015-12-23","33970067","2022-01-01","2022-12-31","7","0","20386875",""
+"MKB Bank Nyrt.","Sun Rack Hardware","Power cord: Sun Rack 2 jumper, 2 meters, C14RA plug, C13 connector, 13 A (for factory installation)","2","38","2015-12-23","33970067","2022-01-01","2022-12-31","7","0","20385657",""
+"MKB Bank Nyrt.","Sun Rack Hardware","Power cord: Sun Rack 2 jumper, 2 meters, C14RA plug, C13 connector, 13 A (for factory installation)","2","38","2015-12-23","33970067","2022-01-01","2022-12-31","7","0","20385657",""
+"MKB Bank Nyrt.","Sun Rack Hardware","Jumper Cable Kit: 1 x 2m C13","2","41","2015-12-23","33970067","2022-01-01","2022-12-31","7","0","20385657",""
+"MKB Bank Nyrt.","Sun Rack Hardware","Power cord: Sun Rack 2 jumper, 2 meters, C14RA plug, C13 connector, 13 A (for factory installation)","2","38","2015-12-23","33970067","2022-01-01","2022-12-31","7","0","20386875",""
+"MKB Bank Nyrt.","Sun Rack Hardware","Power cord: Sun Rack 2 jumper, 2 meters, C14RA plug, C13 connector, 13 A (for factory installation)","1","20","2016-10-03","34546385","2022-01-01","2022-12-31","4","0","20865706",""
+"MKB Bank Nyrt.","Sun Rack Hardware","Power cord: Sun Rack 2 jumper, 2 meters, C14RA plug, C13 connector, 13 A (for factory installation)","1","20","2016-10-03","34546385","2022-01-01","2022-12-31","4","0","20865706",""
+"MKB Bank Nyrt.","Sun Rack Hardware","Power cord: Sun Rack 2 jumper, 2 meters, C14RA plug, C13 connector, 13 A (for factory installation)","1","20","2016-10-03","34546385","2022-01-01","2022-12-31","4","0","20865706",""
+"MKB Bank Nyrt.","Sun Rack Hardware","Power cord: Sun Rack 2 jumper, 2 meters, C14RA plug, C13 connector, 13 A (for factory installation)","1","20","2016-10-03","34546385","2022-01-01","2022-12-31","4","0","20865706",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: model family","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","2","20385657",""
+"MKB Bank Nyrt.","Exadata Database Machine X7-2 Hardware","X7-2,1U DATABASE SERVER (768GB),ED X7-2","1","0","2019-01-04","35938270","2019-01-04","2024-01-03","0","0","22063355",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: model family","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","2","20385657",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: model family","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","2","20385657",""
+"MKB Bank Nyrt.","Exadata Database Machine Expansion Switch Kit","RACK 42U-1200 W/HEAVY DUTY PAL","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","0","20386874",""
+"MKB Bank Nyrt.","Server Spares","SUNDC SWITCH IB-36P MANAGED,LF","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","0","20386874",""
+"MKB Bank Nyrt.","Server Spares","SUNDC SWITCH IB-36P MANAGED,LF","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","0","20386874",""
+"MKB Bank Nyrt.","Exadata Database Machine X5-2 Eighth Rack","X5-2,1U DATABASE SERVER,EXADATA X5","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","2","20386874",""
+"MKB Bank Nyrt.","Exadata Database Machine X5-2 Eighth Rack","X5-2,1U DATABASE SERVER,EXADATA X5","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","2","20386874",""
+"MKB Bank Nyrt.","Exadata Database Machine X5-2 Hardware","Exadata Database Machine X5-2: model family","1","0","2015-12-23","33970067","2021-12-01","2022-12-31","0","0","20386874",""
+"MKB Bank Nyrt.","Exadata Database Machine X5-8 Full Rack","X5-2L,2U,HIGH CAPACITY SERVER (w/8TB HDs),EXADATA","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","0","20386874",""
+"MKB Bank Nyrt.","Exadata Database Machine X5-8 Full Rack","X5-2L,2U,HIGH CAPACITY SERVER (w/8TB HDs),EXADATA","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","0","20386874",""
+"MKB Bank Nyrt.","Exadata Database Machine X5-8 Full Rack","X5-2L,2U,HIGH CAPACITY SERVER (w/8TB HDs),EXADATA","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","0","20386874",""
+"MKB Bank Nyrt.","Exadata Database Machine Expansion Switch Kit","SWITCH,ENET,WS-C4948E-F-S,CISCO CATALYST,BACK TO FRONT COOLING","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","0","20386874",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: model family","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","2","20386875",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: model family","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","2","20386875",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: model family","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","2","20386875",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: model family","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","2","20386875",""
+"MKB Bank Nyrt.","Exadata Database Machine Expansion Switch Kit","RACK 42U-1200 W/HEAVY DUTY PAL","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","0","20387608",""
+"MKB Bank Nyrt.","Server Spares","SUNDC SWITCH IB-36P MANAGED,LF","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","0","20387608",""
+"MKB Bank Nyrt.","Server Spares","SUNDC SWITCH IB-36P MANAGED,LF","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","0","20387608",""
+"MKB Bank Nyrt.","Exadata Database Machine X5-2 Eighth Rack","X5-2,1U DATABASE SERVER,EXADATA X5","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","2","20387608",""
+"MKB Bank Nyrt.","Exadata Database Machine X5-2 Eighth Rack","X5-2,1U DATABASE SERVER,EXADATA X5","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","2","20387608",""
+"MKB Bank Nyrt.","Exadata Database Machine X5-2 Hardware","Exadata Database Machine X5-2: model family","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","0","20387608",""
+"MKB Bank Nyrt.","Exadata Database Machine X5-2 Hardware","Exadata Database Machine X5-2: model family","1","0","2015-12-23","33970067","2021-12-01","2022-12-31","0","0","20387608",""
+"MKB Bank Nyrt.","Exadata Database Machine X5-8 Full Rack","X5-2L,2U,HIGH CAPACITY SERVER (w/8TB HDs),EXADATA","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","0","20387608",""
+"MKB Bank Nyrt.","Exadata Database Machine X5-8 Full Rack","X5-2L,2U,HIGH CAPACITY SERVER (w/8TB HDs),EXADATA","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","0","20387608",""
+"MKB Bank Nyrt.","Exadata Database Machine X5-8 Full Rack","X5-2L,2U,HIGH CAPACITY SERVER (w/8TB HDs),EXADATA","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","0","20387608",""
+"MKB Bank Nyrt.","Exadata Database Machine Expansion Switch Kit","SWITCH,ENET,WS-C4948E-F-S,CISCO CATALYST,BACK TO FRONT COOLING","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","0","20387608",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: model family","1","0","2016-10-03","34546385","2022-01-01","2022-12-31","0","2","20865706",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: model family","1","0","2016-10-03","34546385","2022-01-01","2022-12-31","0","2","20865706",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: model family","1","0","2016-10-03","34546385","2022-01-01","2022-12-31","0","2","20865706",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: model family","1","0","2016-10-03","34546385","2022-01-01","2022-12-31","0","2","20865706",""
+"MKB Bank Nyrt.","Exadata Database Machine X7-2 Hardware","X7-2L,2U HIGH CAPACITY SERVER,REDUCED HARDWARE FOR 1/8th RACK,ED X7-2","1","0","2019-01-04","35938270","2019-01-04","2024-01-03","0","0","22063355",""
+"MKB Bank Nyrt.","Exadata Database Machine X7-2 Hardware","Exadata Database Machine X7-2: model family","1","0","2019-01-04","35938270","2019-01-04","2024-01-03","0","0","22063355",""
+"MKB Bank Nyrt.","Exadata Database Machine X7-2 Hardware","Exadata Database Machine X7-2 Upgrades: model family","1","0","2019-01-04","35938270","2019-01-04","2024-01-03","0","0","22063355",""
+"MKB Bank Nyrt.","Exadata Database Machine X7-2 Hardware","Exadata Database Machine X7-2 Upgrades: model family","1","0","2019-01-04","35938270","2019-01-04","2024-01-03","0","0","22063355",""
+"MKB Bank Nyrt.","Exadata Database Machine X7-2 Hardware","Exadata Database Machine X7-2 High Capacity (HC) Eighth Rack","1","0","2019-01-04","35938270","2019-01-04","2024-01-03","0","0","22063355",""
+"MKB Bank Nyrt.","Exadata Database Machine X7-2 Eighth Rack","X7-2,1U DATABASE SERVER,REDUCED HARDWARE FOR 1/8th RACK,ED X7-2","1","0","2019-01-04","35938270","2019-01-04","2024-01-03","0","0","22063355",""
+"MKB Bank Nyrt.","Exadata Database Machine X7-2 Eighth Rack","X7-2,1U DATABASE SERVER,REDUCED HARDWARE FOR 1/8th RACK,ED X7-2","1","0","2019-01-04","35938270","2019-01-04","2024-01-03","0","0","22063355",""
+"MKB Bank Nyrt.","Exadata Database Machine X7-2 Hardware","X7-2L,2U HIGH CAPACITY SERVER,REDUCED HARDWARE FOR 1/8th RACK,ED X7-2","1","0","2019-01-04","35938270","2019-01-04","2024-01-03","0","0","22063355",""
+"MKB Bank Nyrt.","Exadata Database Machine X7-2 Hardware","X7-2L,2U HIGH CAPACITY SERVER,REDUCED HARDWARE FOR 1/8th RACK,ED X7-2","1","0","2019-01-04","35938270","2019-01-04","2024-01-03","0","0","22063355",""
+"MKB Bank Nyrt.","SPARC T7-1 Server","SPARC T7-1 server: model family","1","0","2015-12-23","33970067","2022-01-01","2022-12-31","0","2","20385657",""
