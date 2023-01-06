@@ -19,7 +19,6 @@ def printSupportIDChart():
     fig=go.Figure()
     available_licenses=support_licenses.groupby(support_licenses["Product Name"])["Percent","IsDBEE"].max().sort_values(by=["IsDBEE","Percent"],ascending=[False,False])
     available_licenses.reset_index(inplace=True)
-    # available_licenses.at[0,"Product Name"]="<b>"+available_licenses.at[0,"Product Name"]+"<b>"
 
     print(available_licenses)
     colors=['#DE7f11','#A0c98b','#DB6fBF','#FBc26A','#9E7FCC','#5fb9b5','#E46476','#5fa2ba','#b4728b','#bd9057']
