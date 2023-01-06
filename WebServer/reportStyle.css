@@ -84,6 +84,10 @@
     width:50%;
   }
 
+  #LicenseCoverageColumnTable{
+    width: 100%;
+  }
+
 
   @media print{
 

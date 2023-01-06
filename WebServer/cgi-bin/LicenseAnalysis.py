@@ -11,10 +11,10 @@ global totalSupportPaid
 # Read the available database options into a dataframe
 db_options=pd.read_csv("Database Options.csv", sep=',',encoding='utf8', engine='python')
 # Read the installed base into a dataframe with a ',' separator chech if all fields/Information is present
-possible_fields=['Customer Name', 'Product Name','Product Description','Quantity','Contract ARR', 'Contract ARR (CD)','Metric', 'Install Status']
+possible_fields=['Customer Name', 'Product Name','Product Description','Quantity','Contract ARR', 'Contract ARR (CD)','Metric', 'Install Status', 'CSI#', 'Order Number']
 
 try:
-    df = pd.read_csv("Install Base.csv", sep=',', usecols=lambda x: x in possible_fields)
+    df = pd.read_csv("Install Base.csv", sep=',', usecols=lambda x: x in possible_fields, dtype={"Order Number":"S","CSI#":"S"})
 except Exception as e:
     print(e)
     print('Csv format is not valid.')
@@ -37,6 +37,12 @@ if 'Customer Name' not in current_columns or 'Product Name' not in current_colum
 
 if "Install Status" in df.columns: # Check if there is an install status field in the file, if yes, only the active status is valid
     df=df[df["Install Status"]=="ACTIVE"]
+
+# if "CSI#" in df.columns:
+#     df["CSI#"] = df["CSI#"].astype(str)
+
+# if "Order Number" in df.columns:
+#     df["Order Number"] = df["Order Number"].astype(str)
 
 def printNoCustomers(style='txt'):# Describe Show the number of customers in this analysis
     no_customers=df["Customer Name"].unique().__len__()
@@ -223,19 +229,73 @@ def printLicenseQuantities(style='txt'):
 
 
 #These activities are needed to calculate the cores coverage by CSI or Order number
+def getLicencesBySupportId():
+    if 'CSI#' in current_columns or 'Order Number' in licenses.columns: # if some support ID columns are present
+        if 'Order Number'in current_columns:
+            support_id='Order Number'           #if Order Number exists this will be used
+        else:
+            support_id='CSI#'                   #otherwise CSI#
 
-if 'CSI#' in current_columns or 'Order Number' in licenses.columns:
-    if 'CSI#'in current_columns:
-        support_id='CSI#'
+        support_licenses=df[[support_id,"Product Name", "Quantity", "Contract ARR","License type"]][df["License type"] != "Unknown"].groupby(
+        [support_id,"Product Name","License type"], as_index=False)[["Quantity", "Contract ARR"]].sum()
+        support_licenses=support_licenses.rename(columns={support_id: "Support ID"})    #Rename Order Number or CSI# to Support ID
+
+        support_licenses["DB_Option"]=support_licenses.apply(
+            lambda row: pd.Series(list(map(
+                lambda option,no:
+                    no if option in row["Product Name"] else -1, db_options["Keyword"], range(db_options.__len__())
+                ))).max(),
+            axis=1)
+        
+        support_licenses["Total Intel Cores Covered"]=support_licenses.apply(
+            lambda row:
+                row["Quantity"]/0.5 if row["License type"] == "Processor" else
+                math.floor(row["Quantity"]/0.5/25) if row["License type"] == "NUP" and row["DB_Option"]!=0 else
+                math.floor(row["Quantity"]/0.5/10) if row["License type"] ==" NUP" and row["DB_Option"]==0 else
+                0
+            ,axis=1)
+
+        support_licenses=support_licenses[support_licenses["DB_Option"]>0]
+        support_licenses=support_licenses.groupby(["Support ID","Product Name"],as_index=False)[["Total Intel Cores Covered"]].sum()
+
+        support_licenses["Percent"]=support_licenses.apply(
+            lambda row:
+                support_licenses[support_licenses["Product Name"]==row["Product Name"]]["Total Intel Cores Covered"].sum()/max_cores_supported,
+                axis=1
+        )
+        support_licenses["IsDBEE"]=support_licenses.apply(
+            lambda row:
+#                row["Product Name"]=="Oracle Database Enterprise Edition",
+                row["Product Name"].find(db_options.iloc[1]["Keyword"])>-1, #Checks if the product name contains the keywords assined to DB EE in db_option parameter
+                axis=1
+        )
+
+        support_licenses=support_licenses.sort_values(by=["Support ID","IsDBEE","Percent"], ascending=[True,False,False])
+        support_licenses.reset_index(inplace=True)
+
+        # available_licenses=support_licenses.groupby(support_licenses["Product Name"])["Percent","IsDBEE"].max().sort_values(by=["IsDBEE","Percent"],ascending=[False,False])
+        # available_licenses.reset_index(inplace=True)
+
+        # support_ids=support_licenses["Support ID"].unique().tolist()
+        # print(getMostSignificantCustomerName())
+        # print(support_ids)
+        # for s_id in support_ids:
+        #     testseries=available_licenses.copy()
+        #     s_idLicenses=support_licenses[support_licenses["Support ID"] == s_id]
+        #     testseries["Total Intel Cores Covered"]=testseries.apply(
+        #         lambda row:
+        #             s_idLicenses[support_licenses["Product Name"] == row["Product Name"]]["Total Intel Cores Covered"].iloc[0] if len(s_idLicenses[support_licenses["Product Name"] == row["Product Name"]])>0 else 0,
+        #             axis=1
+        #     )
+       
+        #     testseries=testseries[["Product Name","Total Intel Cores Covered"]]
+        #     print(testseries)
+        #     del testseries
+            
+
+        return(support_licenses)
     else:
-        support_id='Order Number'
-    
-    support_licenses=df[[support_id,"Product Name", "Quantity", "Contract ARR","License type"]][df["License type"] != "Unknown"].groupby(
-    [support_id,"Product Name","License type"], as_index=False)[["Quantity", "Contract ARR"]].sum()
-
-
-
-
+        return # if there are no information about Support Identifiers
 
 def printULAInfo(style='txt'): #Check if the customer has ULA
     df["DB_Option"]=df.apply(
@@ -325,11 +385,17 @@ def getTotalSupportPaid():
     return totalSupportPaid
 
 warnings.filterwarnings('default')
+
 #printNoCustomers()
+#print(getMostSignificantCustomerName())
 #printLicenseCosts(style='html')
 #printLicenseQuantities(style='txt')
 # printULAInfo()
 # printTargetSizing()
 # getMostSignificantCustomerName()
+
+# print(getLicencesBySupportId())
+# if getLicencesBySupportId() is None:
+#     print('hello')
 
 

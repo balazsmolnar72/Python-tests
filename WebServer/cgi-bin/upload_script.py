@@ -24,6 +24,132 @@ def insertDownloadLink(table_class, filename):  #This command will insert a 'Dow
         insertDownloadLinkScript=True
     print('<a class="download_links" href="#" onclick="download_table_as_csv(\''+table_class+'\',\''+filename+'\');">Download as CSV</a><br>')
 
+def printTCOChart():
+    data={'Scenarios':Scenarios,'Infra':Infrastructure,'License_support':License_support,'UC':Universal_credits}
+    df=pd.DataFrame(data)
+    df.set_index('Scenarios', inplace=True)
+    fig=go.Figure(
+        data=[
+            go.Bar(
+                name="Infra",
+                x=df.index,
+                y=df.Infra,
+                offsetgroup=0,
+                marker=go.bar.Marker(color='#245d63'),
+                text=list(map(lambda val: 'Infra \n${:,.0f}K'.format(val/1000) if(val>0) else "",df.Infra)),
+                textposition="inside"
+            ),
+            go.Bar(
+                name="License_Support",
+                x=df.index,
+                y=df.License_support,
+                offsetgroup=0,
+                marker=go.bar.Marker(color='#83401E'),
+                text=list(map(lambda val: 'Lic. Support \n${:,.0f}K'.format(val/1000) if(val>0) else "",df.License_support)),
+                textposition="inside",
+                textfont=dict(
+                    color="white"
+                )
+            ),       
+            go.Bar(
+                name="UC",
+                x=df.index,
+                y=df.UC,
+                marker=go.bar.Marker(color='#DE7F11'),
+                offsetgroup=0,
+                text=list(map(lambda val: 'UC \n${:,.0f}K'.format(val/1000) if(val>0) else "",df.UC)),
+                textposition="inside",
+                textfont=dict(
+                    color="white"
+                )
+            )
+        ]
+    )
+    fig.update_layout(barmode="stack",bargap=0.1)
+
+    totalSum=df.sum(axis="columns")
+    totalSumText=list(map(lambda val: '{:+.0%} Total \n${:,.0f}K'.format(val/totalSum[Reference]-1,val/1000) if(val>0) else "",totalSum))
+    fig.add_trace(go.Scatter(
+    #    x=df.Scenarios, 
+        x=df.index,
+        y=totalSum,
+        text=totalSumText,
+        mode="text",
+        textposition='top center',
+        textfont=dict(
+            size=14,
+        ),
+        showlegend=False
+    ))
+    fig.update_yaxes(range=[0,totalSum.max()*1.2])
+    fig.update_layout(title="4 years cost comparison",width=df.index.size*220, height=500)
+    #fig.show()
+    #print(plotly.io.to_html(fig=fig,full_html=False, default_width='100%', default_height='60%',div_id='TCO_Comparison_chart'))
+    print(plotly.io.to_html(fig=fig,full_html=False, default_width='100%',div_id='TCO_Comparison_chart'))
+
+
+def printSupportIDChart():
+    import warnings
+    fig=go.Figure()
+    available_licenses=support_licenses.groupby(support_licenses["Product Name"])["Percent","IsDBEE"].max().sort_values(by=["IsDBEE","Percent"],ascending=[False,False])
+    available_licenses.reset_index(inplace=True)
+
+    colors=['#DE7f11','#A0c98b','#DB6fBF','#FBc26A','#9E7FCC','#5fb9b5','#E46476','#5fa2ba','#b4728b','#bd9057']
+
+    support_ids=support_licenses["Support ID"].unique().tolist()
+    i=0
+   
+    for s_id in support_ids:
+        testseries=available_licenses.copy()
+        s_idLicenses=support_licenses[support_licenses["Support ID"] == s_id]
+        warnings.filterwarnings('ignore', category=UserWarning) 
+        testseries["Total Intel Cores Covered"]=testseries.apply(
+            lambda row:
+                s_idLicenses[support_licenses["Product Name"] == row["Product Name"]]["Total Intel Cores Covered"].iloc[0] 
+                    if len(s_idLicenses[support_licenses["Product Name"] == row["Product Name"]])>0 else 0,
+                axis=1
+        )   
+        warnings.filterwarnings('default')
+        testseries=testseries[["Product Name","Total Intel Cores Covered"]]
+        fig.add_trace(go.Bar(
+            x=[testseries["Total Intel Cores Covered"]], y=[testseries["Product Name"]],
+            orientation='h',
+            marker=dict(
+                color=colors[i],
+                line=dict(color='rgb(248, 248, 249)', width=1)
+            )
+        ))
+
+        del testseries
+        if i<len(colors)-1:
+            i+=1
+        else:
+            i=0
+
+    fig.update_layout(
+        xaxis=dict(
+            showgrid=False,
+            showline=False,
+            showticklabels=False,
+            zeroline=False,
+            domain=[0.15, 1]
+        ),
+        yaxis=dict(
+            showgrid=False,
+            showline=False,
+            showticklabels=False,
+            zeroline=False,
+        ),
+        barmode='stack',
+        paper_bgcolor='rgb(248, 248, 255)',
+        plot_bgcolor='rgb(248, 248, 255)',
+        margin=dict(l=120, r=10, t=140, b=80),
+        showlegend=False,
+    )
+ #   fig.update_layout(title="Supported cores by Support ID",width=1000, height=500)
+    #fig.show()
+    print(plotly.io.to_html(fig=fig,full_html=False, default_width='100%',div_id='Support_ID_licenses_chart'))
+
 import os, cgi, time
 
 form = cgi.FieldStorage() 
@@ -118,67 +244,7 @@ width = 0.9       # the width of the bars: can also be len(x) sequence
 Totals=TCO_result['Total']
 Reference='On Premise' # On the chart the savings will be displayed based on this reference
 
-data={'Scenarios':Scenarios,'Infra':Infrastructure,'License_support':License_support,'UC':Universal_credits}
-df=pd.DataFrame(data)
-df.set_index('Scenarios', inplace=True)
-fig=go.Figure(
-    data=[
-        go.Bar(
-            name="Infra",
-            x=df.index,
-            y=df.Infra,
-            offsetgroup=0,
-            marker=go.bar.Marker(color='#245d63'),
-            text=list(map(lambda val: 'Infra \n${:,.0f}K'.format(val/1000) if(val>0) else "",df.Infra)),
-            textposition="inside"
-        ),
-         go.Bar(
-            name="License_Support",
-            x=df.index,
-            y=df.License_support,
-            offsetgroup=0,
-            marker=go.bar.Marker(color='#83401E'),
-            text=list(map(lambda val: 'Lic. Support \n${:,.0f}K'.format(val/1000) if(val>0) else "",df.License_support)),
-            textposition="inside",
-            textfont=dict(
-                color="white"
-            )
-        ),       
-        go.Bar(
-            name="UC",
-            x=df.index,
-            y=df.UC,
-            marker=go.bar.Marker(color='#DE7F11'),
-            offsetgroup=0,
-            text=list(map(lambda val: 'UC \n${:,.0f}K'.format(val/1000) if(val>0) else "",df.UC)),
-            textposition="inside",
-            textfont=dict(
-                color="white"
-            )
-        )
-    ]
-)
-fig.update_layout(barmode="stack",bargap=0.1)
-
-totalSum=df.sum(axis="columns")
-totalSumText=list(map(lambda val: '{:+.0%} Total \n${:,.0f}K'.format(val/totalSum[Reference]-1,val/1000) if(val>0) else "",totalSum))
-fig.add_trace(go.Scatter(
-#    x=df.Scenarios, 
-    x=df.index,
-    y=totalSum,
-    text=totalSumText,
-    mode="text",
-    textposition='top center',
-    textfont=dict(
-        size=14,
-    ),
-    showlegend=False
-))
-fig.update_yaxes(range=[0,totalSum.max()*1.2])
-fig.update_layout(title="4 years cost comparison",width=df.index.size*220, height=500)
-#fig.show()
-#print(plotly.io.to_html(fig=fig,full_html=False, default_width='100%', default_height='60%',div_id='TCO_Comparison_chart'))
-print(plotly.io.to_html(fig=fig,full_html=False, default_width='100%',div_id='TCO_Comparison_chart'))
+printTCOChart()  # Draw the TCO Chart 
 
 #Other details display
 
@@ -190,9 +256,17 @@ if LA.printULAInfo(style='html'):
     insertDownloadLink('dataframe.ULA_table_style',LA.getMostSignificantCustomerName()+' Licenses in ULA')
 
 print('<h2>Number of Intel Cores Can Be Covered by DB Licenses</h2>')
+support_licenses=LA.getLicencesBySupportId()
+if support_licenses is not None:  #If the data contains Order Number or CSI number fields draw a chart about CSI Numbers
+    print('<table id="LicenseCoverageColumnTable"><td>')
 LA.printLicenseQuantities(style='html')
 print('<div class="download_links"><script> DisplayPercentageOfCoverage()</script></div>')
 insertDownloadLink('dataframe.Intel_coverage_table_style',LA.getMostSignificantCustomerName()+' cores covered by DB licenses')
+if support_licenses is not None:  #If the data contains Order Number or CSI number fields draw a chart about CSI Numbers
+    print('<td>')
+    printSupportIDChart()
+    print('</td></table>')
+
 #print('<div class="pagebreak"> </div>')  # Breaks the page before the target sizing
 
 print('<h2>Possible Exa Target Sizing</h2>')
