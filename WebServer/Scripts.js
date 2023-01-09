@@ -33,16 +33,16 @@ function DisplayPercentageOfCoverage(){
     if(getComputedStyle(document.getElementById('LicenseCoverageColumnTable')).getPropertyValue("--printed")=='yes'){
         return
     }
-    var col1="#FBc26A",
-    col2="white";
-    var els=document.querySelectorAll('.dataframe.Intel_coverage_table_style tr td:last-child');
-    for (var i=0; i<els.length; i++) {
-        var content=els[i].firstChild.nodeValue;
+    // var col1="#FBc26A",
+    // col2="white";
+    var cells=document.querySelectorAll('.dataframe.Intel_coverage_table_style tr td:last-child');
+    for (var i=0; i<cells.length; i++) {
+        var content=cells[i].firstChild.nodeValue;
         var percentage = Number(content.substring(0,content.length-1));
-        els[i].style.background = "-webkit-gradient(linear, left,right, color-stop("+percentage+"%, var(--percentCol1)), color-stop("+percentage+"%,var(--percentCol2)))";
-        els[i].style.background = "-moz-linear-gradient(left center,var(--percentCol1) "+percentage+"%, var(--percentCol2) "+percentage+"%)" ;
-        els[i].style.background = "-o-linear-gradient(left,var(--percentCol1) "+percentage+"%, var(--percentCol2) "+percentage+"%)";
-        els[i].style.background = "linear-gradient(to right,var(--percentCol1) "+percentage+"%, var(--percentCol2) "+percentage+"%)" ;
+        cells[i].style.background = "-webkit-gradient(linear, left,right, color-stop("+percentage+"%, var(--percentCol1)), color-stop("+percentage+"%,var(--percentCol2)))";
+        cells[i].style.background = "-moz-linear-gradient(left center,var(--percentCol1) "+percentage+"%, var(--percentCol2) "+percentage+"%)" ;
+        cells[i].style.background = "-o-linear-gradient(left,var(--percentCol1) "+percentage+"%, var(--percentCol2) "+percentage+"%)";
+        cells[i].style.background = "linear-gradient(to right,var(--percentCol1) "+percentage+"%, var(--percentCol2) "+percentage+"%)" ;
     //      els[i].style.background = "-webkit-gradient(linear, left,right, color-stop("+percentage+"%,"+col1+"), color-stop("+percentage+"%,"+col2+"))";
     //     els[i].style.background = "-moz-linear-gradient(left center,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)" ;
     //     els[i].style.background = "-o-linear-gradient(left,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)";
@@ -58,5 +58,14 @@ function resizeGraphs(){
         };
     Plotly.relayout('Support_ID_licenses_chart', update)
 }
-window.onbeforeprint=resizeGraphs
-window.onresize=resizeGraphs
+window.onbeforeprint=resizeGraphs;
+window.onresize=resizeGraphs;
+
+// window.onload=function(){
+//     chart=document.getElementById('Support_ID_licenses_chart');
+//     chart.on('plotly_click', function(){
+//         alert('You clicked this Plotly chart!');
+//     });
+// }
+
+

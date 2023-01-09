@@ -88,6 +88,7 @@ def printTCOChart():
     print(plotly.io.to_html(fig=fig,full_html=False, default_width='100%',div_id='TCO_Comparison_chart'))
 
 
+
 def printSupportIDChart():
     import warnings
     fig=go.Figure()
@@ -137,6 +138,7 @@ def printSupportIDChart():
             textfont=dict(
                 color="white"
             ),
+            showlegend=True, # False = Disabled clickable Support ID numbers, because I could not solve the interactive update of the total sum.
             hovertext=testseries.apply(lambda row, si_id=s_id: 'Support Id:'+str(si_id)+' cores:'+"{:.0f}".format(row["Total Intel Cores Covered"]), axis=1)
         ))
 
@@ -149,7 +151,8 @@ def printSupportIDChart():
     fig.update_layout(
         barmode='stack',
         showlegend=True,
-        yaxis={'categoryorder':'total ascending'}
+        yaxis={'categoryorder':'total ascending'},
+        clickmode='event+select'
     )
     total_cores["Total Intel Cores Covered"]=total_cores["Total Intel Cores Covered"].apply(
         lambda row: "{:.0f}".format(row)
@@ -165,11 +168,11 @@ def printSupportIDChart():
         textfont=dict(
             size=14,
         ),
-        showlegend=False
+        showlegend=False  
     ))
 
     # fig.update_layout(title="Supported cores by Support ID",width=1000)
-    fig.update_layout(title="Supported Intel Cores by Support ID",width=650, height=len(available_licenses)*50)
+    fig.update_layout(title="Supported Intel Cores by Support ID",width=800, height=len(available_licenses)*50)
     #fig.show()
     print(plotly.io.to_html(fig=fig,full_html=False,div_id='Support_ID_licenses_chart'))
 
