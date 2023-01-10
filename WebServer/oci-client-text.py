@@ -29,11 +29,8 @@ key = 'Install Base.csv'
 
 # Connect to OCI Object Storage using the default profile
 file_path='C:\\Users\\BMOLNAR\\.oci\\config'
-print('Balazs: config file path:',file_path)
 config=oci.config.from_file(file_location=file_path)
-object_storage = oci.object_storage.ObjectStorageClient(config=config)
-
-print(oci.config.get_config_value_or_default(config,'tenancy'))
+object_storage = oci.object_storage.ObjectStorageClient(config=config)  # This needs to be done also in the second part if that is in a different scrpt.
 
 # Create the object in the bucket
 object_storage.put_object(
@@ -46,8 +43,6 @@ object_storage.put_object(
 
 # Get the URL of the object
 region=oci.config.get_config_value_or_default(config,'region')
-
-
 namespace_name=object_storage.get_namespace().data
 
 # url="https://objectstorage.{}.oraclecloud.com/n/{}/b/{}/o/{}".format(region,namespace_name,bucket_name,key)  # Works only with buckets that has Public access
@@ -71,8 +66,6 @@ import urllib.parse
 print(create_preauthenticated_request_response.data)
 par_id=create_preauthenticated_request_response.data.id
 url="https://objectstorage.{}.oraclecloud.com{}{}".format(region,create_preauthenticated_request_response.data.access_uri,urllib.parse.quote(key))
-
-
 
 print(url)
 
