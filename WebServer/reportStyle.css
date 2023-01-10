@@ -42,7 +42,8 @@
   .dataframe.licenses_table_style,
   .dataframe.Intel_coverage_table_style,
   .dataframe.ULA_table_style,
-  .target_sizing_table_style
+  .target_sizing_table_style,
+  .benchmarks_table_style
   {
     border-collapse: collapse;
     border: 1px solid #ddd;
@@ -53,7 +54,8 @@
   .dataframe.licenses_table_style thead,
   .dataframe.Intel_coverage_table_style thead,
   .dataframe.Intel_coverage_table_style thead tr:last-child,
-  .target_sizing_table_style tr:first-child{
+  .target_sizing_table_style tr:first-child,
+  .benchmarks_table_style thead{
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 15px;
@@ -65,12 +67,14 @@
 
   .dataframe.licenses_table_style tr:nth-child(even),
   .dataframe.Intel_coverage_table_style tr:nth-child(even),
-  .target_sizing_table_style tr:nth-child(even)
+  .target_sizing_table_style tr:nth-child(even),
+  .benchmarks_table_style tr:nth-child(even)
   {background-color: #f2f2f2;}
 
   .dataframe.licenses_table_style tr:hover,
   .dataframe.Intel_coverage_table_style tr:hover,
-  .target_sizing_table_style tr:hover
+  .target_sizing_table_style tr:hover,
+  .benchmarks_table_style tr:hover
   {background-color: #ddd;}
 
   .dataframe.licenses_table_style tbody tr:last-child,
@@ -93,6 +97,10 @@
     width: 100%;
     --percentCol1:#FBc26A;
     --percentCol2:white;
+  }
+
+  .benchmarks_table_style{
+    font-size: small;
   }
 
 
@@ -128,7 +136,8 @@
       .dataframe.licenses_table_style,
       .dataframe.Intel_coverage_table_style,
       .dataframe.ULA_table_style,
-      .target_sizing_table_style{
+      .target_sizing_table_style,
+      .benchmarks_table_style{
         page-break-inside: avoid;
       }
       .dataframe.Intel_coverage_table_style{

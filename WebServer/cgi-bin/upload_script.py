@@ -271,6 +271,7 @@ Totals=TCO_result['Total']
 Reference='On Premise' # On the chart the savings will be displayed based on this reference
 
 printTCOChart()  # Draw the TCO Chart 
+print('<div style="font-size:small;"><b>Note:</b> These TCO Numbers were calculated based on <a href="#benchmarks_table">assumptions and benchmarks listed below</a> in this document</div>')
 
 #Other details display
 
@@ -301,6 +302,23 @@ LA.printTargetSizing(style='html')
 print('<br>')
 insertDownloadLink('target_sizing_table_style',LA.getMostSignificantCustomerName()+' Exa Target Sizing')
 print('<br><br>')
+
+# Print Benchmarks and assumptions for the TCO
+
+print('<h2>Benchmarks and Assumptions</h2>')
+
+import json
+
+json_file=open("benchmarks.json")
+benchmarks=json.load(json_file)
+json_file.close()
+
+print('<table border="1" class="benchmarks_table_style" id="benchmarks_table">')
+print('<thead>\n\t<th>Benchmark</th>\n\t<th>Value</th>\n</thead>')
+for key, value in benchmarks.items():
+    print("<tr><td>{}</td><td>{:,.0f}</td></tr>".format(key,value))
+
+print('</table><br>')
 
 # Close the page
 
