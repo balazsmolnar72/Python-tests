@@ -4,6 +4,8 @@ import cgi
 import io
 import oci
 import logging as log
+import datetime
+
 
 log.basicConfig(level=log.INFO)
 log.info('Balazs: process started\n')
@@ -40,25 +42,45 @@ bucket_name = 'Balazs-Test-Bucket'
 key = file_item.filename
 
 # Connect to OCI Object Storage using the default profile
-file_path='C:\\Users\\BMOLNAR\\.oci>'
+file_path='C:\\Users\\BMOLNAR\\.oci\\config'
 log.info('Balazs: config file path:',file_path)
 config=oci.config.from_file(file_location=file_path)
 object_storage = oci.object_storage.ObjectStorageClient(config=config)
 
 # Create the object in the bucket
 object_storage.put_object(
-    namespace_name=oci.config.get_config().get('tenancy'),
+    namespace_name=object_storage.get_namespace().data,
     bucket_name=bucket_name,
     object_name=key,
-    data=buffer
+    put_object_body=buffer
 )
 
 # Get the URL of the object
-url = object_storage.get_object_url(
-    namespace_name=oci.config.get_config().get('tenancy'),
-    bucket_name=bucket_name,
-    object_name=key
-)
+region=oci.config.get_config_value_or_default(config,'region')
+namespace_name=object_storage.get_namespace().data
 
-# Return the URL to the user
-print(url)
+# url="https://objectstorage.{}.oraclecloud.com/n/{}/b/{}/o/{}".format(region,namespace_name,bucket_name,key)  # Works only with buckets that has Public access
+
+create_preauthenticated_request_response = object_storage.create_preauthenticated_request(
+    namespace_name=namespace_name,
+    bucket_name=bucket_name,
+    create_preauthenticated_request_details=oci.object_storage.models.CreatePreauthenticatedRequestDetails(
+        name=key+'_Request',
+        access_type="AnyObjectReadWrite",
+        time_expires=(datetime.datetime.now()+ datetime.timedelta(days=1, hours=3)).strftime("%Y-%m-%dT%H:%M:%S.%fZ"), # The link will expire within a day 
+        bucket_listing_action="Deny",
+        object_name=key),
+    opc_client_request_id=namespace_name+"EXAMPLE-opcClientRequestId-Value")
+
+
+# Get the data from response
+import urllib.parse
+# print(create_preauthenticated_request_response.data)
+par_id=create_preauthenticated_request_response.data.id
+url="https://objectstorage.{}.oraclecloud.com{}{}".format(region,create_preauthenticated_request_response.data.access_uri,urllib.parse.quote(key))
+
+print('File is uploaded to an object storage')
+print('<a href="{}">click here to download the file from Object Storage</a>'.format(url))
+print('<br>')
+print('<a href="ociTest1.py?file_location={}&par_id={}">Use this link to invoke</a>'.format(url,urllib.parse.quote(par_id)))
+
