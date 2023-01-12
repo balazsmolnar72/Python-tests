@@ -25,7 +25,11 @@ buffer = io.BytesIO(file_contents)
 
 # Set the name of the bucket and the key (filename) for the object
 bucket_name = 'Balazs-Test-Bucket'
-key = 'Install Base.csv'
+import random
+import string
+randomString=''.join(random.choice(string.ascii_letters) for i in range(5))
+
+key = datetime.datetime.now().strftime('%Y%m%d%H%M%S%fZ')+randomString+'Install Base.csv'
 
 # Connect to OCI Object Storage using the default profile
 file_path='C:\\Users\\BMOLNAR\\.oci\\config'
@@ -85,7 +89,6 @@ print(par_id)
 # import urllib.parse
 
 # bucket_name = 'Balazs-Test-Bucket'
-# key = 'Install Base.csv'
 # file_path='C:\\Users\\BMOLNAR\\.oci\\config'
 # config=oci.config.from_file(file_location=file_path)
 # object_storage = oci.object_storage.ObjectStorageClient(config=config)  # This needs to be done also in the second part if that is in a different scrpt.

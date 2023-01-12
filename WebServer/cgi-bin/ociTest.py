@@ -6,6 +6,8 @@ import oci
 import logging as log
 import datetime
 
+import ObjectStoragePersistance as OP
+
 
 log.basicConfig(level=log.INFO)
 log.info('Balazs: process started\n')
@@ -34,7 +36,14 @@ file_contents = file_item.file.read()
 
 log.info('Balazs:file contents loaded\n')
 
-# Create an in-memory buffer for the file contents
+f = open('test.csv', 'wb')
+f.write(file_contents)
+f.close()
+
+url,par_id=OP.SaveToObjectStorage('test.csv')
+
+
+""" # Create an in-memory buffer for the file contents
 buffer = io.BytesIO(file_contents)
 
 # Set the name of the bucket and the key (filename) for the object
@@ -77,8 +86,9 @@ create_preauthenticated_request_response = object_storage.create_preauthenticate
 import urllib.parse
 # print(create_preauthenticated_request_response.data)
 par_id=create_preauthenticated_request_response.data.id
-url="https://objectstorage.{}.oraclecloud.com{}{}".format(region,create_preauthenticated_request_response.data.access_uri,urllib.parse.quote(key))
+url="https://objectstorage.{}.oraclecloud.com{}{}".format(region,create_preauthenticated_request_response.data.access_uri,urllib.parse.quote(key)) """
 
+import urllib.parse
 print('File is uploaded to an object storage')
 print('<a href="{}">click here to download the file from Object Storage</a>'.format(url))
 print('<br>')
